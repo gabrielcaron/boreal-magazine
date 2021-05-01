@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+* Typographie responsive (Mobile First)
+========================================================================
+*
+* @author Gabriel Caron
+*
+* TABLE DES MATIÈRES
+* Polices
+* Base décimale
+* Hiérarchie responsive
+*
+*
+* Doc des points de rupture :
+* ==========================================================================
+* Écran mobile : de 0 à 599px
+* point de rupture: 600px
+*
+* Écran tablette : de 600 à 799px
+* point de rupture: 800px
+*
+* Écran desktop : 800px et +
+*/
+/* Polices */
+@font-face {
+  font-family: Heebo-Light;
+  src: url(../polices/heebo-light.woff2) format("woff2"), url(../polices/heebo-light.woff) format("woff"), url(../polices/heebo-light.ttf) format("truetype");
+}
+@font-face {
+  font-family: Heebo-Regular;
+  src: url(../polices/heebo-regular.woff2) format("woff2"), url(../polices/heebo-regular.woff) format("woff"), url(../polices/heebo-regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Heebo-Medium;
+  src: url(../polices/heebo-medium.woff2) format("woff2"), url(../polices/heebo-medium.woff) format("woff"), url(../polices/heebo-medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: Heebo-Bold;
+  src: url(../polices/heebo-bold.woff2) format("woff2"), url(../polices/heebo-bold.woff) format("woff"), url(../polices/heebo-bold.ttf) format("truetype");
+}
+h1, h2, h3 {
+  font-family: Heebo-Bold, sans-serif;
+}
+
+body {
+  font-family: Heebo-Light, sans-serif;
+}
+
+/* Base décimale */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* 16px pour toutes les largeurs d'écran */
+  font-size: 16px;
+  font-size: 1.6rem;
+  /* facteur multiplicateur de la taille de la police 1.375x16 = 22 */
+  line-height: 1.375;
+}
+
+/*# sourceMappingURL=typo.css.map */

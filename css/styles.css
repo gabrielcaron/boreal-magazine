@@ -1,0 +1,594 @@
+@charset "UTF-8";
+
+
+/* ===========================
+
+PAGES
+
+=========================== */
+
+/* ACCUEIL */
+
+/* Bloc titre */
+
+
+.bloc-titre {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 25%;
+    text-align: center;
+}
+
+.bloc-titre h1 {
+    font-size: 0;
+    
+}
+
+.logo {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.slogan {
+    margin-top: 20px;
+    color: white;
+    font-size: 5vw;
+    text-shadow: #333333 3px 3px 10px;
+}
+
+.header-accueil picture img {
+    width: 100%;
+    z-index: 1;
+}
+
+.header-commun picture img {
+    width: 100%;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.article-accueil {
+    background-color: rgba(0,155,50,0.8);
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+}
+
+.categorie {
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.accueil .article-accueil h2 {
+    font-size: 1.75em;
+    line-height: 1.25em;
+    margin: 0;
+}
+
+.conteneur-articles {
+    grid-column: 2 / span 10; /* positionne l'enfant sur le conteneur parent */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* positionne les enfants sur la grille */
+    gap: 20px;
+}
+
+.grille-articles {
+    grid-template-columns: 1fr 1fr;
+}
+
+.liens-accueil {
+    position: relative;
+    height: 350px;
+    color: #FFFFFF;
+}
+
+.accueil .liens-accueil:nth-child(1) {
+    background-image: url(../images_css/accueil-article-01.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.accueil .liens-accueil:nth-child(2) {
+    background-image: url(../images_css/accueil-article-02.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.accueil .liens-accueil:nth-child(3) {
+    background-image: url(../images_css/accueil-article-03.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.accueil .liens-accueil:nth-child(4) {
+    background-image: url(../images_css/accueil-article-04.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.accueil .liens-accueil:nth-child(5) {
+    background-image: url(../images_css/accueil-article-05.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.accueil .liens-accueil:nth-child(6) {
+    background-image: url(../images_css/accueil-article-06.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.accueil .liens-accueil:nth-child(7) {
+    background-image: url(../images_css/accueil-article-07.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.accueil .liens-accueil:nth-child(8) {
+    background-image: url(../images_css/accueil-article-08.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.accueil .flottants a:link h2, .accueil .flottants a:visited h2 {
+    color: #FFFFFF;
+    transition: all, 0.3s ease-in-out;
+    
+}
+
+.accueil .flottants a:hover h2, .accueil .flottants a:active h2 {
+    text-shadow: #33FF33 0px 0px 10px;
+    text-decoration: underline;
+}
+
+
+.accueil .flottants a:link .categorie, .accueil .flottants a:visited .categorie {
+    color: #FFFFFF;
+    transition: all, 0.3s ease-in-out;
+}
+
+.accueil .flottants a:hover .categorie, .accueil .flottants a:active .categorie {
+    text-shadow: #33FF33 0px 0px 10px;
+}
+
+
+/* ARTICLES */
+
+/* En-tête */
+
+/* Commun */
+
+.header-commun picture img {
+    width: 100%;
+    z-index: 1;
+}
+
+.article-complet {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Gestion du texte */
+
+.header-article .categorie-article {
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.60em;
+    color: #666666;
+}
+
+.header-article h1 {
+    font-size: 3em;
+    line-height: 1em;
+    text-align: center;
+    color: rgba(0,155,50,1);
+}
+
+.header-article .auteur {
+    text-align: center;
+    padding: 2em 0;
+    text-decoration: none;
+    font-size: 0.70em;
+}
+
+.corps-article h2 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    color: rgba(0,155,50,1);
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin-left: -10%;
+}
+
+.corps-article h3 {
+    font-size: 1.2em;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    color: rgba(0,155,50,1);
+    padding-top: 1em;
+}
+
+.corps-article p {
+    font-size: 1.25em;
+    margin: 1em 0;
+}
+
+.corps-article p:first-child {
+    font-weight: bold;
+    color: #666666;
+    font-size: 1.50em;
+}
+
+ol {
+    line-height: 1.5em;
+    font-size: 1.25em;
+}
+
+ol li {
+    padding: 0.5em 0;
+}
+
+/* Photos et légendes, vidéos */
+
+figure {
+    width: 133.7%;
+    margin-left: -17%;
+    
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 0.90em;
+    line-height: 1.5em;
+    padding: 1em 10% 2em 12.5%;
+
+}
+
+.enveloppe-video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    
+}
+
+.enveloppe-iframe {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; 
+}
+
+
+/* À PROPOS */
+
+.a-propos h1 {
+    padding: 1.5em 0 0 0;
+}
+
+
+/* CONTACT */
+
+.contact h1 {
+    padding: 1.5em 0 1em 0;
+}
+
+/* Commun à tous les champs */
+
+.contact fieldset {
+    border-color: rgba(0,155,50,1);
+    margin: 30px 0;
+    padding: 10px 0;
+}
+
+.contact fieldset li {
+    list-style-type: none;
+}
+
+.contact legend {
+    background-color: rgba(0,155,50,1);
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+
+.contact fieldset label {
+    margin: 0 0 0 10%;
+    width: 50px;
+    line-height: 2em; 
+    display: inline-block;
+}
+
+
+
+.contact fieldset input, .contact fieldset select {
+    width: 50%;
+    margin: 5px 10%;
+}
+
+/* Langue */
+
+.contact fieldset:nth-child(3) input {
+    margin: 0 0 0 60px;
+}
+
+/* J'aimerais collaborer */
+
+.contact fieldset:nth-child(4) input {
+    margin: 0 0 0 60px;
+}
+
+/* Expliquez pourquoi */
+
+.contact textarea {
+    width: 95%;
+    height: 150px;
+    margin: 10px 2.5%;
+}
+
+/* CV */
+
+.contact fieldset:nth-child(6) input {
+    margin: 5px 15px;
+}
+
+.contact .corps-article > form > input:last-child {
+    background-color: rgba(0,155,50,1);
+    color: #FFFFFF;
+    font-size: 0.9em;
+    padding: 5px 30px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+
+
+
+/* ===========================
+
+PIED DE PAGE
+
+=========================== */
+
+/* Réseaux sociaux */
+
+.reseaux-sociaux {
+    list-style-type: none;
+    overflow: auto;
+}
+
+.reseaux-sociaux ul {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.reseaux-sociaux li {
+    display: inline;
+}
+
+.reseaux-sociaux li a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background: url(../images_css/commun-sociaux.png) no-repeat;
+    background-position: -10px 0;
+    background-size: 290px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+
+.reseaux-sociaux li:first-child a {
+    background-position: -1px 0;
+    border-color: #2D5DB6;
+}
+
+.reseaux-sociaux li:nth-child(2) a {
+    background-position: -98px 0;
+    border-color: #1CA1F2;
+}
+
+.reseaux-sociaux li:nth-child(3) a {
+    background-position: -195px 0;
+    border-color: #E82279;
+}
+
+
+.reseaux-sociaux li a:link, li a:visited {
+    transition: all, 0.1s ease;
+}
+
+.reseaux-sociaux li a:hover, li a:active {
+    background-position-y: -100px; 
+}
+
+.reseaux-sociaux h2 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 50px;
+}
+
+.infolettre {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3em 0;
+    margin-top: 75px;
+    background-color: #E6E6E6;
+}
+
+.infolettre h2 {
+    color: #333333;
+    padding-bottom: 1em;
+}
+
+.footer-commun form input:nth-child(1) {
+    font-size: 0.9em;
+    padding: 5px 20px;
+    width: 33%;
+    border: none;
+    text-align: center;
+} 
+
+
+.footer-commun form input:nth-child(2) {
+    background-color: rgba(0,155,50,1);
+    color: #FFFFFF;
+    font-size: 0.9em;
+    padding: 5px 30px;
+    border: none;
+}
+
+small {
+    color: #FFFFFF;
+    background-color: rgba(0,155,50,1);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px 0;
+}
+
+/* Articles */
+
+.footer-article {
+    font-size: 0.60em;
+    background-color: #FFFFFF;
+    border-top: rgba(0,155,50,1) 2px solid; 
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+
+
+/* ===========================
+
+ADAPTATIONS
+
+=========================== */
+
+
+/* PETITS ÉCRANS */
+
+@media (min-width: 500px) {
+
+/* Navigation */
+    
+.menu-principal > li > a {
+    padding: 0.8em 1.5em;
+}
+}
+
+
+/* MOYENS ÉCRANS */
+
+@media (min-width: 650px) {
+
+/* Navigation */
+    
+nav {
+    font-size: 1.25em;
+}
+
+.menu-principal li > a:hover, .menu-principal li > a:active {
+    padding-bottom: 4px;
+}
+  
+.sous-menu-articles {
+    top: 42px;
+}
+
+
+/* Contact */
+    
+.contact fieldset label {
+    margin: 0 0 0 10%;
+    width: 100px;
+    line-height: 2em; 
+    display: inline-block;
+}
+    
+/* - Langue */
+
+.contact fieldset:nth-child(3) input {
+    margin: 0 0 0 65px;
+}
+
+/* - J'aimerais collaborer */
+
+.contact fieldset:nth-child(4) input {
+    margin: 0 0 0 65px;
+} 
+    
+}
+
+
+/* GRANDS ÉCRANS */
+
+@media (min-width: 900px) {
+
+
+/* Articles */
+
+.article-complet {
+    width: 700px;
+    margin: 0 auto;
+}
+      
+
+
+/* Pied de page - Réseau sociaux */
+
+.reseaux-sociaux ul {
+    width: 510px;
+}
+
+.reseaux-sociaux li a {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    background: url(../images_css/commun-sociaux.png) no-repeat;
+    background-position: -10px 0;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    font-size: 0;    
+}
+
+.reseaux-sociaux li:first-child a {
+    background-position: -1px 0;
+    border-color: #2D5DB6;
+}
+
+.reseaux-sociaux li:nth-child(2) a {
+    background-position: -150px 0;
+    border-color: #1CA1F2;
+}
+
+.reseaux-sociaux li:nth-child(3) a {
+    background-position: -300px 0;
+    border-color: #E82279;
+}
+
+.reseaux-sociaux li a:link, li a:visited {
+    transition: all, 0.1s ease;
+}
+
+.reseaux-sociaux li a:hover, li a:active {
+    background-position-y: -151px; 
+}
+    
+}

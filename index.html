@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="Boréal est le magazine par excellence des amateurs de plein-air.">
+	<meta name="password"
+		  content="Boréal Magazine, plein-air, randonnée pédestre, fat bike, ski, ski de fond, randonnée au Québec, camping, camping hivernal">
+	<meta name="author" content="Gabriel Caron">
+	<link rel="stylesheet" type="text/css" media="screen" href="sass/normalize.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="sass/utilitaires.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="sass/grille.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="sass/general.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="sass/typo.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="sass/entete-nav.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="sass/accueil.css">
+	<link rel="icon" type="image/gif" href="images_css/favicon.png">
+	<title>Boréal Magazine - 100% plein-air</title>
+</head>
+<body class="accueil">
+<nav class="conteneur rangee navigation">
+	<ul class="menu-principal">
+		<li><a href="index.html">Boréal Magazine</a></li>
+		<li><a href="#">Articles</a>
+			<ul class="sous-menu-articles">
+				<li><a href="html/article-01-camping-hiver-trucs.html">Camping d’hiver - 26 trucs pour débutants</a>
+				</li>
+				<li><a href="html/article-02-bottes-raquettes.html">Quelles bottes choisir pour faire de la raquette</a>
+				</li>
+				<li><a href="html/article-03-sentiers-raquettes-quebec.html">10 sentiers de raquettes pour tous au
+					Québec</a></li>
+				<li><a href="html/article-04-shabiller-ski-de-fond.html">Comment s'habiller pour faire du ski de fond
+					?</a></li>
+				<li><a href="html/article-05-skis-parfaits.html">Quels sont les skis parfaits pour vous ?</a></li>
+				<li><a href="html/article-06-endroits-ski-de-fond.html">Les meilleurs endroits pour faire du ski de
+					fond</a></li>
+				<li><a href="html/article-07-sentiers-difficiles-quebec.html">5 sentiers difficiles au Québec pour
+					randonneurs aguerris</a></li>
+				<li><a href="html/article-08-fat-biking-devez-savoir.html">Fat biking : ce que vous devez savoir sur le
+					vélo tout terrain</a></li>
+			</ul>
+		</li>
+		<li><a href="html/a-propos.html">À propos</a></li>
+		<li><a href="html/contact.html">Contact</a></li>
+	</ul>
+</nav>
+<header class="conteneur header-accueil">
+	<div class="bloc-titre">
+		<h1>Boréal Magazine</h1>
+		<div class="logo"><img src="images_css/commun-logo.svg"></div>
+		<div class="slogan">Le magazine 100% plein-air
+		</div>
+	</div>
+	<picture>
+		<!-- Image pour petites résolutions -->
+		<source srcset="images_html/index-entete-500.jpg" media="(max-width: 580px)">
+		<!-- Image pour résolutions moyennes -->
+		<source srcset="images_html/index-entete-1024.jpg" media="(max-width: 1000px)">
+		<!-- Image pour grandes résolution et image par défaut -->
+		<img src="images_html/index-entete-1920.jpg" alt="">
+	</picture>
+</header>
+<div class="conteneur grille">
+	<div class="conteneur-articles">
+		<a href="html/article-01-camping-hiver-trucs.html" class="articles-accueil">
+			<figure>
+				<picture>
+					<img src="images_css/accueil-article-01.jpg" alt="">
+				</picture>
+				<figcaption class="infos-article">
+					<div class="categorie">Camping d'hiver</div>
+					<h2>Camping d’hiver - 26 trucs pour débutants</h2></figcaption>
+			</figure>
+		</a>
+		<a href="html/article-02-bottes-raquettes.html" class="articles-accueil">
+			<article class="infos-article">
+				<div class="categorie">Raquettes</div>
+				<h2>Quelles bottes choisir pour faire de la raquette</h2>
+			</article>
+		</a>
+		<a href="html/article-03-sentiers-raquettes-quebec.html" class="articles-accueil">
+			<article class="infos-article">
+				<div class="categorie">Raquettes</div>
+				<h2>10 sentiers de raquettes pour tous au Québec</h2>
+			</article>
+		</a>
+		<a href="html/article-04-shabiller-ski-de-fond.html" class="articles-accueil">
+			<article class="infos-article">
+				<div class="categorie">Ski de fond</div>
+				<h2>Comment s'habiller pour faire du ski de fond ?</h2>
+			</article>
+		</a>
+		<a href="html/article-05-skis-parfaits.html" class="articles-accueil">
+			<article class="infos-article">
+				<div class="categorie">Ski alpin</div>
+				<h2>Quels sont les skis parfaits pour vous ?</h2>
+			</article>
+		</a>
+		<a href="html/article-06-endroits-ski-de-fond.html" class="articles-accueil">
+			<article class="infos-article">
+				<div class="categorie">Ski de fond</div>
+				<h2>Les meilleurs endroits pour faire du ski de fond</h2>
+			</article>
+		</a>
+		<a href="html/article-07-sentiers-difficiles-quebec.html" class="articles-accueil">
+			<article class="infos-article">
+				<div class="categorie">Randonnée pédestre</div>
+				<h2>5 sentiers difficiles au Québec pour randonneurs aguerris</h2>
+			</article>
+		</a>
+		<a href="html/article-08-fat-biking-devez-savoir.html" class="articles-accueil">
+			<article class="infos-article">
+				<div class="categorie">Fat biking</div>
+				<h2>Fat biking : ce que vous devez savoir sur le vélo tout terrain</h2>
+			</article>
+		</a>
+	</div>
+</div>
+<div class="infolettre">
+	<h2>Abonnez-vous à notre infolettre</h2>
+	<form action="">
+		<input type="text" placeholder="votre@courriel.com">
+		<input type="submit" value="Envoyer">
+	</form>
+</div>
+<footer class="conteneur footer-commun">
+			<ul class="reseaux-sociaux">
+				<li><a href="https://www.facebook.com"><div class="icone"></div><span>Facebook</span></a></li>
+				<li><a href="https://www.twitter.com"><div class="icone"></div><span>Twitter</span></a></li>
+				<li><a href="https://www.instagram.com"><div class="icone"></div><span>Instagram</span></a></li>
+			</ul>
+	<small class="credits">Ce projet a été réalisé dans le cadre du cours Intégration I en Techniques d'intégration multimédia au Cégep de Sainte-Foy à l’automne 2018.
+		© 2020, Gabriel Caron. Tous droits réservés.</small>
+</footer>
+</body>
+</html>
