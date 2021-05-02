@@ -7,18 +7,12 @@
 	<meta name="password"
 		  content="Boréal Magazine, plein-air, randonnée pédestre, fat bike, ski, ski de fond, randonnée au Québec, camping, camping hivernal">
 	<meta name="author" content="Gabriel Caron">
-	<link rel="stylesheet" type="text/css" media="screen" href="sass/normalize.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="sass/utilitaires.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="sass/grille.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="sass/general.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="sass/typo.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="sass/entete-nav.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="sass/accueil.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 	<link rel="icon" type="image/gif" href="images_css/favicon.png">
 	<title>Boréal Magazine - 100% plein-air</title>
 </head>
 <body class="accueil">
-<nav class="conteneur rangee navigation">
+<nav class="navigation">
 	<ul class="menu-principal">
 		<li><a href="index.html">Boréal Magazine</a></li>
 		<li><a href="#">Articles</a>
@@ -47,7 +41,7 @@
 <header class="conteneur header-accueil">
 	<div class="bloc-titre">
 		<h1>Boréal Magazine</h1>
-		<div class="logo"><img src="images_css/commun-logo.svg"></div>
+		<div class="logo"><img src="images_css/logo-boreal-2021-ren.svg"></div>
 		<div class="slogan">Le magazine 100% plein-air
 		</div>
 	</div>
@@ -60,62 +54,100 @@
 		<img src="images_html/index-entete-1920.jpg" alt="">
 	</picture>
 </header>
-<div class="conteneur grille">
-	<div class="conteneur-articles">
-		<a href="html/article-01-camping-hiver-trucs.html" class="articles-accueil">
-			<figure>
-				<picture>
-					<img src="images_css/accueil-article-01.jpg" alt="">
-				</picture>
-				<figcaption class="infos-article">
-					<div class="categorie">Camping d'hiver</div>
-					<h2>Camping d’hiver - 26 trucs pour débutants</h2></figcaption>
-			</figure>
-		</a>
-		<a href="html/article-02-bottes-raquettes.html" class="articles-accueil">
-			<article class="infos-article">
-				<div class="categorie">Raquettes</div>
-				<h2>Quelles bottes choisir pour faire de la raquette</h2>
-			</article>
-		</a>
-		<a href="html/article-03-sentiers-raquettes-quebec.html" class="articles-accueil">
-			<article class="infos-article">
-				<div class="categorie">Raquettes</div>
-				<h2>10 sentiers de raquettes pour tous au Québec</h2>
-			</article>
-		</a>
-		<a href="html/article-04-shabiller-ski-de-fond.html" class="articles-accueil">
-			<article class="infos-article">
-				<div class="categorie">Ski de fond</div>
-				<h2>Comment s'habiller pour faire du ski de fond ?</h2>
-			</article>
-		</a>
-		<a href="html/article-05-skis-parfaits.html" class="articles-accueil">
-			<article class="infos-article">
-				<div class="categorie">Ski alpin</div>
-				<h2>Quels sont les skis parfaits pour vous ?</h2>
-			</article>
-		</a>
-		<a href="html/article-06-endroits-ski-de-fond.html" class="articles-accueil">
-			<article class="infos-article">
-				<div class="categorie">Ski de fond</div>
-				<h2>Les meilleurs endroits pour faire du ski de fond</h2>
-			</article>
-		</a>
-		<a href="html/article-07-sentiers-difficiles-quebec.html" class="articles-accueil">
-			<article class="infos-article">
-				<div class="categorie">Randonnée pédestre</div>
-				<h2>5 sentiers difficiles au Québec pour randonneurs aguerris</h2>
-			</article>
-		</a>
-		<a href="html/article-08-fat-biking-devez-savoir.html" class="articles-accueil">
-			<article class="infos-article">
-				<div class="categorie">Fat biking</div>
-				<h2>Fat biking : ce que vous devez savoir sur le vélo tout terrain</h2>
-			</article>
-		</a>
+<section class="articles">
+	<div class="articles__conteneur">
+		<div class="articles__conteneurRangee">
+			<a href="html/article-01-camping-hiver-trucs.html" class="article">
+				<figure class="article__figure">
+					<picture>
+						<img class="article__image" src="images_css/accueil-article-01.jpg" alt="">
+					</picture>
+					<figcaption class="article__infos">
+						<p class="article__categorie">Camping d'hiver</p>
+						<h2 class="article__titre">Camping d’hiver - 26 trucs pour débutants</h2>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="html/article-02-bottes-raquettes.html" class="article">
+				<figure class="article__figure">
+					<picture>
+						<img class="article__image" src="images_css/accueil-article-02.jpg" alt="">
+					</picture>
+					<figcaption class="article__infos">
+						<p class="article__categorie">Raquettes</p>
+						<h2 class="article__titre">Quelles bottes choisir pour faire de la raquette</h2>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="html/article-03-sentiers-raquettes-quebec.html" class="article">
+				<figure class="article__figure">
+					<picture>
+						<img class="article__image" src="images_css/accueil-article-03.jpg" alt="">
+					</picture>
+					<figcaption class="article__infos">
+						<p class="article__categorie">Raquettes</p>
+						<h2 class="article__titre">10 sentiers de raquettes pour tous au Québec</h2>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="html/article-04-shabiller-ski-de-fond.html" class="article">
+				<figure class="article__figure">
+					<picture>
+						<img class="article__image" src="images_css/accueil-article-04.jpg" alt="">
+					</picture>
+					<figcaption class="article__infos">
+						<p class="article__categorie">Ski de fond</p>
+						<h2 class="article__titre">Comment s'habiller pour faire du ski de fond ?</h2>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="html/article-05-skis-parfaits.html" class="article">
+				<figure class="article__figure">
+					<picture>
+						<img class="article__image" src="images_css/accueil-article-05.jpg" alt="">
+					</picture>
+					<figcaption class="article__infos">
+						<p class="article__categorie">Ski alpin</p>
+						<h2 class="article__titre">Quels sont les skis parfaits pour vous ?</h2>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="html/article-06-endroits-ski-de-fond.html" class="article">
+				<figure class="article__figure">
+					<picture>
+						<img class="article__image" src="images_css/accueil-article-06.jpg" alt="">
+					</picture>
+					<figcaption class="article__infos">
+						<p class="article__categorie">Ski de fond</p>
+						<h2 class="article__titre">Les meilleurs endroits pour faire du ski de fond</h2>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="html/article-07-sentiers-difficiles-quebec.html" class="article">
+				<figure class="article__figure">
+					<picture>
+						<img class="article__image" src="images_css/accueil-article-07.jpg" alt="">
+					</picture>
+					<figcaption class="article__infos">
+						<p class="article__categorie">Randonnée pédestre</p>
+						<h2 class="article__titre">5 sentiers difficiles au Québec pour randonneurs aguerris</h2>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="html/article-08-fat-biking-devez-savoir.html" class="article">
+				<figure class="article__figure">
+					<picture>
+						<img class="article__image" src="images_css/accueil-article-08.jpg" alt="">
+					</picture>
+					<figcaption class="article__infos">
+						<p class="article__categorie">Randonnée pédestre</p>
+						<h2 class="article__titre">5 sentiers difficiles au Québec pour randonneurs aguerris</h2>
+					</figcaption>
+				</figure>
+			</a>
+		</div>
 	</div>
-</div>
+</section>
 <div class="infolettre">
 	<h2>Abonnez-vous à notre infolettre</h2>
 	<form action="">
@@ -124,12 +156,19 @@
 	</form>
 </div>
 <footer class="conteneur footer-commun">
-			<ul class="reseaux-sociaux">
-				<li><a href="https://www.facebook.com"><div class="icone"></div><span>Facebook</span></a></li>
-				<li><a href="https://www.twitter.com"><div class="icone"></div><span>Twitter</span></a></li>
-				<li><a href="https://www.instagram.com"><div class="icone"></div><span>Instagram</span></a></li>
-			</ul>
-	<small class="credits">Ce projet a été réalisé dans le cadre du cours Intégration I en Techniques d'intégration multimédia au Cégep de Sainte-Foy à l’automne 2018.
+	<ul class="reseaux-sociaux">
+		<li><a href="https://www.facebook.com">
+			<div class="icone"></div>
+			<span>Facebook</span></a></li>
+		<li><a href="https://www.twitter.com">
+			<div class="icone"></div>
+			<span>Twitter</span></a></li>
+		<li><a href="https://www.instagram.com">
+			<div class="icone"></div>
+			<span>Instagram</span></a></li>
+	</ul>
+	<small class="credits">Ce projet a été réalisé dans le cadre du cours Intégration I en Techniques d'intégration
+		multimédia au Cégep de Sainte-Foy à l’automne 2018.
 		© 2020, Gabriel Caron. Tous droits réservés.</small>
 </footer>
 </body>

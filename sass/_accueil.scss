@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+
+/* ===========================
+
+PAGES
+
+=========================== */
+
+/* ACCUEIL */
+
+/* Bloc titre */
+
+
+.bloc-titre {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  top: 25%;
+  text-align: center;
+}
+
+.bloc-titre h1 {
+  font-size: 0;
+
+}
+
+.logo {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.slogan {
+  margin-top: 20px;
+  color: white;
+  font-size: 4rem;
+  text-shadow: #333333 3px 3px 10px;
+}
+
+.header-accueil picture img {
+  width: 100%;
+  z-index: 1;
+}
+
+/* Section Articles */
+
+.articles {
+  @include conteneur1920px;
+
+  &__conteneur {
+	@include rangeeGrid12col;
+
+	&Rangee {
+	  grid-column: 2 / 12;
+	  display: grid;
+	  grid-template-columns: repeat(10, 1fr);
+	  grid-gap: 20px;
+	}
+  }
+
+  .article {
+	grid-column: span 5;
+	position: relative; // Positionne le figcaption en absolue
+	color: #FFFFFF;
+	border-radius: 5px;
+
+    &__image {
+      border-radius: $coinArrondi;
+      box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    }
+
+	&:link h2, &:visited h2 {
+	  color: #FFFFFF;
+	  transition: color, 0.2s ease-in-out;
+	}
+
+	&:hover h2, &:active h2 {
+	  text-shadow: #33FF33 0 0 10px;
+	  text-decoration: underline;
+	}
+
+	figure {
+	  margin: 0;
+	}
+
+	figcaption {
+	  background: linear-gradient(180deg, rgba(0, 100, 55, 0) 10%, rgba(0, 100, 55, 0.9) 50%);
+	  position: absolute;
+	  bottom: 0;
+	  width: 100%;
+	  padding: 7rem 3rem 3rem 3rem;
+      border-radius: 0 0 $coinArrondi $coinArrondi;
+
+	  p {
+		text-transform: uppercase;
+		font-size: 1em;
+		margin: 0.5rem 0;
+	  }
+
+	  h2 {
+		font-size: 1.75em;
+		line-height: 1.25em;
+		margin: 0;
+	  }
+	}
+  }
+}
+
+
+.accueil .flottants a:link .article__categorie, .accueil .flottants a:visited .article__categorie {
+  color: #FFFFFF;
+  transition: all, 0.3s ease-in-out;
+}
+
+.accueil .flottants a:hover .article__categorie, .accueil .flottants a:active .article__categorie {
+  text-shadow: #33FF33 0px 0px 10px;
+}
+
+
+
+
+/* À PROPOS */
+
+.a-propos h1 {
+  padding: 1.5em 0 0 0;
+}
+
+
+/* CONTACT */
+
+.contact h1 {
+  padding: 1.5em 0 1em 0;
+}
+
+/* Commun à tous les champs */
+
+.contact fieldset {
+  border-color: rgba(0, 155, 50, 1);
+  margin: 30px 0;
+  padding: 10px 0;
+}
+
+.contact fieldset li {
+  list-style-type: none;
+}
+
+.contact legend {
+  background-color: rgba(0, 155, 50, 1);
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+}
+
+.contact fieldset label {
+  margin: 0 0 0 10%;
+  width: 50px;
+  line-height: 2em;
+  display: inline-block;
+}
+
+
+.contact fieldset input, .contact fieldset select {
+  width: 50%;
+  margin: 5px 10%;
+}
+
+/* Langue */
+
+.contact fieldset:nth-child(3) input {
+  margin: 0 0 0 60px;
+}
+
+/* J'aimerais collaborer */
+
+.contact fieldset:nth-child(4) input {
+  margin: 0 0 0 60px;
+}
+
+/* Expliquez pourquoi */
+
+.contact textarea {
+  width: 95%;
+  height: 150px;
+  margin: 10px 2.5%;
+}
+
+/* CV */
+
+.contact fieldset:nth-child(6) input {
+  margin: 5px 15px;
+}
+
+.contact .article-complet__contenu > form > input:last-child {
+  background-color: rgba(0, 155, 50, 1);
+  color: #FFFFFF;
+  font-size: 0.9em;
+  padding: 5px 30px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+
+/* ===========================
+
+PIED DE PAGE
+
+=========================== */
+
+/* Réseaux sociaux */
+.reseaux-sociaux {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.reseaux-sociaux li {
+  display: inline;
+}
+
+.reseaux-sociaux li a {
+  display: block;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.reseaux-sociaux .icone {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../medias/commun/sprite_sociaux.svg) no-repeat;
+  background-size: 150px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+.reseaux-sociaux li:first-child a .icone {
+  background-position: 0 0;
+}
+
+.reseaux-sociaux li:nth-child(2) a .icone {
+  background-position: -50px 0;
+}
+
+.reseaux-sociaux li:nth-child(3) a .icone {
+  background-position: -100px 0;
+}
+
+.reseaux-sociaux li a:link .icone, li a:visited .icone {
+  transition: all, 0.1s ease;
+}
+
+.reseaux-sociaux li a:hover .icone, li a:active .icone {
+  background-position-y: -50px;
+  border-color: #005A32;
+}
+
+.reseaux-sociaux li span {
+  display: inline-block;
+  line-height: 50px;
+  vertical-align: top;
+  padding-left: 10px;
+}
+
+.infolettre {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3em 0;
+  margin-top: 75px;
+  background-color: #E6E6E6;
+}
+
+.infolettre h2 {
+  color: #333333;
+  padding-bottom: 1em;
+}
+
+.infolettre form input:nth-child(1) {
+  font-size: 0.9em;
+  padding: 5px 20px;
+  width: 33%;
+  border: none;
+  text-align: center;
+}
+
+
+.infolettre form input:nth-child(2) {
+  background-color: rgba(0, 155, 50, 1);
+  color: #FFFFFF;
+  font-size: 0.9em;
+  padding: 5px 30px;
+  border: none;
+}
+
+small {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px 0;
+}
+
+/* Articles */
+
+.footer-article {
+  font-size: 0.60em;
+  background-color: #FFFFFF;
+  border-top: rgba(0, 155, 50, 1) 2px solid;
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
+
+
+/* ===========================
+
+ADAPTATIONS
+
+=========================== */
+
+
+/* PETITS ÉCRANS */
+
+@media (min-width: 500px) {
+
+  /* Navigation */
+
+  .menu-principal > li > a {
+	padding: 0.8em 1.5em;
+  }
+}
+
+
+/* MOYENS ÉCRANS */
+
+@media (min-width: 650px) {
+
+
+  /* Contact */
+
+  .contact fieldset label {
+	margin: 0 0 0 10%;
+	width: 100px;
+	line-height: 2em;
+	display: inline-block;
+  }
+
+  /* - Langue */
+
+  .contact fieldset:nth-child(3) input {
+	margin: 0 0 0 65px;
+  }
+
+  /* - J'aimerais collaborer */
+
+  .contact fieldset:nth-child(4) input {
+	margin: 0 0 0 65px;
+  }
+
+}

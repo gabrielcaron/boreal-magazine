@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fr">
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Boréal est le magazine par excellence des amateurs de plein-air.">
@@ -10,10 +10,9 @@
     <link rel="icon" type="image/gif" href="../images_css/favicon.png">
     <title>Camping d’hiver - 26 trucs pour débutants | Boréal Magazine</title>
 </head>
-<body class="article-commun">
-    <div class="enveloppe-article">
-        <header class="header-commun">
-            <nav>
+<body class="article-commun"> <!-- TODO supprimer cette classe -->
+        <header class="entete-pages">
+            <nav class="navigation">
                 <ul class="menu-principal">
                     <li><a href="../index.html">Boréal Magazine</a></li>
                     <li><a href="#">Articles</a>
@@ -32,22 +31,22 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <picture>
+            <picture class="entete-pages__picture"> <!-- TODO ajouter classe -->
             <!-- Image pour petites résolutions -->
-            <source srcset="../images_html/article-01-entete-500.jpg" media="(max-width: 580px)"> 
+            <source srcset="../images_html/article-01-entete-500.jpg" media="(max-width: 580px)">
             <!-- Image pour résolutions moyennes -->
-            <source srcset="../images_html/article-01-entete-1024.jpg" media="(max-width: 1000px)"> 
+            <source srcset="../images_html/article-01-entete-1024.jpg" media="(max-width: 1000px)">
             <!-- Image pour grandes résolution et image par défaut -->
-            <img src="../images_html/article-01-entete-1920.jpg" alt=""> 
+            <img src="../images_html/article-01-entete-1920.jpg" alt="">
             </picture>
         </header>
         <article class="article-complet">
-            <header class="header-article">
-                <div class="categorie-article"><p>Camping hivernal</p></div>
+            <header class="article-complet__header">
+                <div class="article-complet__categorie"><p>Camping hivernal</p></div>
                 <h1>Camping d’hiver&thinsp;:<br> 26 trucs pour débutants</h1>
-                <div class="auteur"><p>Source&thinsp;: <a href="https://www.mec.ca/fr/article/winter-camping-tips-26-things-beginners-should-know">MEC</a></p></div>
+                <div class="article-complet__auteur"><p>Source&thinsp;: <a href="https://www.mec.ca/fr/article/winter-camping-tips-26-things-beginners-should-know">MEC</a></p></div>
             </header>
-            <div class="corps-article">
+            <div class="article-complet__contenu">
                 <p>Le camping d’hiver peut sembler inaccessible et extrême pour beaucoup, mais en réalité, si on est bien équipé, c’est une activité de plein air originale et rassembleuse à faire entre amis durant l’hiver au Québec. Pour bien en profiter, il vous faudra être bien préparé. Voici une liste de 26 trucs à garder en tête qui vous aideront si vous tentez l’expérience.</p>
                 <h2>Vêtements</h2>
                 <figure>
@@ -124,7 +123,7 @@
                 <p>Bon camping d’hiver&thinsp;!</p>
             </div>
             <footer class="footer-article">
-                <p>Dernière mise à jour&thinsp;: <time datetime="2018-12-04">4 décembre 2018</time></p>                
+                <p>Dernière mise à jour&thinsp;: <time datetime="2018-12-04">4 décembre 2018</time></p>
             </footer>
         </article>
         <div class="separateur"></div>
@@ -143,11 +142,10 @@
                 <form action="script.php">
                     <input type="text" placeholder="votre@courriel.com">
                     <input type="submit" value="Envoyer">
-                </form> 
+                </form>
                 </div>
             </div>
             <small>© 2018, Gabriel Caron.</small>
         </footer>
-    </div>
 </body>
 </html>

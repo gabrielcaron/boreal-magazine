@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fr">
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="">
@@ -11,9 +11,8 @@
     <title>Nous contacter | Boréal Magazine</title>
 </head>
 <body class="contact">
-    <div class="enveloppe-article">
-        <header class="header-commun">
-            <nav>
+        <header class="entete-pages">
+            <nav class="navigation">
                 <ul class="menu-principal">
                     <li><a href="../index.html">Boréal Magazine</a></li>
                     <li><a href="#">Articles</a>
@@ -34,22 +33,22 @@
             </nav>
             <picture>
             <!-- Image pour petites résolutions -->
-            <source srcset="../images_html/contact-entete-500.jpg" media="(max-width: 580px)"> 
+            <source srcset="../images_html/contact-entete-500.jpg" media="(max-width: 580px)">
             <!-- Image pour résolutions moyennes -->
-            <source srcset="../images_html/contact-entete-1024.jpg" media="(max-width: 1000px)"> 
+            <source srcset="../images_html/contact-entete-1024.jpg" media="(max-width: 1000px)">
             <!-- Image pour grandes résolution et image par défaut -->
-            <img src="../images_html/contact-entete-1920.jpg" alt=""> 
+            <img src="../images_html/contact-entete-1920.jpg" alt="">
             </picture>
         </header>
         <article class="article-complet">
-            <header class="header-article">
+            <header class="article-complet__header">
                 <h1>Pour nous contacter</h1>
             </header>
             <div class="corps-article">
                 <form action="traitement.php" method="post">
                     <fieldset>
                         <legend>Identification</legend>
-                        <div> 
+                        <div>
                             <label for="nom">Nom</label>
                             <input type="text" name="nom" id="nom">
                         </div>
@@ -164,11 +163,10 @@
                 <form action="script.php">
                     <input type="text" placeholder="votre@courriel.com">
                     <input type="submit" value="Envoyer">
-                </form> 
+                </form>
                 </div>
             </div>
             <small>© 2018, Gabriel Caron.</small>
         </footer>
-    </div>
 </body>
 </html>
