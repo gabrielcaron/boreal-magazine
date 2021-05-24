@@ -51,7 +51,9 @@
 		<!-- Image pour résolutions moyennes -->
 		<source srcset="images_html/index-entete-1024.jpg" media="(max-width: 1000px)">
 		<!-- Image pour grandes résolution et image par défaut -->
-		<img src="images_html/index-entete-1920.jpg" alt="">
+		<img src="images_html/index-montagnes-banff-1920.jpg"
+			 srcset="images_html/index-montagnes-banff-1920.jpg 1x, images_html/index-montagnes-banff-3840.jpg 2x"
+			 alt="">
 	</picture>
 </header>
 <section class="articles">
@@ -148,28 +150,56 @@
 		</div>
 	</div>
 </section>
-<div class="infolettre">
-	<h2>Abonnez-vous à notre infolettre</h2>
-	<form action="">
-		<input type="text" placeholder="votre@courriel.com">
-		<input type="submit" value="Envoyer">
-	</form>
-</div>
-<footer class="conteneur footer-commun">
-	<ul class="reseaux-sociaux">
-		<li><a href="https://www.facebook.com">
-			<div class="icone"></div>
-			<span>Facebook</span></a></li>
-		<li><a href="https://www.twitter.com">
-			<div class="icone"></div>
-			<span>Twitter</span></a></li>
-		<li><a href="https://www.instagram.com">
-			<div class="icone"></div>
-			<span>Instagram</span></a></li>
-	</ul>
-	<small class="credits">Ce projet a été réalisé dans le cadre du cours Intégration I en Techniques d'intégration
-		multimédia au Cégep de Sainte-Foy à l’automne 2018.
-		© 2020, Gabriel Caron. Tous droits réservés.</small>
+
+<footer class="pieddepage">
+	<div class="pieddepage__infolettre">
+		<h2 class="pieddepage__titreinfolettre">Abonnez-vous à notre infolettre</h2>
+		<form class="pieddepage__formulaire" action="">
+			<label class="pieddepage__label" for="courriel">Courriel</label>
+			<input class="pieddepage__champ" type="email" autocomplete="email" id="courriel">
+			<input class="pieddepage__bouton" type="submit" value="S'abonner">
+		</form>
+	</div>
+	<div class="pieddepage__conteneur">
+		<nav class="pieddepage__navigation">
+				<a href="index.html">Boréal Magazine</a>
+				<h2><a href="#">Articles</a></h2>
+					<ul class="">
+						<li><a href="html/article-01-camping-hiver-trucs.html">Camping d’hiver - 26 trucs pour débutants</a>
+						</li>
+						<li><a href="html/article-02-bottes-raquettes.html">Quelles bottes choisir pour faire de la raquette</a>
+						</li>
+						<li><a href="html/article-03-sentiers-raquettes-quebec.html">10 sentiers de raquettes pour tous au
+							Québec</a></li>
+						<li><a href="html/article-04-shabiller-ski-de-fond.html">Comment s'habiller pour faire du ski de fond
+							?</a></li>
+						<li><a href="html/article-05-skis-parfaits.html">Quels sont les skis parfaits pour vous ?</a></li>
+						<li><a href="html/article-06-endroits-ski-de-fond.html">Les meilleurs endroits pour faire du ski de
+							fond</a></li>
+						<li><a href="html/article-07-sentiers-difficiles-quebec.html">5 sentiers difficiles au Québec pour
+							randonneurs aguerris</a></li>
+						<li><a href="html/article-08-fat-biking-devez-savoir.html">Fat biking : ce que vous devez savoir sur le
+							vélo tout terrain</a></li>
+					</ul>
+				<h2><a href="html/a-propos.html">À propos</a></h2>
+				<h2><a href="html/contact.html">Contact</a></h2>
+
+		</nav>
+		<ul class="reseaux-sociaux">
+			<li><a href="https://www.facebook.com">
+				<div class="icone"></div>
+				<span>Facebook</span></a></li>
+			<li><a href="https://www.twitter.com">
+				<div class="icone"></div>
+				<span>Twitter</span></a></li>
+			<li><a href="https://www.instagram.com">
+				<div class="icone"></div>
+				<span>Instagram</span></a></li>
+		</ul>
+		<small class="credits">Ce projet a été réalisé dans le cadre du cours Intégration I en Techniques d'intégration
+			multimédia au Cégep de Sainte-Foy à l’automne 2018.
+			© 2020, Gabriel Caron. Tous droits réservés.</small>
+	</div>
 </footer>
 </body>
 </html>

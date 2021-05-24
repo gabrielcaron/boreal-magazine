@@ -26,7 +26,7 @@ PAGES
 }
 
 .logo {
-  width: 45%;
+  width: 36%;
   margin: 0 auto;
 }
 
@@ -37,15 +37,20 @@ PAGES
   text-shadow: #333333 3px 3px 10px;
 }
 
-.header-accueil picture img {
-  width: 100%;
-  z-index: 1;
+.header-accueil {
+  padding: 0;
+  picture img {
+	width: 100%;
+	z-index: 1;
+  }
 }
 
 /* Section Articles */
 
 .articles {
   @include conteneur1920px;
+  position: relative;
+  top: -10rem;
 
   &__conteneur {
 	@include rangeeGrid12col;
@@ -200,114 +205,6 @@ PAGES
   border: none;
 }
 
-
-/* ===========================
-
-PIED DE PAGE
-
-=========================== */
-
-/* Réseaux sociaux */
-.reseaux-sociaux {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0;
-}
-
-.reseaux-sociaux li {
-  display: inline;
-}
-
-.reseaux-sociaux li a {
-  display: block;
-  color: #FFFFFF;
-  font-size: 2rem;
-}
-
-.reseaux-sociaux .icone {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: url(../medias/commun/sprite_sociaux.svg) no-repeat;
-  background-size: 150px;
-  border: 1px solid #FFFFFF;
-  border-radius: 5px;
-}
-
-.reseaux-sociaux li:first-child a .icone {
-  background-position: 0 0;
-}
-
-.reseaux-sociaux li:nth-child(2) a .icone {
-  background-position: -50px 0;
-}
-
-.reseaux-sociaux li:nth-child(3) a .icone {
-  background-position: -100px 0;
-}
-
-.reseaux-sociaux li a:link .icone, li a:visited .icone {
-  transition: all, 0.1s ease;
-}
-
-.reseaux-sociaux li a:hover .icone, li a:active .icone {
-  background-position-y: -50px;
-  border-color: #005A32;
-}
-
-.reseaux-sociaux li span {
-  display: inline-block;
-  line-height: 50px;
-  vertical-align: top;
-  padding-left: 10px;
-}
-
-.infolettre {
-  color: #FFFFFF;
-  text-align: center;
-  padding: 3em 0;
-  margin-top: 75px;
-  background-color: #E6E6E6;
-}
-
-.infolettre h2 {
-  color: #333333;
-  padding-bottom: 1em;
-}
-
-.infolettre form input:nth-child(1) {
-  font-size: 0.9em;
-  padding: 5px 20px;
-  width: 33%;
-  border: none;
-  text-align: center;
-}
-
-
-.infolettre form input:nth-child(2) {
-  background-color: rgba(0, 155, 50, 1);
-  color: #FFFFFF;
-  font-size: 0.9em;
-  padding: 5px 30px;
-  border: none;
-}
-
-small {
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 0.8em;
-  padding: 10px 0;
-}
-
-/* Articles */
-
-.footer-article {
-  font-size: 0.60em;
-  background-color: #FFFFFF;
-  border-top: rgba(0, 155, 50, 1) 2px solid;
-  padding-top: 1em;
-  padding-bottom: 5em;
-}
 
 
 /* ===========================

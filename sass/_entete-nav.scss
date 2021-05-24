@@ -1,5 +1,5 @@
 
-/* BARRE DE MENU PRINCIPAL */
+/* BARRE DU MENU PRINCIPAL */
 
 header {
   position: relative;
@@ -14,7 +14,7 @@ header {
 .navigation {
   width: 100%;
   z-index: 100;
-  font-family: 'Mukta Mahee', sans-serif;
+  font-family: Heebo-Bold, sans-serif;
   font-size: 1.25em;
   background-color: $vertForet;
 }
@@ -39,7 +39,7 @@ header {
       &:hover, &:active {
         text-shadow: #33FF33 0 0 10px;
         border-bottom: #FFFFFF 4px solid;
-        padding-bottom: 9px;
+        padding-bottom: 1.2rem;
       }
 	}
   }
@@ -47,14 +47,10 @@ header {
 
 
 
-
-
-
-
 /* ÉLÉMENTS ACTIFS */
 
 .accueil nav > ul > li:nth-child(1) > a, .article-commun nav > ul > li:nth-child(2) > a, .a-propos nav > ul > li:nth-child(3) > a, .contact nav > ul > li:nth-child(4) > a {
-  text-shadow: #33FF33 0px 0px 10px;
+  text-shadow: #33FF33 0 0 10px;
   font-weight: bold;
 }
 
@@ -63,8 +59,8 @@ header {
 .sous-menu-articles {
   display: none;
   position: absolute;
-  z-index: 99;
-  top: 4.7rem;
+  z-index: 1000;
+  top: 4.5rem;
   left: 0;
   width: 400px;
   padding: 25px 25px;
@@ -94,7 +90,7 @@ header {
 }
 
 .sous-menu-articles > li > a:hover, .sous-menu-articles > li > a:active {
-  text-shadow: #33FF33 0px 0px 10px;
+  text-shadow: #33FF33 0 0 10px;
   text-decoration: underline;
 }
 
