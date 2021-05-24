@@ -897,6 +897,7 @@ PIED DE PAGE
 }
 .pieddepage__formulaire {
   flex-basis: 52rem;
+  margin-bottom: 3rem;
 }
 .pieddepage__infolettre {
   display: flex;
@@ -919,14 +920,17 @@ PIED DE PAGE
 }
 .pieddepage__champ {
   font-size: 0.9em;
-  width: 75%;
+  width: 72%;
   height: 5rem;
   border: none;
+  border-radius: 5px;
 }
 .pieddepage__bouton {
-  background-color: #009b32;
+  background-color: #006437;
+  border-radius: 7px;
   color: #FFFFFF;
-  font-size: 0.9em;
+  font-family: Heebo-Bold, sans-serif;
+  font-size: 1.75rem;
   padding: 5px 30px;
   border: none;
   height: 5rem;
