@@ -1,5 +1,5 @@
 
-/* BARRE DU MENU PRINCIPAL */
+
 
 header {
   position: relative;
@@ -8,8 +8,9 @@ header {
 .entete-pages picture img {
   width: 100%;
   z-index: 1;
-  //margin-top: 50px;
 }
+
+/* Barre de navigation principale */
 
 .navigation {
   width: 100%;
@@ -19,6 +20,8 @@ header {
   background-color: $vertForet;
 }
 
+/* Liens du menu */
+
 .menu-principal {
   padding: 0;
   margin: 0;
@@ -27,9 +30,11 @@ header {
 
   & > li {
 	display: inline;
+    margin: 0 1rem;
 
 	& > a {
-	  padding: 0.8em 0.5em;
+      padding-left: 2rem;
+      padding-right: 2rem;
       line-height: 6rem;
       &:link, &:visited {
         text-decoration: none;
@@ -49,8 +54,9 @@ header {
 
 /* ÉLÉMENTS ACTIFS */
 
-.accueil nav > ul > li:nth-child(1) > a, .article-commun nav > ul > li:nth-child(2) > a, .a-propos nav > ul > li:nth-child(3) > a, .contact nav > ul > li:nth-child(4) > a {
-  text-shadow: #33FF33 0 0 10px;
+.page-courante {
+  border-bottom: #FFFFFF 4px solid;
+  padding-bottom: 1.2rem;
   font-weight: bold;
 }
 

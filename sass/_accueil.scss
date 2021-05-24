@@ -47,7 +47,7 @@ PAGES
 
 /* Section Articles */
 
-.articles {
+.accueil .articles {
   @include conteneur1920px;
   position: relative;
   top: -10rem;
@@ -213,17 +213,6 @@ ADAPTATIONS
 
 =========================== */
 
-
-/* PETITS ÉCRANS */
-
-@media (min-width: 500px) {
-
-  /* Navigation */
-
-  .menu-principal > li > a {
-	padding: 0.8em 1.5em;
-  }
-}
 
 
 /* MOYENS ÉCRANS */
