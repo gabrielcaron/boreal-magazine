@@ -1,81 +1,96 @@
 <!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Boréal est le magazine par excellence des amateurs de plein-air.">
-    <meta name="password" content="Boréal Magazine, plein-air, randonnée pédestre, fat bike, ski, ski de fond, randonnée au Québec, camping, camping hivernal">
-    <meta name="author" content="Gabriel Caron">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
-    <link rel="icon" type="image/gif" href="../images-css/favicon.png">
-    <title>À propos | Boréal Magazine</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="Boréal est le magazine par excellence des amateurs de plein-air.">
+	<meta name="password"
+		  content="Boréal Magazine, plein-air, randonnée pédestre, fat bike, ski, ski de fond, randonnée au Québec, camping, camping hivernal">
+	<meta name="author" content="Gabriel Caron">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
+	<link rel="icon" type="image/gif" href="../images-html/favicon.png">
+	<title>À propos | Boréal Magazine</title>
 </head>
 <body class="a-propos">
-    <div class="enveloppe-article">
-        <header class="entete-pages">
-            <nav>
-                <ul class="menu-principal">
-                    <li><a href="../index.html">Boréal Magazine</a></li>
-                    <li><a href="#">Articles</a>
-                        <ul class="sous-menu-articles">
-                            <li><a href="article-01-camping-hiver-trucs.html">Camping d’hiver - 26 trucs pour débutants</a></li>
-                            <li><a href="article-02-bottes-raquettes.html">Quelles bottes choisir pour faire de la raquette</a></li>
-                            <li><a href="article-03-sentiers-raquettes-quebec.html">10 sentiers de raquettes pour tous au Québec</a></li>
-                            <li><a href="article-04-shabiller-ski-de-fond.html">Comment s'habiller pour faire du ski de fond ?</a></li>
-                            <li><a href="article-05-skis-parfaits.html">Quels sont les skis parfaits pour vous ?</a></li>
-                            <li><a href="article-06-endroits-ski-de-fond.html">Les meilleurs endroits pour faire du ski de fond</a></li>
-                            <li><a href="article-07-sentiers-difficiles-quebec.html">5 sentiers difficiles au Québec pour randonneurs aguerris</a></li>
-                            <li><a href="article-08-fat-biking-devez-savoir.html">Fat biking : ce que vous devez savoir sur le vélo tout terrain</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="a-propos.html">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <picture>
-            <!-- Image pour petites résolutions -->
-            <source srcset="../images-html/a-propos-entete-500.jpg" media="(max-width: 580px)">
-            <!-- Image pour résolutions moyennes -->
-            <source srcset="../images-html/a-propos-entete-1024.jpg" media="(max-width: 1000px)">
-            <!-- Image pour grandes résolution et image par défaut -->
-            <img src="../images-html/a-propos-entete-1920.jpg" alt="">
-            </picture>
-        </header>
-        <article class="article-complet">
-            <header class="article-complet__header">
-                <h1>À propos de nous</h1>
-            </header>
-            <div class="corps-article">
-                <p>Nous sommes Boréal, le magazine 100% plein-air. Axé sur la vie active, nous publions des articles sur la randonnée pédestre, le camping, le ski alpin, le ski de fond, la raquette, le véloneige, etc.</p>
-                <figure>
-                    <img src="../images-html/a-propos-contenu-01.jpg" alt="Nous sommes des passionnés du plein-air.">
-                    <figcaption>Nous sommes des passionnés du plein-air.</figcaption>
-                </figure>
-                <p>Publié sur une base permanente, nous explorons tous les sujets reliés au plein-air pour le passionné de plein-air que vous êtes.</p>
-                <p>Nos bureaux sont situés à Québec. Intéressé à vous joindre à notre équipe de collaborateurs ? <a href="contact.html">Communiquez avec nous</a>.</p>
-            </div>
-        </article>
-        <div class="separateur"></div>
-        <footer class="footer-commun">
-            <div class="flottants">
-                <div class="reseaux-sociaux">
-                    <h2>Nos médias sociaux</h2>
-                    <ul>
-                        <li><a href="https://www.facebook.com">Facebook</a></li>
-                        <li><a href="https://www.instagram.com">Instagram</a></li>
-                        <li><a href="https://www.twitter.com">Twitter</a></li>
+<div class="enveloppe-article">
+	<header class="entete-pages">
+        <nav class="menu-principal">
+            <ul class="menu-principal__liste">
+                <li class="menu-principal__item"><a href="../index.html" class="menu-principal__lien accueil">Boréal Magazine</a></li>
+                <li class="menu-principal__item articles-recents"><a href="#" class="menu-principal__lien">Articles</a>
+                    <ul class="menu-principal__sous-menu-liste">
+                        <li class="menu-principal__sous-menu-item"><a href="article-01-camping-hiver-trucs.html" class="menu-principal__sous-menu-lien">Camping d’hiver - 26 trucs pour débutants</a>
+                        </li>
+                        <li class="menu-principal__sous-menu-item"><a href="article-02-bottes-raquettes.html" class="menu-principal__sous-menu-lien">Quelles bottes choisir pour faire de la raquette</a>
+                        </li>
+                        <li class="menu-principal__sous-menu-item"><a href="article-03-sentiers-raquettes-quebec.html" class="menu-principal__sous-menu-lien">10 sentiers de raquettes pour tous au
+                            Québec</a></li>
+                        <li class="menu-principal__sous-menu-item"><a href="article-04-shabiller-ski-de-fond.html" class="menu-principal__sous-menu-lien">Comment s'habiller pour faire du ski de fond
+                            ?</a></li>
+                        <li class="menu-principal__sous-menu-item"><a href="article-05-skis-parfaits.html" class="menu-principal__sous-menu-lien">Quels sont les skis parfaits pour vous ?</a></li>
+                        <li class="menu-principal__sous-menu-item"><a href="article-06-endroits-ski-de-fond.html" class="menu-principal__sous-menu-lien">Les meilleurs endroits pour faire du ski de
+                            fond</a></li>
+                        <li class="menu-principal__sous-menu-item"><a href="article-07-sentiers-difficiles-quebec.html" class="menu-principal__sous-menu-lien">5 sentiers difficiles au Québec pour
+                            randonneurs aguerris</a></li>
+                        <li class="menu-principal__sous-menu-item"><a href="article-08-fat-biking-devez-savoir.html" class="menu-principal__sous-menu-lien">Fat biking : ce que vous devez savoir sur le
+                            vélo tout terrain</a></li>
                     </ul>
-                </div>
-                <div class="infolettre">
-                    <h2>Abonnez-vous à notre infolettre</h2>
-                <form action="script.php">
-                    <input type="text" placeholder="votre@courriel.com">
-                    <input type="submit" value="Envoyer">
-                </form>
-                </div>
-            </div>
-            <small>© 2018, Gabriel Caron.</small>
-        </footer>
-    </div>
+                </li>
+                <li class="menu-principal__item"><a href="a-propos.html" class="menu-principal__lien page-courante">À propos</a></li>
+                <li class="menu-principal__item"><a href="contact.html" class="menu-principal__lien">Contact</a></li>
+            </ul>
+        </nav>
+		<picture>
+			<!-- Image pour mobile -->
+			<source media="(max-width: 600px)"
+					srcset="../images-html/a-propos-entete-600.jpg 1x, ../images-html/a-propos-entete-1200.jpg 2x">
+			<!-- Image pour tablette -->
+			<source media="(max-width: 1000px)"
+					srcset="../images-html/a-propos-entete-1000.jpg 1x, ../images-html/a-propos-entete-2000.jpg 2x">
+			<!-- Image pour poste de table et image par défaut -->
+			<img src="../images-html/a-propos-entete-2000.jpg"
+				 srcset="../images-html/a-propos-entete-2000.jpg 1x, ../images-html/a-propos-entete-3840.jpg 2x"
+				 alt="">
+		</picture>
+	</header>
+	<article class="article-complet">
+		<header class="article-complet__header">
+			<h1>À propos de nous</h1>
+		</header>
+		<div class="corps-article">
+			<p>Nous sommes Boréal, le magazine 100% plein-air. Axé sur la vie active, nous publions des articles sur la
+				randonnée pédestre, le camping, le ski alpin, le ski de fond, la raquette, le véloneige, etc.</p>
+			<figure>
+				<img src="../images-html/a-propos-contenu-01.jpg" alt="Nous sommes des passionnés du plein-air.">
+				<figcaption>Nous sommes des passionnés du plein-air.</figcaption>
+			</figure>
+			<p>Publié sur une base permanente, nous explorons tous les sujets reliés au plein-air pour le passionné de
+				plein-air que vous êtes.</p>
+			<p>Nos bureaux sont situés à Québec. Intéressé à vous joindre à notre équipe de collaborateurs ? <a
+					href="contact.html">Communiquez avec nous</a>.</p>
+		</div>
+	</article>
+	<div class="separateur"></div>
+	<footer class="footer-commun">
+		<div class="flottants">
+			<div class="reseaux-sociaux">
+				<h2>Nos médias sociaux</h2>
+				<ul>
+					<li><a href="https://www.facebook.com">Facebook</a></li>
+					<li><a href="https://www.instagram.com">Instagram</a></li>
+					<li><a href="https://www.twitter.com">Twitter</a></li>
+				</ul>
+			</div>
+			<div class="infolettre">
+				<h2>Abonnez-vous à notre infolettre</h2>
+				<form action="script.php">
+					<input type="text" placeholder="votre@courriel.com">
+					<input type="submit" value="Envoyer">
+				</form>
+			</div>
+		</div>
+		<small>© 2018, Gabriel Caron.</small>
+	</footer>
+</div>
 </body>
 </html>

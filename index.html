@@ -8,34 +8,34 @@
 		  content="Boréal Magazine, plein-air, randonnée pédestre, fat bike, ski, ski de fond, randonnée au Québec, camping, camping hivernal">
 	<meta name="author" content="Gabriel Caron">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
-	<link rel="icon" type="image/gif" href="images-css/favicon.png">
+	<link rel="icon" type="image/gif" href="images-html/favicon.png">
 	<title>Boréal Magazine - 100% plein-air</title>
 </head>
 <body class="accueil">
-<nav class="navigation">
-	<ul class="menu-principal">
-		<li><a href="index.html" class="page-courante">Boréal Magazine</a></li>
-		<li><a href="#">Articles</a>
-			<ul class="sous-menu-articles">
-				<li><a href="html/article-01-camping-hiver-trucs.html">Camping d’hiver - 26 trucs pour débutants</a>
+<nav class="menu-principal">
+	<ul class="menu-principal__liste">
+		<li class="menu-principal__item"><a href="index.html" class="menu-principal__lien accueil page-courante">Boréal Magazine</a></li>
+		<li class="menu-principal__item articles-recents"><a href="#" class="menu-principal__lien">Articles</a>
+			<ul class="menu-principal__sous-menu-liste">
+				<li class="menu-principal__sous-menu-item"><a href="html/article-01-camping-hiver-trucs.html" class="menu-principal__sous-menu-lien">Camping d’hiver - 26 trucs pour débutants</a>
 				</li>
-				<li><a href="html/article-02-bottes-raquettes.html">Quelles bottes choisir pour faire de la raquette</a>
+				<li class="menu-principal__sous-menu-item"><a href="html/article-02-bottes-raquettes.html" class="menu-principal__sous-menu-lien">Quelles bottes choisir pour faire de la raquette</a>
 				</li>
-				<li><a href="html/article-03-sentiers-raquettes-quebec.html">10 sentiers de raquettes pour tous au
+				<li class="menu-principal__sous-menu-item"><a href="html/article-03-sentiers-raquettes-quebec.html" class="menu-principal__sous-menu-lien">10 sentiers de raquettes pour tous au
 					Québec</a></li>
-				<li><a href="html/article-04-shabiller-ski-de-fond.html">Comment s'habiller pour faire du ski de fond
+				<li class="menu-principal__sous-menu-item"><a href="html/article-04-shabiller-ski-de-fond.html" class="menu-principal__sous-menu-lien">Comment s'habiller pour faire du ski de fond
 					?</a></li>
-				<li><a href="html/article-05-skis-parfaits.html">Quels sont les skis parfaits pour vous ?</a></li>
-				<li><a href="html/article-06-endroits-ski-de-fond.html">Les meilleurs endroits pour faire du ski de
+				<li class="menu-principal__sous-menu-item"><a href="html/article-05-skis-parfaits.html" class="menu-principal__sous-menu-lien">Quels sont les skis parfaits pour vous ?</a></li>
+				<li class="menu-principal__sous-menu-item"><a href="html/article-06-endroits-ski-de-fond.html" class="menu-principal__sous-menu-lien">Les meilleurs endroits pour faire du ski de
 					fond</a></li>
-				<li><a href="html/article-07-sentiers-difficiles-quebec.html">5 sentiers difficiles au Québec pour
+				<li class="menu-principal__sous-menu-item"><a href="html/article-07-sentiers-difficiles-quebec.html" class="menu-principal__sous-menu-lien">5 sentiers difficiles au Québec pour
 					randonneurs aguerris</a></li>
-				<li><a href="html/article-08-fat-biking-devez-savoir.html">Fat biking : ce que vous devez savoir sur le
+				<li class="menu-principal__sous-menu-item"><a href="html/article-08-fat-biking-devez-savoir.html" class="menu-principal__sous-menu-lien">Fat biking : ce que vous devez savoir sur le
 					vélo tout terrain</a></li>
 			</ul>
 		</li>
-		<li><a href="html/a-propos.html">À propos</a></li>
-		<li><a href="html/contact.html">Contact</a></li>
+		<li class="menu-principal__item"><a href="html/a-propos.html" class="menu-principal__lien">À propos</a></li>
+		<li class="menu-principal__item"><a href="html/contact.html" class="menu-principal__lien">Contact</a></li>
 	</ul>
 </nav>
 <header class="conteneur header-accueil">
@@ -46,13 +46,15 @@
 		</div>
 	</div>
 	<picture>
-		<!-- Image pour petites résolutions -->
-		<source srcset="images-html/index-entete-500.jpg" media="(max-width: 580px)">
-		<!-- Image pour résolutions moyennes -->
-		<source srcset="images-html/index-entete-1024.jpg" media="(max-width: 1000px)">
-		<!-- Image pour grandes résolution et image par défaut -->
-		<img src="images-html/index-montagnes-banff-1920.jpg"
-			 srcset="images-html/index-montagnes-banff-1920.jpg 1x, images-html/index-montagnes-banff-3840.jpg 2x"
+		<!-- Image pour mobile -->
+		<source media="(max-width: 600px)"
+				srcset="images-html/index-entete-montagnes-banff-600.jpg 1x, images-html/index-entete-montagnes-banff-1200.jpg 2x">
+		<!-- Image pour tablette -->
+		<source media="(max-width: 1000px)"
+				srcset="images-html/index-entete-montagnes-banff-1000.jpg 1x, images-html/index-entete-montagnes-banff-2000.jpg 2x">
+		<!-- Image pour poste de table et image par défaut -->
+		<img src="images-html/index-entete-montagnes-banff-2000.jpg"
+			 srcset="images-html/index-entete-montagnes-banff-2000.jpg 1x, images-html/index-entete-montagnes-banff-3840.jpg 2x"
 			 alt="">
 	</picture>
 </header>

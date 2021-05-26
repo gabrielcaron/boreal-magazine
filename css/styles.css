@@ -670,50 +670,68 @@ header {
 }
 
 /* Barre de navigation principale */
-.navigation {
+.menu-principal {
   width: 100%;
   z-index: 100;
-  font-family: Heebo-Bold, sans-serif;
-  font-size: 1.25em;
   background-color: #006437;
 }
-
-/* Liens du menu */
-.menu-principal {
+.menu-principal .accueil::before {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  vertical-align: middle;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  content: "";
+  background: url(../images-css/logo-symbole-ren.svg) no-repeat;
+}
+.menu-principal__liste {
   padding: 0;
   margin: 0;
   list-style-type: none;
   text-align: center;
 }
-.menu-principal > li {
-  display: inline;
-  margin: 0 1rem;
+.menu-principal__liste .articles-recents {
+  position: relative;
 }
-.menu-principal > li > a {
+.menu-principal__item {
+  display: inline;
+}
+.menu-principal__item:hover .menu-principal__sous-menu-liste {
+  display: block;
+}
+.menu-principal__lien {
+  font-family: Heebo-Medium, sans-serif;
+  font-size: 1.25em;
   padding-left: 2rem;
   padding-right: 2rem;
   line-height: 6rem;
+  display: inline-block;
 }
-.menu-principal > li > a:link, .menu-principal > li > a:visited {
+@media screen and (max-width: 603px) {
+  .menu-principal__lien {
+    width: calc((100% / 3) - 4px);
+  }
+}
+.menu-principal__lien.accueil {
+  font-family: Heebo-Bold, sans-serif;
+}
+@media screen and (max-width: 603px) {
+  .menu-principal__lien.accueil {
+    width: 100%;
+    text-align: left;
+  }
+}
+.menu-principal__lien:link, .menu-principal__lien:visited {
   text-decoration: none;
   color: #ffffff;
   transition: none, 0.3s ease-in-out;
 }
-.menu-principal > li > a:hover, .menu-principal > li > a:active {
+.menu-principal__lien:hover, .menu-principal__lien:active {
   text-shadow: #33FF33 0 0 10px;
   border-bottom: #FFFFFF 4px solid;
-  padding-bottom: 1.2rem;
 }
-
-/* ÉLÉMENTS ACTIFS */
-.page-courante {
-  border-bottom: #FFFFFF 4px solid;
-  padding-bottom: 1.2rem;
-  font-weight: bold;
-}
-
-/* SOUS-MENU */
-.sous-menu-articles {
+.menu-principal__sous-menu-liste {
   display: none;
   position: absolute;
   z-index: 1000;
@@ -725,40 +743,24 @@ header {
   background-color: rgba(0, 100, 55, 0.95);
   line-height: 1.25em;
 }
-
-.sous-menu-articles li {
+.menu-principal__sous-menu-item {
   display: block;
   list-style: none;
   padding: 5px 0;
 }
-
-.menu-principal > li:nth-child(2):hover .sous-menu-articles {
-  display: block;
-}
-
-.menu-principal > li:nth-child(2) {
-  position: relative;
-}
-
-.menu-principal > li:nth-child(1) a::before {
-  display: inline-block;
-  width: 3.5rem;
-  height: 3.5rem;
-  vertical-align: middle;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  content: "";
-  background: url(../images-css/logo-symbole-ren.svg) no-repeat;
-}
-
-.sous-menu-articles > li > a:link, .sous-menu-articles > li > a:visited {
+.menu-principal__sous-menu-lien:link, .menu-principal__sous-menu-lien:visited {
   text-decoration: none;
   color: #ffffff;
 }
-
-.sous-menu-articles > li > a:hover, .sous-menu-articles > li > a:active {
+.menu-principal__sous-menu-lien:hover, .menu-principal__sous-menu-lien:active {
   text-shadow: #33FF33 0 0 10px;
   text-decoration: underline;
+}
+
+/* ÉLÉMENTS ACTIFS */
+.page-courante {
+  border-bottom: #FFFFFF 4px solid;
+  font-weight: bold;
 }
 
 /** Articles **/
@@ -996,7 +998,7 @@ PIED DE PAGE
   }
 }
 .pieddepage__navigation {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem 0;
 }
 @media (min-width: 600px) {
   .pieddepage__navigation {
@@ -1026,12 +1028,17 @@ PIED DE PAGE
   text-decoration: underline;
 }
 .pieddepage__lien.accueil {
-  grid-column: 2/5;
+  grid-column: 2/12;
   grid-row: 1;
   align-self: center;
   font-family: Heebo-Bold, sans-serif;
   font-size: 25px;
   font-size: 2.5rem;
+}
+@media screen and (min-width: 1100px) {
+  .pieddepage__lien.accueil {
+    grid-column: 2/5;
+  }
 }
 .pieddepage__lien.accueil::before {
   display: inline-block;
@@ -1156,7 +1163,7 @@ PIED DE PAGE
 
 /* Crédits */
 .credits {
-  padding: 5rem 0;
+  padding: 3rem 0 5rem 0;
   color: #fff;
 }
 @media (min-width: 600px) {
@@ -1168,7 +1175,6 @@ PIED DE PAGE
 }
 .credits__conteneur {
   grid-column: 2/12;
-  padding: 5rem 0;
 }
 .credits__description {
   font-size: 16px;
@@ -1259,24 +1265,37 @@ PAGES
     padding-right: initial;
   }
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 800px) and (min-width: 600px) {
   .accueil .articles__conteneur {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
   }
 }
-.accueil .articles__conteneurRangee {
-  grid-column: 2/12;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-gap: 20px;
+@media screen and (min-width: 800px) {
+  .accueil .articles__conteneurRangee {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .accueil .articles__conteneurRangee {
+    grid-column: 2/12;
+  }
 }
 .accueil .articles .article {
   grid-column: span 5;
   position: relative;
   color: #FFFFFF;
   border-radius: 5px;
+  padding: 0 3rem;
+}
+@media screen and (min-width: 800px) {
+  .accueil .articles .article {
+    padding: initial;
+  }
 }
 .accueil .articles .article__image {
   border-radius: 1rem;
@@ -1292,6 +1311,7 @@ PAGES
 }
 .accueil .articles .article figure {
   margin: 0;
+  position: relative;
 }
 .accueil .articles .article figcaption {
   background: linear-gradient(180deg, rgba(0, 100, 55, 0) 10%, rgba(0, 100, 55, 0.9) 50%);

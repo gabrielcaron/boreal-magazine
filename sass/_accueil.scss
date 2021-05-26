@@ -53,21 +53,32 @@ PAGES
   top: -10rem;
 
   &__conteneur {
-	@include rangeeGrid12col;
+	@media screen and (min-width: $tablet800px) {
+	  @include rangeeGrid12col;
+	}
 
 	&Rangee {
-	  grid-column: 2 / 12;
-	  display: grid;
-	  grid-template-columns: repeat(10, 1fr);
-	  grid-gap: 20px;
+	  @media screen and (min-width: $tablet800px) {
+		grid-column: 1 / 13;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		grid-gap: 20px;
+	  }
+	  @media screen and (min-width: $desktop1050px) {
+		grid-column: 2 / 12;
+	  }
 	}
   }
 
   .article {
 	grid-column: span 5;
-	position: relative; // Positionne le figcaption en absolue
+	position: relative; // Positionne le figcaption en absolu
 	color: #FFFFFF;
 	border-radius: 5px;
+	padding: 0 3rem;
+	@media screen and (min-width: $tablet800px) {
+	  padding: initial;
+	}
 
     &__image {
       border-radius: $coinArrondi;
@@ -86,6 +97,7 @@ PAGES
 
 	figure {
 	  margin: 0;
+	  position: relative;
 	}
 
 	figcaption {

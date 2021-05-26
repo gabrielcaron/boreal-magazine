@@ -1,206 +1,285 @@
 <!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Boréal est le magazine par excellence des amateurs de plein-air.">
-    <meta name="password" content="Boréal Magazine, plein-air, randonnée pédestre, fat bike, ski, ski de fond, randonnée au Québec, camping, camping hivernal">
-    <meta name="author" content="Gabriel Caron">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
-    <link rel="icon" type="image/gif" href="../images-css/favicon.png">
-    <title>Camping d’hiver - 26 trucs pour débutants | Boréal Magazine</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="Boréal est le magazine par excellence des amateurs de plein-air.">
+	<meta name="password"
+		  content="Boréal Magazine, plein-air, randonnée pédestre, fat bike, ski, ski de fond, randonnée au Québec, camping, camping hivernal">
+	<meta name="author" content="Gabriel Caron">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
+	<link rel="icon" type="image/gif" href="../images-html/favicon.png">
+	<title>Camping d’hiver - 26 trucs pour débutants | Boréal Magazine</title>
 </head>
 <body class="article-commun"> <!-- TODO supprimer cette classe -->
-        <header class="entete-pages">
-            <nav class="navigation">
-                <ul class="menu-principal">
-                    <li><a href="../index.html">Boréal Magazine</a></li>
-                    <li><a href="#">Articles</a>
-                        <ul class="sous-menu-articles">
-                            <li><a href="article-01-camping-hiver-trucs.html">Camping d’hiver - 26 trucs pour débutants</a></li>
-                            <li><a href="article-02-bottes-raquettes.html">Quelles bottes choisir pour faire de la raquette</a></li>
-                            <li><a href="article-03-sentiers-raquettes-quebec.html">10 sentiers de raquettes pour tous au Québec</a></li>
-                            <li><a href="article-04-shabiller-ski-de-fond.html">Comment s'habiller pour faire du ski de fond&thinsp;?</a></li>
-                            <li><a href="article-05-skis-parfaits.html">Quels sont les skis parfaits pour vous&thinsp;?</a></li>
-                            <li><a href="article-06-endroits-ski-de-fond.html">Les meilleurs endroits pour faire du ski de fond</a></li>
-                            <li><a href="article-07-sentiers-difficiles-quebec.html">5 sentiers difficiles au Québec pour randonneurs aguerris</a></li>
-                            <li><a href="article-08-fat-biking-devez-savoir.html">Fat biking&thinsp;: ce que vous devez savoir sur le vélo tout terrain</a></li>
-                      </ul>
+<header class="entete-pages">
+    <nav class="menu-principal">
+        <ul class="menu-principal__liste">
+            <li class="menu-principal__item"><a href="../index.html" class="menu-principal__lien accueil">Boréal Magazine</a></li>
+            <li class="menu-principal__item articles-recents"><a href="#" class="menu-principal__lien page-courante">Articles</a>
+                <ul class="menu-principal__sous-menu-liste">
+                    <li class="menu-principal__sous-menu-item"><a href="article-01-camping-hiver-trucs.html" class="menu-principal__sous-menu-lien">Camping d’hiver - 26 trucs pour débutants</a>
                     </li>
-                    <li><a href="a-propos.html">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-02-bottes-raquettes.html" class="menu-principal__sous-menu-lien">Quelles bottes choisir pour faire de la raquette</a>
+                    </li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-03-sentiers-raquettes-quebec.html" class="menu-principal__sous-menu-lien">10 sentiers de raquettes pour tous au
+                        Québec</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-04-shabiller-ski-de-fond.html" class="menu-principal__sous-menu-lien">Comment s'habiller pour faire du ski de fond
+                        ?</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-05-skis-parfaits.html" class="menu-principal__sous-menu-lien">Quels sont les skis parfaits pour vous ?</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-06-endroits-ski-de-fond.html" class="menu-principal__sous-menu-lien">Les meilleurs endroits pour faire du ski de
+                        fond</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-07-sentiers-difficiles-quebec.html" class="menu-principal__sous-menu-lien">5 sentiers difficiles au Québec pour
+                        randonneurs aguerris</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-08-fat-biking-devez-savoir.html" class="menu-principal__sous-menu-lien">Fat biking : ce que vous devez savoir sur le
+                        vélo tout terrain</a></li>
                 </ul>
-            </nav>
-            <picture class="entete-pages__picture"> <!-- TODO ajouter classe -->
-            <!-- Image pour petites résolutions -->
-            <source srcset="../images-html/article-01-entete-500.jpg" media="(max-width: 580px)">
-            <!-- Image pour résolutions moyennes -->
-            <source srcset="../images-html/article-01-entete-1024.jpg" media="(max-width: 1000px)">
-            <!-- Image pour grandes résolution et image par défaut -->
-            <img src="../images-html/article-01-entete-1920.jpg" alt="">
-            </picture>
-        </header>
-        <article class="article-complet">
-            <header class="article-complet__header">
-                <div class="article-complet__categorie"><p>Camping hivernal</p></div>
-                <h1>Camping d’hiver&thinsp;:<br> 26 trucs pour débutants</h1>
-                <div class="article-complet__auteur"><p>Source&thinsp;: <a href="https://www.mec.ca/fr/article/winter-camping-tips-26-things-beginners-should-know">MEC</a></p></div>
-            </header>
-            <div class="article-complet__contenu">
-                <p>Le camping d’hiver peut sembler inaccessible et extrême pour beaucoup, mais en réalité, si on est bien équipé, c’est une activité de plein air originale et rassembleuse à faire entre amis durant l’hiver au Québec. Pour bien en profiter, il vous faudra être bien préparé. Voici une liste de 26 trucs à garder en tête qui vous aideront si vous tentez l’expérience.</p>
-                <h2>Vêtements</h2>
-                <figure>
-                    <img src="../images-html/article-01-contenu-01.jpg" alt="Évitez tout vêtement en coton et privilégiez la laine mérinos, qui garde au chaud et qui sèche rapidement.">
-                    <figcaption>Évitez tout vêtement en coton et privilégiez la laine mérinos, qui garde au chaud et qui sèche rapidement.</figcaption>
-                </figure>
-                <ol>
-                    <li>Faites toujours une liste de matériel avant, et imaginez-vous dans les différents contextes de votre week-end pour prévoir les bons outils et vêtements.</li>
-                    <li>Pour évacuer l’humidité de votre peau et dans votre tente, emportez un ensemble complet de vêtements de rechange pour la nuit et un ensemble pour la deuxième journée (des bas jusqu’à la tuque, en passant par les sous-vêtements).</li>
-                    <li>Évitez tout vêtement en coton et privilégiez la laine mérinos, qui garde au chaud et qui sèche rapidement.</li>
-                    <li>Enfilez des bottes imperméables munies d’une bonne semelle.</li>
-                    <li>Utilisez des chauffe-mains et chauffe-orteils dans vos gants et vos bottes.</li>
-                </ol>
-                <h2>Feu</h2>
-                <figure>
-                    <img src="../images-html/article-01-contenu-02.jpg" alt="Prévoyez suffisamment de bois – ne sous-estimez pas le froid en hiver !">
-                    <figcaption>Prévoyez suffisamment de bois – ne sous-estimez pas le froid en hiver&thinsp;!</figcaption>
-                </figure>
-                <ol start="6">
-                    <li>Emportez un briquet de rechange.</li>
-                    <li>Prévoyez des allume-feu, du bois et du papier. (La plupart des parcs nationaux en vendent à l’accueil, car il est interdit de prendre du bois dans le parc.)</li>
-                    <li>Prévoyez suffisamment de bois – ne sous-estimez pas le froid en hiver&thinsp;!</li>
-                    <li>Si le site de campement est loin du stationnement ou du point de départ, emportez un traîneau pour transporter le bois.</li>
-                    <li>Creusez un trou dans la neige pour que le feu soit le plus près possible du sol et de façon à éviter qu’il fasse fondre la neige et que tout s’effondre dans le trou.</li>
-                </ol>
-                <h2>Dans la tente</h2>
-                <figure>
-                    <img src="../images-html/article-01-contenu-03.jpg" alt="Selon la température, prévoyez un sac de couchage pour des températures allant de -20 et -30 degrés Celsius.">
-                    <figcaption>Selon la température, prévoyez un sac de couchage pour des températures allant de -20 et -30 degrés Celsius.</figcaption>
-                </figure>
-                <ol start="11">
-                    <li>Prévoyez un matelas de sol isolant en mousse, en plus de votre matelas de sol gonflable.</li>
-                    <li>Selon la température, prévoyez un sac de couchage pour des températures allant de -20 et -30 degrés Celsius.</li>
-                    <li>Insérez une doublure en laine polaire à l’intérieur de votre sac de couchage, ce qui vous gardera encore plus au chaud.</li>
-                    <li>Et pour mettre un peu d’ambiance (si ce n’est pas trop venteux), allumez des chandelles à l’extérieur de la tente afin de donner une touche de hygge à votre repas en plein air.</li>
-                </ol>
-                <h2>Nourriture</h2>
-                <figure>
-                    <img src="../images-html/article-01-contenu-04.jpg" alt="Faites cuire votre nourriture déshydratée un peu plus longtemps, puisqu’il fait froid et que ça ne cuit pas aussi vite.">
-                    <figcaption>Faites cuire votre nourriture déshydratée un peu plus longtemps, puisqu’il fait froid et que ça ne cuit pas aussi vite.</figcaption>
-                </figure>
-                <figure>
-                    <img src="../images-html/article-01-contenu-05.jpg" alt="Essayez de préparer le plus possible votre nourriture d’avance, car cuisiner quand il fait froid, c’est moins agréable.">
-                    <figcaption>Essayez de préparer le plus possible votre nourriture d’avance, car cuisiner quand il fait froid, c’est moins agréable.</figcaption>
-                </figure>
-                <ol start="15">
-                    <li>Prévoyez du <a href="https://www.mec.ca/en/product/5020-289/946ml-unit-%2832fl-oz%29-Stove-Fuel">gaz</a> qui ne gèle pas pour le brûleur.</li>
-                    <li>Si vous faites une longue excursion, vous pouvez emporter de la nourriture déshydratée, qui sera moins lourde dans votre sac.</li>
-                    <li>Faites cuire votre nourriture déshydratée un peu plus longtemps, puisqu’il fait froid et que ça ne cuit pas aussi vite.</li>
-                    <li>Dans tous les cas, essayez de préparer le plus possible votre nourriture d’avance, car cuisiner quand il fait froid, c’est moins agréable.</li>
-                </ol>
-                <h2>Site</h2>
-                <figure>
-                    <img src="../images-html/article-01-contenu-06.jpg" alt="NAssurez-vous d’avoir une tente 4 saisons ou une tente d’hiver.">
-                    <figcaption>Assurez-vous d’avoir une tente 4 saisons ou une tente d’hiver.</figcaption>
-                </figure>
-                <ol start="19">
-                    <li>Ne sous-estimez pas le temps que cela prend pour organiser votre site. Il faut piétiner le sol pour ne pas renfoncer dans la neige, creuser un trou pour la tente, creuser un trou pour le feu et installer le matériel. Prévoyez au moins 1 h 30 avant la noirceur pour ne pas vous faire prendre.</li>
-                    <li>Emportez une petite pelle pour déblayer les surfaces, comme l’endroit où vous monterez votre tente. Creuser un trou solidifiera la tente et l’isolera un peu.</li>
-                    <li>Assurez-vous d’avoir une <a href="https://www.mec.ca/fr/produits/équipement/équipement-de-camping-et-de-randonnée/tentes-et-abris/c/1436?f=CFtentsSeasons%3A4+saisons">tente 4 saisons</a> ou une tente d’hiver.</li>
-                    <li>Prévoyez une bâche pour couvrir les articles qui resteront dehors durant la nuit si jamais il neige.</li>
-                </ol>
-                <h2>Autres trucs</h2>
-                <figure>
-                    <img src="../images-html/article-01-contenu-07.jpg" alt="Prévoyez des chaises pliantes ou des couvertures pour ne pas vous asseoir directement dans la neige.">
-                    <figcaption>Prévoyez des chaises pliantes ou des couvertures pour ne pas vous asseoir directement dans la neige.</figcaption>
-                </figure>
-                <ol start="23">
-                    <li>N’oubliez pas l’éclairage (lanternes, lampes frontales et chandelles sont primordiales).</li>
-                    <li>Si vous voulez éviter de traîner de l’eau afin d’alléger votre sac, il se vend des pastilles de purification d’eau. Il suffit ensuite de faire fondre de la neige et d’y ajouter les pastilles.</li>
-                    <li>Tout ce qui est électronique se décharge plus rapidement au froid. Prévoyez des chargeurs portatifs, comme les petits <a href="https://www.mec.ca/en/product/5043-188/Flip-10-Recharger">chargeurs goalzero</a> qui fonctionnent super bien et se transportent à merveille.</li>
-                    <li>Prévoyez des chaises pliantes ou des couvertures pour ne pas vous asseoir directement dans la neige. C’est froid pour les fesses sinon&thinsp;!</li>
-                </ol>
-                <p>Bon camping d’hiver&thinsp;!</p>
-            </div>
-            <footer class="pieddepage">
-                <div class="pieddepage__infolettre">
-                    <h2 class="pieddepage__titreinfolettre">Abonnez-vous à notre infolettre</h2>
-                    <form class="pieddepage__formulaire" action="">
-                        <label class="pieddepage__label" for="courriel">Courriel</label>
-                        <input class="pieddepage__champ" type="email" autocomplete="email" id="courriel">
-                        <input class="pieddepage__bouton" type="submit" value="S'abonner">
-                    </form>
-                </div>
-                <div class="pieddepage__conteneur">
-                    <nav class="pieddepage__navigation">
-                        <a href="index.html" class="pieddepage__lien pieddepage__titre accueil" aria-label="Revenir à l'accueil">Boréal Magazine</a>
-                        <h2 class="pieddepage__titre articles-recents">Dans notre dernière édition</h2>
-                        <ul class="pieddepage__articles-liste">
-                            <li class="pieddepage__articles-item"><a href="article-01-camping-hiver-trucs.html"
-                                                                     class="pieddepage__articles-lien">Camping d’hiver - 26
-                                trucs pour débutants</a>
-                            </li>
-                            <li class="pieddepage__articles-item"><a href="article-02-bottes-raquettes.html"
-                                                                     class="pieddepage__articles-lien">Quelles bottes choisir
-                                pour faire de la raquette</a>
-                            </li>
-                            <li class="pieddepage__articles-item"><a href="article-03-sentiers-raquettes-quebec.html"
-                                                                     class="pieddepage__articles-lien">10 sentiers de raquettes
-                                pour tous au
-                                Québec</a></li>
-                            <li class="pieddepage__articles-item"><a href="article-04-shabiller-ski-de-fond.html"
-                                                                     class="pieddepage__articles-lien">Comment s'habiller pour
-                                faire du ski de fond
-                                ?</a></li>
-                            <li class="pieddepage__articles-item"><a href="article-05-skis-parfaits.html"
-                                                                     class="pieddepage__articles-lien">Quels sont les skis
-                                parfaits pour vous ?</a></li>
-                            <li class="pieddepage__articles-item"><a href="article-06-endroits-ski-de-fond.html"
-                                                                     class="pieddepage__articles-lien">Les meilleurs endroits
-                                pour faire du ski de
-                                fond</a></li>
-                            <li class="pieddepage__articles-item"><a href="article-07-sentiers-difficiles-quebec.html"
-                                                                     class="pieddepage__articles-lien">5 sentiers difficiles au
-                                Québec pour
-                                randonneurs aguerris</a></li>
-                            <li class="pieddepage__articles-item"><a href="article-08-fat-biking-devez-savoir.html"
-                                                                     class="pieddepage__articles-lien">Fat biking : ce que vous
-                                devez savoir sur le
-                                vélo tout terrain</a></li>
-                        </ul>
-                        <h2 class="pieddepage__titre a-propos"><a href="a-propos.html" class="pieddepage__lien">À propos</a></h2>
-                        <h2 class="pieddepage__titre contact"><a href="contact.html" class="pieddepage__lien">Contact</a></h2>
-                    </nav>
-                    <div class="pieddepage__reseaux-sociaux-conteneur">
-                        <ul class="pieddepage__reseaux-sociaux-liste">
-                            <li class="pieddepage__reseaux-sociaux-items">
-                                <a href="https://www.facebook.com"
-                                   class="pieddepage__reseaux-sociaux-lien">
-                                    <div class="icone"></div>
-                                    <span class="libelle">Facebook</span>
-                                </a>
-                            </li>
-                            <li class="pieddepage__reseaux-sociaux-items">
-                                <a href="https://www.twitter.com"
-                                   class="pieddepage__reseaux-sociaux-lien">
-                                    <div class="icone"></div>
-                                    <span class="libelle">Twitter</span>
-                                </a>
-                            </li>
-                            <li class="pieddepage__reseaux-sociaux-items">
-                                <a href="https://www.instagram.com"
-                                   class="pieddepage__reseaux-sociaux-lien">
-                                    <div class="icone"></div>
-                                    <span class="libelle">Instagram</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="credits">
-                        <small class="credits__conteneur"><span class="credits__description">Ce projet a été réalisé à l'automne 2018 dans le cadre du cours Intégration I en Techniques d'intégration multimédia au Cégep de Sainte-Foy.</span><span
-                                class="credits__auteur">© 2018, Gabriel Caron. Tous droits réservés.</span></small>
-                    </div>
-                </div>
-            </footer>
+            </li>
+            <li class="menu-principal__item"><a href="a-propos.html" class="menu-principal__lien">À propos</a></li>
+            <li class="menu-principal__item"><a href="contact.html" class="menu-principal__lien">Contact</a></li>
+        </ul>
+    </nav>
+	<picture>
+		<!-- Image pour mobile -->
+		<source media="(max-width: 600px)"
+				srcset="../images-html/article-01-entete-600.jpg 1x, ../images-html/article-01-entete-1200.jpg 2x">
+		<!-- Image pour tablette -->
+		<source media="(max-width: 1000px)"
+				srcset="../images-html/article-01-entete-1000.jpg 1x, ../images-html/article-01-entete-2000.jpg 2x">
+		<!-- Image pour poste de table et image par défaut -->
+		<img src="../images-html/article-01-entete-2000.jpg"
+			 srcset="../images-html/article-01-entete-2000.jpg 1x, ../images-html/article-01-entete-3840.jpg 2x"
+			 alt="">
+	</picture>
+</header>
+<article class="article-complet">
+	<header class="article-complet__header">
+		<div class="article-complet__categorie"><p>Camping hivernal</p></div>
+		<h1>Camping d’hiver&thinsp;:<br> 26 trucs pour débutants</h1>
+		<div class="article-complet__auteur"><p>Source&thinsp;: <a
+				href="https://www.mec.ca/fr/article/winter-camping-tips-26-things-beginners-should-know">MEC</a></p>
+		</div>
+	</header>
+	<div class="article-complet__contenu">
+		<p>Le camping d’hiver peut sembler inaccessible et extrême pour beaucoup, mais en réalité, si on est bien
+			équipé, c’est une activité de plein air originale et rassembleuse à faire entre amis durant l’hiver au
+			Québec. Pour bien en profiter, il vous faudra être bien préparé. Voici une liste de 26 trucs à garder en
+			tête qui vous aideront si vous tentez l’expérience.</p>
+		<h2>Vêtements</h2>
+		<figure>
+			<img src="../images-html/article-01-contenu-01.jpg"
+				 alt="Évitez tout vêtement en coton et privilégiez la laine mérinos, qui garde au chaud et qui sèche rapidement.">
+			<figcaption>Évitez tout vêtement en coton et privilégiez la laine mérinos, qui garde au chaud et qui sèche
+				rapidement.
+			</figcaption>
+		</figure>
+		<ol>
+			<li>Faites toujours une liste de matériel avant, et imaginez-vous dans les différents contextes de votre
+				week-end pour prévoir les bons outils et vêtements.
+			</li>
+			<li>Pour évacuer l’humidité de votre peau et dans votre tente, emportez un ensemble complet de vêtements de
+				rechange pour la nuit et un ensemble pour la deuxième journée (des bas jusqu’à la tuque, en passant par
+				les sous-vêtements).
+			</li>
+			<li>Évitez tout vêtement en coton et privilégiez la laine mérinos, qui garde au chaud et qui sèche
+				rapidement.
+			</li>
+			<li>Enfilez des bottes imperméables munies d’une bonne semelle.</li>
+			<li>Utilisez des chauffe-mains et chauffe-orteils dans vos gants et vos bottes.</li>
+		</ol>
+		<h2>Feu</h2>
+		<figure>
+			<img src="../images-html/article-01-contenu-02.jpg"
+				 alt="Prévoyez suffisamment de bois – ne sous-estimez pas le froid en hiver !">
+			<figcaption>Prévoyez suffisamment de bois – ne sous-estimez pas le froid en hiver&thinsp;!</figcaption>
+		</figure>
+		<ol start="6">
+			<li>Emportez un briquet de rechange.</li>
+			<li>Prévoyez des allume-feu, du bois et du papier. (La plupart des parcs nationaux en vendent à l’accueil,
+				car il est interdit de prendre du bois dans le parc.)
+			</li>
+			<li>Prévoyez suffisamment de bois – ne sous-estimez pas le froid en hiver&thinsp;!</li>
+			<li>Si le site de campement est loin du stationnement ou du point de départ, emportez un traîneau pour
+				transporter le bois.
+			</li>
+			<li>Creusez un trou dans la neige pour que le feu soit le plus près possible du sol et de façon à éviter
+				qu’il fasse fondre la neige et que tout s’effondre dans le trou.
+			</li>
+		</ol>
+		<h2>Dans la tente</h2>
+		<figure>
+			<img src="../images-html/article-01-contenu-03.jpg"
+				 alt="Selon la température, prévoyez un sac de couchage pour des températures allant de -20 et -30 degrés Celsius.">
+			<figcaption>Selon la température, prévoyez un sac de couchage pour des températures allant de -20 et -30
+				degrés Celsius.
+			</figcaption>
+		</figure>
+		<ol start="11">
+			<li>Prévoyez un matelas de sol isolant en mousse, en plus de votre matelas de sol gonflable.</li>
+			<li>Selon la température, prévoyez un sac de couchage pour des températures allant de -20 et -30 degrés
+				Celsius.
+			</li>
+			<li>Insérez une doublure en laine polaire à l’intérieur de votre sac de couchage, ce qui vous gardera encore
+				plus au chaud.
+			</li>
+			<li>Et pour mettre un peu d’ambiance (si ce n’est pas trop venteux), allumez des chandelles à l’extérieur de
+				la tente afin de donner une touche de hygge à votre repas en plein air.
+			</li>
+		</ol>
+		<h2>Nourriture</h2>
+		<figure>
+			<img src="../images-html/article-01-contenu-04.jpg"
+				 alt="Faites cuire votre nourriture déshydratée un peu plus longtemps, puisqu’il fait froid et que ça ne cuit pas aussi vite.">
+			<figcaption>Faites cuire votre nourriture déshydratée un peu plus longtemps, puisqu’il fait froid et que ça
+				ne cuit pas aussi vite.
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="../images-html/article-01-contenu-05.jpg"
+				 alt="Essayez de préparer le plus possible votre nourriture d’avance, car cuisiner quand il fait froid, c’est moins agréable.">
+			<figcaption>Essayez de préparer le plus possible votre nourriture d’avance, car cuisiner quand il fait
+				froid, c’est moins agréable.
+			</figcaption>
+		</figure>
+		<ol start="15">
+			<li>Prévoyez du <a href="https://www.mec.ca/en/product/5020-289/946ml-unit-%2832fl-oz%29-Stove-Fuel">gaz</a>
+				qui ne gèle pas pour le brûleur.
+			</li>
+			<li>Si vous faites une longue excursion, vous pouvez emporter de la nourriture déshydratée, qui sera moins
+				lourde dans votre sac.
+			</li>
+			<li>Faites cuire votre nourriture déshydratée un peu plus longtemps, puisqu’il fait froid et que ça ne cuit
+				pas aussi vite.
+			</li>
+			<li>Dans tous les cas, essayez de préparer le plus possible votre nourriture d’avance, car cuisiner quand il
+				fait froid, c’est moins agréable.
+			</li>
+		</ol>
+		<h2>Site</h2>
+		<figure>
+			<img src="../images-html/article-01-contenu-06.jpg"
+				 alt="NAssurez-vous d’avoir une tente 4 saisons ou une tente d’hiver.">
+			<figcaption>Assurez-vous d’avoir une tente 4 saisons ou une tente d’hiver.</figcaption>
+		</figure>
+		<ol start="19">
+			<li>Ne sous-estimez pas le temps que cela prend pour organiser votre site. Il faut piétiner le sol pour ne
+				pas renfoncer dans la neige, creuser un trou pour la tente, creuser un trou pour le feu et installer le
+				matériel. Prévoyez au moins 1 h 30 avant la noirceur pour ne pas vous faire prendre.
+			</li>
+			<li>Emportez une petite pelle pour déblayer les surfaces, comme l’endroit où vous monterez votre tente.
+				Creuser un trou solidifiera la tente et l’isolera un peu.
+			</li>
+			<li>Assurez-vous d’avoir une <a
+					href="https://www.mec.ca/fr/produits/équipement/équipement-de-camping-et-de-randonnée/tentes-et-abris/c/1436?f=CFtentsSeasons%3A4+saisons">tente
+				4 saisons</a> ou une tente d’hiver.
+			</li>
+			<li>Prévoyez une bâche pour couvrir les articles qui resteront dehors durant la nuit si jamais il neige.
+			</li>
+		</ol>
+		<h2>Autres trucs</h2>
+		<figure>
+			<img src="../images-html/article-01-contenu-07.jpg"
+				 alt="Prévoyez des chaises pliantes ou des couvertures pour ne pas vous asseoir directement dans la neige.">
+			<figcaption>Prévoyez des chaises pliantes ou des couvertures pour ne pas vous asseoir directement dans la
+				neige.
+			</figcaption>
+		</figure>
+		<ol start="23">
+			<li>N’oubliez pas l’éclairage (lanternes, lampes frontales et chandelles sont primordiales).</li>
+			<li>Si vous voulez éviter de traîner de l’eau afin d’alléger votre sac, il se vend des pastilles de
+				purification d’eau. Il suffit ensuite de faire fondre de la neige et d’y ajouter les pastilles.
+			</li>
+			<li>Tout ce qui est électronique se décharge plus rapidement au froid. Prévoyez des chargeurs portatifs,
+				comme les petits <a href="https://www.mec.ca/en/product/5043-188/Flip-10-Recharger">chargeurs
+					goalzero</a> qui fonctionnent super bien et se transportent à merveille.
+			</li>
+			<li>Prévoyez des chaises pliantes ou des couvertures pour ne pas vous asseoir directement dans la neige.
+				C’est froid pour les fesses sinon&thinsp;!
+			</li>
+		</ol>
+		<p>Bon camping d’hiver&thinsp;!</p>
+	</div>
+	<footer class="pieddepage">
+		<div class="pieddepage__infolettre">
+			<h2 class="pieddepage__titreinfolettre">Abonnez-vous à notre infolettre</h2>
+			<form class="pieddepage__formulaire" action="">
+				<label class="pieddepage__label" for="courriel">Courriel</label>
+				<input class="pieddepage__champ" type="email" autocomplete="email" id="courriel">
+				<input class="pieddepage__bouton" type="submit" value="S'abonner">
+			</form>
+		</div>
+		<div class="pieddepage__conteneur">
+			<nav class="pieddepage__navigation">
+				<a href="index.html" class="pieddepage__lien pieddepage__titre accueil"
+				   aria-label="Revenir à l'accueil">Boréal Magazine</a>
+				<h2 class="pieddepage__titre articles-recents">Dans notre dernière édition</h2>
+				<ul class="pieddepage__articles-liste">
+					<li class="pieddepage__articles-item"><a href="article-01-camping-hiver-trucs.html"
+															 class="pieddepage__articles-lien">Camping d’hiver - 26
+						trucs pour débutants</a>
+					</li>
+					<li class="pieddepage__articles-item"><a href="article-02-bottes-raquettes.html"
+															 class="pieddepage__articles-lien">Quelles bottes choisir
+						pour faire de la raquette</a>
+					</li>
+					<li class="pieddepage__articles-item"><a href="article-03-sentiers-raquettes-quebec.html"
+															 class="pieddepage__articles-lien">10 sentiers de raquettes
+						pour tous au
+						Québec</a></li>
+					<li class="pieddepage__articles-item"><a href="article-04-shabiller-ski-de-fond.html"
+															 class="pieddepage__articles-lien">Comment s'habiller pour
+						faire du ski de fond
+						?</a></li>
+					<li class="pieddepage__articles-item"><a href="article-05-skis-parfaits.html"
+															 class="pieddepage__articles-lien">Quels sont les skis
+						parfaits pour vous ?</a></li>
+					<li class="pieddepage__articles-item"><a href="article-06-endroits-ski-de-fond.html"
+															 class="pieddepage__articles-lien">Les meilleurs endroits
+						pour faire du ski de
+						fond</a></li>
+					<li class="pieddepage__articles-item"><a href="article-07-sentiers-difficiles-quebec.html"
+															 class="pieddepage__articles-lien">5 sentiers difficiles au
+						Québec pour
+						randonneurs aguerris</a></li>
+					<li class="pieddepage__articles-item"><a href="article-08-fat-biking-devez-savoir.html"
+															 class="pieddepage__articles-lien">Fat biking : ce que vous
+						devez savoir sur le
+						vélo tout terrain</a></li>
+				</ul>
+				<h2 class="pieddepage__titre a-propos"><a href="a-propos.html" class="pieddepage__lien">À propos</a>
+				</h2>
+				<h2 class="pieddepage__titre contact"><a href="contact.html" class="pieddepage__lien">Contact</a></h2>
+			</nav>
+			<div class="pieddepage__reseaux-sociaux-conteneur">
+				<ul class="pieddepage__reseaux-sociaux-liste">
+					<li class="pieddepage__reseaux-sociaux-items">
+						<a href="https://www.facebook.com"
+						   class="pieddepage__reseaux-sociaux-lien">
+							<div class="icone"></div>
+							<span class="libelle">Facebook</span>
+						</a>
+					</li>
+					<li class="pieddepage__reseaux-sociaux-items">
+						<a href="https://www.twitter.com"
+						   class="pieddepage__reseaux-sociaux-lien">
+							<div class="icone"></div>
+							<span class="libelle">Twitter</span>
+						</a>
+					</li>
+					<li class="pieddepage__reseaux-sociaux-items">
+						<a href="https://www.instagram.com"
+						   class="pieddepage__reseaux-sociaux-lien">
+							<div class="icone"></div>
+							<span class="libelle">Instagram</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="credits">
+				<small class="credits__conteneur"><span class="credits__description">Ce projet a été réalisé à l'automne 2018 dans le cadre du cours Intégration I en Techniques d'intégration multimédia au Cégep de Sainte-Foy.</span><span
+						class="credits__auteur">© 2018, Gabriel Caron. Tous droits réservés.</span></small>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

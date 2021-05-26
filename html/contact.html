@@ -1,172 +1,183 @@
 <!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="password" content="">
-    <meta name="author" content="Gabriel Caron">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
-    <link rel="icon" type="image/gif" href="../images-css/favicon.png">
-    <title>Nous contacter | Boréal Magazine</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="password" content="">
+	<meta name="author" content="Gabriel Caron">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
+	<link rel="icon" type="image/gif" href="../images-html/favicon.png">
+	<title>Nous contacter | Boréal Magazine</title>
 </head>
 <body class="contact">
-        <header class="entete-pages">
-            <nav class="navigation">
-                <ul class="menu-principal">
-                    <li><a href="../index.html">Boréal Magazine</a></li>
-                    <li><a href="#">Articles</a>
-                        <ul class="sous-menu-articles">
-                            <li><a href="article-01-camping-hiver-trucs.html">Camping d’hiver - 26 trucs pour débutants</a></li>
-                            <li><a href="article-02-bottes-raquettes.html">Quelles bottes choisir pour faire de la raquette</a></li>
-                            <li><a href="article-03-sentiers-raquettes-quebec.html">10 sentiers de raquettes pour tous au Québec</a></li>
-                            <li><a href="article-04-shabiller-ski-de-fond.html">Comment s'habiller pour faire du ski de fond ?</a></li>
-                            <li><a href="article-05-skis-parfaits.html">Quels sont les skis parfaits pour vous ?</a></li>
-                            <li><a href="article-06-endroits-ski-de-fond.html">Les meilleurs endroits pour faire du ski de fond</a></li>
-                            <li><a href="article-07-sentiers-difficiles-quebec.html">5 sentiers difficiles au Québec pour randonneurs aguerris</a></li>
-                            <li><a href="article-08-fat-biking-devez-savoir.html">Fat biking : ce que vous devez savoir sur le vélo tout terrain</a></li>
-                      </ul>
+<header class="entete-pages">
+    <nav class="menu-principal">
+        <ul class="menu-principal__liste">
+            <li class="menu-principal__item"><a href="../index.html" class="menu-principal__lien accueil">Boréal Magazine</a></li>
+            <li class="menu-principal__item articles-recents"><a href="#" class="menu-principal__lien">Articles</a>
+                <ul class="menu-principal__sous-menu-liste">
+                    <li class="menu-principal__sous-menu-item"><a href="article-01-camping-hiver-trucs.html" class="menu-principal__sous-menu-lien">Camping d’hiver - 26 trucs pour débutants</a>
                     </li>
-                    <li><a href="a-propos.html">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-02-bottes-raquettes.html" class="menu-principal__sous-menu-lien">Quelles bottes choisir pour faire de la raquette</a>
+                    </li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-03-sentiers-raquettes-quebec.html" class="menu-principal__sous-menu-lien">10 sentiers de raquettes pour tous au
+                        Québec</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-04-shabiller-ski-de-fond.html" class="menu-principal__sous-menu-lien">Comment s'habiller pour faire du ski de fond
+                        ?</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-05-skis-parfaits.html" class="menu-principal__sous-menu-lien">Quels sont les skis parfaits pour vous ?</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-06-endroits-ski-de-fond.html" class="menu-principal__sous-menu-lien">Les meilleurs endroits pour faire du ski de
+                        fond</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-07-sentiers-difficiles-quebec.html" class="menu-principal__sous-menu-lien">5 sentiers difficiles au Québec pour
+                        randonneurs aguerris</a></li>
+                    <li class="menu-principal__sous-menu-item"><a href="article-08-fat-biking-devez-savoir.html" class="menu-principal__sous-menu-lien">Fat biking : ce que vous devez savoir sur le
+                        vélo tout terrain</a></li>
                 </ul>
-            </nav>
-            <picture>
-            <!-- Image pour petites résolutions -->
-            <source srcset="../images-html/contact-entete-500.jpg" media="(max-width: 580px)">
-            <!-- Image pour résolutions moyennes -->
-            <source srcset="../images-html/contact-entete-1024.jpg" media="(max-width: 1000px)">
-            <!-- Image pour grandes résolution et image par défaut -->
-            <img src="../images-html/contact-entete-1920.jpg" alt="">
-            </picture>
-        </header>
-        <article class="article-complet">
-            <header class="article-complet__header">
-                <h1>Pour nous contacter</h1>
-            </header>
-            <div class="corps-article">
-                <form action="traitement.php" method="post">
-                    <fieldset>
-                        <legend>Identification</legend>
-                        <div>
-                            <label for="nom">Nom</label>
-                            <input type="text" name="nom" id="nom">
-                        </div>
-                        <div>
-                            <label for="">Prénom</label>
-                            <input type="text" name="prenom" id="prenom">
-                        </div>
-                    </fieldset>
-                     <fieldset>
-                        <legend>Adresse</legend>
-                        <div>
-                            <label for="rue">Rue</label>
-                            <input type="text" name="rue" id="rue">
-                        </div>
-                        <div>
-                            <label for="ville">Ville</label>
-                            <input type="text" name="ville" id="ville">
-                        </div>
-                        <div>
-                        <label for="province">Province</label>
-                            <select name="listeprov" id="province">
-                                <option value="quebec" selected="selected">Québec</option>
-                                <option value="alberta">Alberta</option>
-                                <option value="cb">Colombie-Britannique</option>
-                                <option value="ipe">Île-du-Prince-Édouard</option>
-                                <option value="manitoba">Manitoba</option>
-                                <option value="nb">Nouveau-Brunswick</option>
-                                <option value="necosse">Nouvelle-Écosse</option>
-                                <option value="ontario">Ontario</option>
-                                <option value="saskatchewan">Saskatchewan</option>
-                                <option value="tnl">Terre-Neuve-et-Labrador</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="codepostal">Code postal</label>
-                            <input type="text" name="codepostal" id="codepostal">
-                        </div>
-                        <div>
-                            <label for="courriel">Courriel</label>
-                            <input type="email" name="courriel" id="courriel">
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Langue de communication</legend>
-                        <div>
-                            <label for="fr">Français</label>
-                            <input type="radio" name="langue" value="fr" id="fr" checked="checked">
-                        </div>
-                        <div>
-                            <label for="en">Anglais</label>
-                            <input type="radio" name="langue" value="en" id="en">
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>J'aimerais collaborer dans la ou les rubriques suivantes</legend>
-                        <ul>
-                            <li>
-                                <label for="actualites">Actualités</label>
-                                <input type="checkbox" name="rubriques" value="actualites" id="actualites">
-                            </li>
-                            <li>
-                                <label for="mecanique">Mécanique</label>
-                                <input type="checkbox" name="rubriques" value="mecanique" id="mecanique">
-                            </li>
-                            <li>
-                                <label for="technique">Technique</label>
-                                <input type="checkbox" name="rubriques" value="technique" id="technique">
-                            </li>
-                            <li>
-                                <label for="dossier">Dossier</label>
-                                <input type="checkbox" name="rubriques" value="dossier" id="dossier">
-                            </li>
-                            <li>
-                                <label for="destination">Destination</label>
-                                <input type="checkbox" name="rubriques" value="destination" id="destination">
-                            </li>
-                            <li>
-                                <label for="nouveautes">Nouveautés</label>
-                                <input type="checkbox" name="rubriques" value="nouveautes" id="nouveautes">
-                            </li>
-                            <li>
-                                <label for="entrainement">Entraînement</label>
-                                <input type="checkbox" name="rubriques" value="entrainement" id="entrainement">
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Expliquez ce qui vous incitent à joindre notre équipe</legend>
-                        <textarea name="commentaires"></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Faites parvenir votre CV au format PDF</legend>
-                        <input type="file" name="cv"/>
-                    </fieldset>
-                    <input type="submit" value="Soumettre votre candidature"/>
-                </form>
-            </div>
-        </article>
-        <div class="separateur"></div>
-        <footer class="footer-commun">
-            <div class="flottants">
-                <div class="reseaux-sociaux">
-                    <h2>Nos médias sociaux</h2>
-                    <ul>
-                        <li><a href="https://www.facebook.com">Facebook</a></li>
-                        <li><a href="https://www.instagram.com">Instagram</a></li>
-                        <li><a href="https://www.twitter.com">Twitter</a></li>
-                    </ul>
-                </div>
-                <div class="infolettre">
-                    <h2>Abonnez-vous à notre infolettre</h2>
-                <form action="script.php">
-                    <input type="text" placeholder="votre@courriel.com">
-                    <input type="submit" value="Envoyer">
-                </form>
-                </div>
-            </div>
-            <small>© 2018, Gabriel Caron.</small>
-        </footer>
+            </li>
+            <li class="menu-principal__item"><a href="a-propos.html" class="menu-principal__lien">À propos</a></li>
+            <li class="menu-principal__item"><a href="contact.html" class="menu-principal__lien page-courante">Contact</a></li>
+        </ul>
+    </nav>
+	<picture>
+		<!-- Image pour mobile -->
+		<source media="(max-width: 600px)"
+				srcset="../images-html/contact-entete-600.jpg 1x, ../images-html/contact-entete-1200.jpg 2x">
+		<!-- Image pour tablette -->
+		<source media="(max-width: 1000px)"
+				srcset="../images-html/contact-entete-1000.jpg 1x, ../images-html/contact-entete-2000.jpg 2x">
+		<!-- Image pour poste de table et image par défaut -->
+		<img src="../images-html/contact-entete-2000.jpg"
+			 srcset="../images-html/contact-entete-2000.jpg 1x, ../images-html/contact-entete-3840.jpg 2x"
+			 alt="">
+	</picture>
+</header>
+<article class="article-complet">
+	<header class="article-complet__header">
+		<h1>Pour nous contacter</h1>
+	</header>
+	<div class="corps-article">
+		<form action="traitement.php" method="post">
+			<fieldset>
+				<legend>Identification</legend>
+				<div>
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom">
+				</div>
+				<div>
+					<label for="">Prénom</label>
+					<input type="text" name="prenom" id="prenom">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Adresse</legend>
+				<div>
+					<label for="rue">Rue</label>
+					<input type="text" name="rue" id="rue">
+				</div>
+				<div>
+					<label for="ville">Ville</label>
+					<input type="text" name="ville" id="ville">
+				</div>
+				<div>
+					<label for="province">Province</label>
+					<select name="listeprov" id="province">
+						<option value="quebec" selected="selected">Québec</option>
+						<option value="alberta">Alberta</option>
+						<option value="cb">Colombie-Britannique</option>
+						<option value="ipe">Île-du-Prince-Édouard</option>
+						<option value="manitoba">Manitoba</option>
+						<option value="nb">Nouveau-Brunswick</option>
+						<option value="necosse">Nouvelle-Écosse</option>
+						<option value="ontario">Ontario</option>
+						<option value="saskatchewan">Saskatchewan</option>
+						<option value="tnl">Terre-Neuve-et-Labrador</option>
+					</select>
+				</div>
+				<div>
+					<label for="codepostal">Code postal</label>
+					<input type="text" name="codepostal" id="codepostal">
+				</div>
+				<div>
+					<label for="courriel">Courriel</label>
+					<input type="email" name="courriel" id="courriel">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Langue de communication</legend>
+				<div>
+					<label for="fr">Français</label>
+					<input type="radio" name="langue" value="fr" id="fr" checked="checked">
+				</div>
+				<div>
+					<label for="en">Anglais</label>
+					<input type="radio" name="langue" value="en" id="en">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>J'aimerais collaborer dans la ou les rubriques suivantes</legend>
+				<ul>
+					<li>
+						<label for="actualites">Actualités</label>
+						<input type="checkbox" name="rubriques" value="actualites" id="actualites">
+					</li>
+					<li>
+						<label for="mecanique">Mécanique</label>
+						<input type="checkbox" name="rubriques" value="mecanique" id="mecanique">
+					</li>
+					<li>
+						<label for="technique">Technique</label>
+						<input type="checkbox" name="rubriques" value="technique" id="technique">
+					</li>
+					<li>
+						<label for="dossier">Dossier</label>
+						<input type="checkbox" name="rubriques" value="dossier" id="dossier">
+					</li>
+					<li>
+						<label for="destination">Destination</label>
+						<input type="checkbox" name="rubriques" value="destination" id="destination">
+					</li>
+					<li>
+						<label for="nouveautes">Nouveautés</label>
+						<input type="checkbox" name="rubriques" value="nouveautes" id="nouveautes">
+					</li>
+					<li>
+						<label for="entrainement">Entraînement</label>
+						<input type="checkbox" name="rubriques" value="entrainement" id="entrainement">
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Expliquez ce qui vous incitent à joindre notre équipe</legend>
+				<textarea name="commentaires"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Faites parvenir votre CV au format PDF</legend>
+				<input type="file" name="cv"/>
+			</fieldset>
+			<input type="submit" value="Soumettre votre candidature"/>
+		</form>
+	</div>
+</article>
+<div class="separateur"></div>
+<footer class="footer-commun">
+	<div class="flottants">
+		<div class="reseaux-sociaux">
+			<h2>Nos médias sociaux</h2>
+			<ul>
+				<li><a href="https://www.facebook.com">Facebook</a></li>
+				<li><a href="https://www.instagram.com">Instagram</a></li>
+				<li><a href="https://www.twitter.com">Twitter</a></li>
+			</ul>
+		</div>
+		<div class="infolettre">
+			<h2>Abonnez-vous à notre infolettre</h2>
+			<form action="script.php">
+				<input type="text" placeholder="votre@courriel.com">
+				<input type="submit" value="Envoyer">
+			</form>
+		</div>
+	</div>
+	<small>© 2018, Gabriel Caron.</small>
+</footer>
 </body>
 </html>
