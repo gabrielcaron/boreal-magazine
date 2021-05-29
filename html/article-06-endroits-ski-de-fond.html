@@ -11,8 +11,8 @@
 	<link rel="icon" type="image/gif" href="../images-html/favicon.png">
 	<title>Les meilleurs endroits pour faire du ski de fond | Boréal Magazine</title>
 </head>
-<body class="article-commun">
-<header class="entete-pages">
+<body>
+<header class="entete">
     <nav class="menu-principal">
         <ul class="menu-principal__liste">
             <li class="menu-principal__item"><a href="../index.html" class="menu-principal__lien accueil">Boréal Magazine</a></li>
@@ -39,24 +39,28 @@
             <li class="menu-principal__item"><a href="contact.html" class="menu-principal__lien">Contact</a></li>
         </ul>
     </nav>
-	<picture>
-		<!-- Image pour petites résolutions -->
-		<source srcset="../images-html/article-06-entete-500.jpg" media="(max-width: 580px)">
-		<!-- Image pour résolutions moyennes -->
-		<source srcset="../images-html/article-06-entete-1024.jpg" media="(max-width: 1000px)">
-		<!-- Image pour grandes résolution et image par défaut -->
-		<img src="../images-html/article-06-entete-1920.jpg" alt="">
+	<picture class="entete__picture">
+		<!-- Image pour mobile -->
+		<source media="(max-width: 600px)"
+				srcset="../images-html/article-06-entete-600.jpg 1x, ../images-html/article-06-entete-1200.jpg 2x">
+		<!-- Image pour tablette -->
+		<source media="(max-width: 1000px)"
+				srcset="../images-html/article-06-entete-1000.jpg 1x, ../images-html/article-06-entete-2000.jpg 2x">
+		<!-- Image pour poste de table et image par défaut -->
+		<img src="../images-html/article-06-entete-2000.jpg"
+			 srcset="../images-html/article-06-entete-2000.jpg 1x, ../images-html/article-06-entete-3840.jpg 2x"
+			 alt="">
 	</picture>
 </header>
-<article class="article-complet">
-	<header class="article-complet__header">
-		<div class="article-complet__categorie"><p>Ski de fond</p></div>
+<article class="article">
+	<header class="article__header">
+		<p class="article__categorie">Ski de fond</p>
 		<h1>Les meilleurs endroits pour faire du ski de fond</h1>
-		<div class="article-complet__auteur"><p>Source: <a
+		<p class="article__auteur">Source: <a
 				href="https://www.lapresse.ca/voyage/destinations/quebec/201201/06/01-4483469-les-meilleurs-endroits-pour-faire-du-ski-de-fond.php">La
-			Presse.ca</a></p></div>
+			Presse.ca</a></p>
 	</header>
-	<div class="article-complet__contenu">
+	<div class="article__contenu">
 		<p>Le Québec compte des dizaines de centres de ski de fond. Au point, parfois, de ne plus savoir où donner du
 			bâton. Notre collaboratrice Stéphanie Drolet, aussi fondeuse passionnée, nous propose quelques-uns des
 			meilleurs endroits de la province pour glisser et glisser encore.</p>
@@ -129,13 +133,7 @@
 		<p>Tarifs: 16$ pour les adultes et 10$ pour les jeunes de 6 à 17 ans.</p>
 		<p><a href="http://www.centrecastor.com">www.centrecastor.com</a>, 418-844-3272</p>
 	</div>
-	<footer class="footer-article">
-		<p>Dernière mise à jour&thinsp;:
-			<time datetime="2012-01-07">7 janvier 2012</time>
-		</p>
-	</footer>
 </article>
-<div class="separateur"></div>
 <footer class="pieddepage">
 	<div class="pieddepage__infolettre">
 		<h2 class="pieddepage__titreinfolettre">Abonnez-vous à notre infolettre</h2>

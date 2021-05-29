@@ -4,18 +4,21 @@
 
 /* Commun */
 
-.entete-pages {
+.entete {
   &__picture {
-	@include conteneur1920px;
+	@include conteneur1920px($conteneurBleed: true);
   }
 
   & picture img {
 	width: 100%;
 	z-index: 1;
+	// version mobile
+	//height: 30rem;
+	//object-fit: cover;
   }
 }
 
-.article-complet {
+.article {
   @include conteneur1920px;
 
   &__header {
@@ -27,26 +30,33 @@
 
   &__categorie {
 	text-align: center;
-	padding-top: 4em;
-	padding-bottom: 3em;
+	padding-top: 5rem;
+	margin-bottom: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 0.60em;
-	color: #666666;
+	font-size: 2rem;
+	color: #8b8b8b;
+  & p {
+	margin: 0;
+  }
   }
 
   & h1 {
 	font-size: 3em;
 	line-height: 1em;
 	text-align: center;
-	color: rgba(0, 155, 50, 1);
+	color: $vertForet;
+	margin: 0;
   }
 
   &__auteur {
 	text-align: center;
-	padding: 2em 0;
+	padding: 0 0 2rem 0;
 	text-decoration: none;
-	font-size: 0.70em;
+	font-size: 1.6rem;
+	& p {
+	  margin: 0;
+	}
   }
 
   &__contenu {
@@ -54,8 +64,15 @@
     & > * {
       grid-column: 2 / 12;
     }
+	& p:first-child {
+	  font-family: Heebo-Medium, sans-serif;
+	}
+	@media screen and (min-width: 1600px) {
+	  p {
+		@include fontSize(25px);
+	  }
+	}
   }
-
 }
 
 

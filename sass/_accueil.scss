@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+// TODO supprimer tous les em, remplacer par rem
 
 /* ===========================
 
@@ -38,7 +39,8 @@ PAGES
 }
 
 .header-accueil {
-  padding: 0;
+  @include conteneur1920px($conteneurBleed: true);
+  padding-left: 0;
   picture img {
 	width: 100%;
 	z-index: 1;
@@ -72,47 +74,59 @@ PAGES
 
   .article {
 	grid-column: span 5;
-	position: relative; // Positionne le figcaption en absolu
 	color: #FFFFFF;
 	border-radius: 5px;
 	padding: 0 3rem;
+	text-decoration: none;
 	@media screen and (min-width: $tablet800px) {
 	  padding: initial;
 	}
 
     &__image {
-      border-radius: $coinArrondi;
+      border-radius: $coinArrondi $coinArrondi 0 0;
       box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
     }
 
-	&:link h2, &:visited h2 {
+	&__categorie {
+	  text-align: left;
+	  padding: 0;
+	  text-transform: uppercase;
+	  font-size: 1.6rem;
+	  margin: 0.5rem 0;
+	  color: $blanc;
+	}
+
+	&__titre {
+	  text-decoration: none;
+	}
+
+	&:link .article__titre, &:visited .article__titre {
 	  color: #FFFFFF;
 	  transition: color, 0.2s ease-in-out;
 	}
 
-	&:hover h2, &:active h2 {
+	&:hover .article__titre, &:active .article__titre {
 	  text-shadow: #33FF33 0 0 10px;
 	  text-decoration: underline;
 	}
 
+	&:link .article__picture, &:visited .article__picture {
+	  transition: all, 0.2s ease-in-out;
+	}
+
+	&:hover .article__picture, &:active .article__picture {
+	  filter: brightness(110%);
+	}
+
 	figure {
 	  margin: 0;
-	  position: relative;
 	}
 
 	figcaption {
-	  background: linear-gradient(180deg, rgba(0, 100, 55, 0) 10%, rgba(0, 100, 55, 0.9) 50%);
-	  position: absolute;
-	  bottom: 0;
-	  width: 100%;
-	  padding: 7rem 3rem 3rem 3rem;
+	  background-color: $vertForet;
+	  padding: 3rem;
       border-radius: 0 0 $coinArrondi $coinArrondi;
-
-	  p {
-		text-transform: uppercase;
-		font-size: 1em;
-		margin: 0.5rem 0;
-	  }
+	  height: 17rem; // Uniformise la hauteur si le titre est court
 
 	  h2 {
 		font-size: 1.75em;

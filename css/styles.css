@@ -427,13 +427,11 @@ html {
 * TABLE DES MATIERES
 * ------------------
 * VARIABLES
-** Polices de caractères
 * PALETTES DE COULEURS
 ** Couleurs de base
 ** Autres couleurs
 * POINTS DE RUPTURE
 */
-/** Polices de caractères **/
 /** Palette de couleurs **/
 /* Couleurs de base */
 /* Autres couleurs */
@@ -540,21 +538,22 @@ h1, h2, h3 {
   font-family: Heebo-Bold, sans-serif;
 }
 
-body {
-  font-family: Heebo-Light, sans-serif;
-}
-
 /* Base décimale */
 html {
   font-size: 62.5%;
 }
 
 body {
+  font-family: Heebo-Light, sans-serif;
   /* 16px pour toutes les largeurs d'écran */
   font-size: 16px;
   font-size: 1.6rem;
-  /* facteur multiplicateur de la taille de la police 1.375x16 = 22 */
-  line-height: 1.375;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 20px;
+  font-size: 2rem;
 }
 
 /** Grille **/
@@ -581,19 +580,22 @@ img {
 }
 
 /*** Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
-@media (min-width: 600px) {
+.conteneur {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  grid-template-columns: minmax(auto, 1920px);
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media (min-width: 1300px) {
   .conteneur {
-    display: grid;
-    grid-template-columns: minmax(auto, 1920px);
-    justify-content: center;
-    padding: 0 3rem;
+    padding-left: initial;
+    padding-right: initial;
   }
 }
-@media (min-width: 600px) and (min-width: 1500px) {
-  .conteneur {
-    padding: initial;
-  }
-}
+
 /*** Classe conteneur pour le positionnement de la rangée enfant en Grid ***/
 .rangeeGrid {
   display: grid;
@@ -767,48 +769,37 @@ header {
 /* ARTICLES */
 /* En-tête */
 /* Commun */
-.entete-pages__picture {
+.entete__picture {
   padding-left: 3rem;
   padding-right: 3rem;
 }
-@media (min-width: 1300px) {
-  .entete-pages__picture {
-    padding-left: initial;
-    padding-right: initial;
-  }
-}
 @media (min-width: 600px) {
-  .entete-pages__picture {
+  .entete__picture {
     display: grid;
     grid-template-columns: minmax(auto, 1920px);
     justify-content: center;
     padding-left: 3rem;
     padding-right: 3rem;
+    padding: 0;
   }
 }
-@media (min-width: 600px) and (min-width: 1300px) {
-  .entete-pages__picture {
-    padding-left: initial;
-    padding-right: initial;
+@media (min-width: 600px) and (min-width: 1980px) {
+  .entete__picture {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-.entete-pages picture img {
+.entete picture img {
   width: 100%;
   z-index: 1;
 }
 
-.article-complet {
+.article {
   padding-left: 3rem;
   padding-right: 3rem;
 }
-@media (min-width: 1300px) {
-  .article-complet {
-    padding-left: initial;
-    padding-right: initial;
-  }
-}
 @media (min-width: 600px) {
-  .article-complet {
+  .article {
     display: grid;
     grid-template-columns: minmax(auto, 1920px);
     justify-content: center;
@@ -816,52 +807,68 @@ header {
     padding-right: 3rem;
   }
 }
-@media (min-width: 600px) and (min-width: 1300px) {
-  .article-complet {
-    padding-left: initial;
-    padding-right: initial;
+@media (min-width: 600px) and (min-width: 1980px) {
+  .article {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (min-width: 600px) {
-  .article-complet__header {
+  .article__header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
   }
 }
-.article-complet__header > * {
+.article__header > * {
   grid-column: 2/12;
 }
-.article-complet__categorie {
+.article__categorie {
   text-align: center;
-  padding-top: 4em;
-  padding-bottom: 3em;
+  padding-top: 5rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.6em;
-  color: #666666;
+  font-size: 2rem;
+  color: #8b8b8b;
 }
-.article-complet h1 {
+.article__categorie p {
+  margin: 0;
+}
+.article h1 {
   font-size: 3em;
   line-height: 1em;
   text-align: center;
-  color: #009b32;
+  color: #006437;
+  margin: 0;
 }
-.article-complet__auteur {
+.article__auteur {
   text-align: center;
-  padding: 2em 0;
+  padding: 0 0 2rem 0;
   text-decoration: none;
-  font-size: 0.7em;
+  font-size: 1.6rem;
+}
+.article__auteur p {
+  margin: 0;
 }
 @media (min-width: 600px) {
-  .article-complet__contenu {
+  .article__contenu {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
   }
 }
-.article-complet__contenu > * {
+.article__contenu > * {
   grid-column: 2/12;
+}
+.article__contenu p:first-child {
+  font-family: Heebo-Medium, sans-serif;
+}
+@media screen and (min-width: 1600px) {
+  .article__contenu p {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
 }
 
 .article-complet__contenu h2 {
@@ -928,6 +935,7 @@ PIED DE PAGE
 /* Styles généraux */
 .pieddepage {
   background-color: #005A32;
+  margin-top: 5rem;
   /* Bloc Infolettre */
   /* Positionnement de la navigation */
   /* Réseaux sociaux */
@@ -976,12 +984,6 @@ PIED DE PAGE
   padding-left: 3rem;
   padding-right: 3rem;
 }
-@media (min-width: 1300px) {
-  .pieddepage__conteneur {
-    padding-left: initial;
-    padding-right: initial;
-  }
-}
 @media (min-width: 600px) {
   .pieddepage__conteneur {
     display: grid;
@@ -991,10 +993,10 @@ PIED DE PAGE
     padding-right: 3rem;
   }
 }
-@media (min-width: 600px) and (min-width: 1300px) {
+@media (min-width: 600px) and (min-width: 1980px) {
   .pieddepage__conteneur {
-    padding-left: initial;
-    padding-right: initial;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .pieddepage__navigation {
@@ -1026,6 +1028,9 @@ PIED DE PAGE
 }
 .pieddepage__titre:hover, .pieddepage__titre:active {
   text-decoration: underline;
+}
+.pieddepage__titre.articles-recents:hover, .pieddepage__titre.articles-recents:active {
+  text-decoration: none;
 }
 .pieddepage__lien.accueil {
   grid-column: 2/12;
@@ -1230,7 +1235,25 @@ PAGES
 }
 
 .header-accueil {
-  padding: 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-left: 0;
+}
+@media (min-width: 600px) {
+  .header-accueil {
+    display: grid;
+    grid-template-columns: minmax(auto, 1920px);
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding: 0;
+  }
+}
+@media (min-width: 600px) and (min-width: 1980px) {
+  .header-accueil {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .header-accueil picture img {
   width: 100%;
@@ -1244,12 +1267,6 @@ PAGES
   position: relative;
   top: -10rem;
 }
-@media (min-width: 1300px) {
-  .accueil .articles {
-    padding-left: initial;
-    padding-right: initial;
-  }
-}
 @media (min-width: 600px) {
   .accueil .articles {
     display: grid;
@@ -1259,10 +1276,10 @@ PAGES
     padding-right: 3rem;
   }
 }
-@media (min-width: 600px) and (min-width: 1300px) {
+@media (min-width: 600px) and (min-width: 1980px) {
   .accueil .articles {
-    padding-left: initial;
-    padding-right: initial;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 800px) and (min-width: 600px) {
@@ -1287,10 +1304,10 @@ PAGES
 }
 .accueil .articles .article {
   grid-column: span 5;
-  position: relative;
   color: #FFFFFF;
   border-radius: 5px;
   padding: 0 3rem;
+  text-decoration: none;
 }
 @media screen and (min-width: 800px) {
   .accueil .articles .article {
@@ -1298,33 +1315,42 @@ PAGES
   }
 }
 .accueil .articles .article__image {
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
-.accueil .articles .article:link h2, .accueil .articles .article:visited h2 {
+.accueil .articles .article__categorie {
+  text-align: left;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+.accueil .articles .article__titre {
+  text-decoration: none;
+}
+.accueil .articles .article:link .article__titre, .accueil .articles .article:visited .article__titre {
   color: #FFFFFF;
   transition: color, 0.2s ease-in-out;
 }
-.accueil .articles .article:hover h2, .accueil .articles .article:active h2 {
+.accueil .articles .article:hover .article__titre, .accueil .articles .article:active .article__titre {
   text-shadow: #33FF33 0 0 10px;
   text-decoration: underline;
 }
+.accueil .articles .article:link .article__picture, .accueil .articles .article:visited .article__picture {
+  transition: all, 0.2s ease-in-out;
+}
+.accueil .articles .article:hover .article__picture, .accueil .articles .article:active .article__picture {
+  filter: brightness(110%);
+}
 .accueil .articles .article figure {
   margin: 0;
-  position: relative;
 }
 .accueil .articles .article figcaption {
-  background: linear-gradient(180deg, rgba(0, 100, 55, 0) 10%, rgba(0, 100, 55, 0.9) 50%);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 7rem 3rem 3rem 3rem;
+  background-color: #006437;
+  padding: 3rem;
   border-radius: 0 0 1rem 1rem;
-}
-.accueil .articles .article figcaption p {
-  text-transform: uppercase;
-  font-size: 1em;
-  margin: 0.5rem 0;
+  height: 17rem;
 }
 .accueil .articles .article figcaption h2 {
   font-size: 1.75em;

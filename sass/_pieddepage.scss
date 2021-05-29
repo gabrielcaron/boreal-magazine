@@ -8,6 +8,7 @@ PIED DE PAGE
 
 .pieddepage {
   background-color: #005A32;
+  margin-top: 5rem;
 
   /* Bloc Infolettre */
 
@@ -88,6 +89,10 @@ PIED DE PAGE
 
   &__titre:hover, &__titre:active {
 	text-decoration: underline;
+  }
+
+  &__titre.articles-recents:hover, &__titre.articles-recents:active {
+	text-decoration: none;
   }
 
   &__lien.accueil {
@@ -236,7 +241,6 @@ PIED DE PAGE
 	  }
 	}
   }
-
 }
 
 /* Crédits */

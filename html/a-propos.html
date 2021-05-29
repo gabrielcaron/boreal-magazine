@@ -53,8 +53,8 @@
 				 alt="">
 		</picture>
 	</header>
-	<article class="article-complet">
-		<header class="article-complet__header">
+	<article class="article">
+		<header class="article__header">
 			<h1>À propos de nous</h1>
 		</header>
 		<div class="corps-article">
@@ -71,25 +71,87 @@
 		</div>
 	</article>
 	<div class="separateur"></div>
-	<footer class="footer-commun">
-		<div class="flottants">
-			<div class="reseaux-sociaux">
-				<h2>Nos médias sociaux</h2>
-				<ul>
-					<li><a href="https://www.facebook.com">Facebook</a></li>
-					<li><a href="https://www.instagram.com">Instagram</a></li>
-					<li><a href="https://www.twitter.com">Twitter</a></li>
+	<footer class="pieddepage">
+		<div class="pieddepage__infolettre">
+			<h2 class="pieddepage__titreinfolettre">Abonnez-vous à notre infolettre</h2>
+			<form class="pieddepage__formulaire" action="">
+				<label class="pieddepage__label" for="courriel">Courriel</label>
+				<input class="pieddepage__champ" type="email" autocomplete="email" id="courriel">
+				<input class="pieddepage__bouton" type="submit" value="S'abonner">
+			</form>
+		</div>
+		<div class="pieddepage__conteneur">
+			<nav class="pieddepage__navigation">
+				<a href="index.html" class="pieddepage__lien pieddepage__titre accueil"
+				   aria-label="Revenir à l'accueil">Boréal Magazine</a>
+				<h2 class="pieddepage__titre articles-recents">Dans notre dernière édition</h2>
+				<ul class="pieddepage__articles-liste">
+					<li class="pieddepage__articles-item"><a href="article-01-camping-hiver-trucs.html"
+															 class="pieddepage__articles-lien">Camping d’hiver - 26
+						trucs pour débutants</a>
+					</li>
+					<li class="pieddepage__articles-item"><a href="article-02-bottes-raquettes.html"
+															 class="pieddepage__articles-lien">Quelles bottes choisir
+						pour faire de la raquette</a>
+					</li>
+					<li class="pieddepage__articles-item"><a href="article-03-sentiers-raquettes-quebec.html"
+															 class="pieddepage__articles-lien">10 sentiers de raquettes
+						pour tous au
+						Québec</a></li>
+					<li class="pieddepage__articles-item"><a href="article-04-shabiller-ski-de-fond.html"
+															 class="pieddepage__articles-lien">Comment s'habiller pour
+						faire du ski de fond
+						?</a></li>
+					<li class="pieddepage__articles-item"><a href="article-05-skis-parfaits.html"
+															 class="pieddepage__articles-lien">Quels sont les skis
+						parfaits pour vous ?</a></li>
+					<li class="pieddepage__articles-item"><a href="article-06-endroits-ski-de-fond.html"
+															 class="pieddepage__articles-lien">Les meilleurs endroits
+						pour faire du ski de
+						fond</a></li>
+					<li class="pieddepage__articles-item"><a href="article-07-sentiers-difficiles-quebec.html"
+															 class="pieddepage__articles-lien">5 sentiers difficiles au
+						Québec pour
+						randonneurs aguerris</a></li>
+					<li class="pieddepage__articles-item"><a href="article-08-fat-biking-devez-savoir.html"
+															 class="pieddepage__articles-lien">Fat biking : ce que vous
+						devez savoir sur le
+						vélo tout terrain</a></li>
+				</ul>
+				<h2 class="pieddepage__titre a-propos"><a href="a-propos.html" class="pieddepage__lien">À propos</a>
+				</h2>
+				<h2 class="pieddepage__titre contact"><a href="contact.html" class="pieddepage__lien">Contact</a></h2>
+			</nav>
+			<div class="pieddepage__reseaux-sociaux-conteneur">
+				<ul class="pieddepage__reseaux-sociaux-liste">
+					<li class="pieddepage__reseaux-sociaux-items">
+						<a href="https://www.facebook.com"
+						   class="pieddepage__reseaux-sociaux-lien">
+							<div class="icone"></div>
+							<span class="libelle">Facebook</span>
+						</a>
+					</li>
+					<li class="pieddepage__reseaux-sociaux-items">
+						<a href="https://www.twitter.com"
+						   class="pieddepage__reseaux-sociaux-lien">
+							<div class="icone"></div>
+							<span class="libelle">Twitter</span>
+						</a>
+					</li>
+					<li class="pieddepage__reseaux-sociaux-items">
+						<a href="https://www.instagram.com"
+						   class="pieddepage__reseaux-sociaux-lien">
+							<div class="icone"></div>
+							<span class="libelle">Instagram</span>
+						</a>
+					</li>
 				</ul>
 			</div>
-			<div class="infolettre">
-				<h2>Abonnez-vous à notre infolettre</h2>
-				<form action="script.php">
-					<input type="text" placeholder="votre@courriel.com">
-					<input type="submit" value="Envoyer">
-				</form>
+			<div class="credits">
+				<small class="credits__conteneur"><span class="credits__description">Ce projet a été réalisé à l'automne 2018 dans le cadre du cours Intégration I en Techniques d'intégration multimédia au Cégep de Sainte-Foy.</span><span
+						class="credits__auteur">© 2018, Gabriel Caron. Tous droits réservés.</span></small>
 			</div>
 		</div>
-		<small>© 2018, Gabriel Caron.</small>
 	</footer>
 </div>
 </body>

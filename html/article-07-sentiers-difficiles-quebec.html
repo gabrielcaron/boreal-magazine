@@ -11,8 +11,8 @@
 	<link rel="icon" type="image/gif" href="../images-html/favicon.png">
 	<title>5 sentiers difficiles au Québec pour randonneurs aguerris | Boréal Magazine</title>
 </head>
-<body class="article-commun">
-<header class="entete-pages">
+<body>
+<header class="entete">
     <nav class="menu-principal">
         <ul class="menu-principal__liste">
             <li class="menu-principal__item"><a href="../index.html" class="menu-principal__lien accueil">Boréal Magazine</a></li>
@@ -39,24 +39,28 @@
             <li class="menu-principal__item"><a href="contact.html" class="menu-principal__lien">Contact</a></li>
         </ul>
     </nav>
-	<picture>
-		<!-- Image pour petites résolutions -->
-		<source srcset="../images-html/article-07-entete-500.jpg" media="(max-width: 580px)">
-		<!-- Image pour résolutions moyennes -->
-		<source srcset="../images-html/article-07-entete-1024.jpg" media="(max-width: 1000px)">
-		<!-- Image pour grandes résolution et image par défaut -->
-		<img src="../images-html/article-07-entete-1920.jpg" alt="">
+	<picture class="entete__picture">
+		<!-- Image pour mobile -->
+		<source media="(max-width: 600px)"
+				srcset="../images-html/article-07-entete-600.jpg 1x, ../images-html/article-07-entete-1200.jpg 2x">
+		<!-- Image pour tablette -->
+		<source media="(max-width: 1000px)"
+				srcset="../images-html/article-07-entete-1000.jpg 1x, ../images-html/article-07-entete-2000.jpg 2x">
+		<!-- Image pour poste de table et image par défaut -->
+		<img src="../images-html/article-07-entete-2000.jpg"
+			 srcset="../images-html/article-07-entete-2000.jpg 1x, ../images-html/article-07-entete-3840.jpg 2x"
+			 alt="">
 	</picture>
 </header>
-<article class="article-complet">
-	<header class="article-complet__header">
-		<div class="article-complet__categorie"><p>Randonnée pédestre</p></div>
+<article class="article">
+	<header class="article__header">
+		<p class="article__categorie">Randonnée pédestre</p>
 		<h1>5 sentiers difficiles au Québec pour randonneurs aguerris</h1>
-		<div class="article-complet__auteur"><p>Source&thinsp;: <a
+		<p class="article__auteur">Source&thinsp;: <a
 				href="http://altitude-blog.com/fr/sentiers-difficiles-pour-randonneurs/">Altitude Sports (blogue)</a>
-		</p></div>
+		</p>
 	</header>
-	<div class="article-complet__contenu">
+	<div class="article__contenu">
 		<p>La période estivale a été remplie d’aventures en plein air et vous cherchez quelques défis de randonnée pour
 			clôturer la belle saison en beauté&thinsp;? <a
 					href="http://altitude-blog.com/fr/comment-choisir-ses-souliers-ou-ses-bottes-de-randonnee/">Attachez
@@ -145,13 +149,7 @@
 			Cap-Chat, le massif des Chic-Chocs et le fleuve Saint-Laurent. Et, tant qu’à y être, pourquoi ne pas
 			poursuivre jusqu’au mont Blanc (20 km aller).</p>
 	</div>
-	<footer class="footer-article">
-		<p>Dernière mise à jour&thinsp;:
-			<time datetime="2017-09-28">28 septembre 2017</time>
-		</p>
-	</footer>
 </article>
-<div class="separateur"></div>
 <footer class="pieddepage">
 	<div class="pieddepage__infolettre">
 		<h2 class="pieddepage__titreinfolettre">Abonnez-vous à notre infolettre</h2>

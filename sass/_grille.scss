@@ -13,78 +13,81 @@
 
 /*** Utilisation du modèle de boîte avec Box-Sizing ***/
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*** Images responsives ***/
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-// TODO faire la solution de repli de max-width pour nav plus anciens. Voir ici: https://www.linkedin.com/learning/css-advanced-layouts-with-grid/check-for-grid-support
+// TODO faire la solution de repli de max-width pour nav plus anciens. Utiliser min-max comme condition ? Voir ici: https://www.linkedin.com/learning/css-advanced-layouts-with-grid/check-for-grid-support
 
 /*** Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
-@media (min-width: 600px) {
-    .conteneur {
-        display: grid;
-        grid-template-columns: minmax(auto, 1920px);
-        justify-content: center;
-        padding: 0 3rem;
-        @media (min-width: 1500px) {
-            padding: initial;
-        }
-    }
+.conteneur {
+  // Si le navigateur ne supporte pas Grid
+  @include paddingMobile3rem;
+  // Sinon, on y va avec Grid
+  display: grid;
+  grid-template-columns: minmax(auto, 1920px);
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  @media (min-width: 1300px) {
+	padding-left: initial;
+	padding-right: initial;
+  }
 }
 
 /*** Classe conteneur pour le positionnement de la rangée enfant en Grid ***/
 .rangeeGrid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
 }
 
 /*** Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
 @media (min-width: 600px) {
-    .rangeeFlex {
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch; /* valeur par défaut */
-    }
+  .rangeeFlex {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch; /* valeur par défaut */
+  }
 
-    .cols_1_de_12 {
-        width: 6.5%;
-    }
-    .cols_2_de_12 {
-        width: 15%;
-    }
-    .cols_3_de_12 {
-        width: 23.5%;
-    }
-    .cols_4_de_12 {
-        width: 32%;
-    }
-    .cols_5_de_12 {
-        width: 40.5%;
-    }
-    .cols_6_de_12 {
-        width: 49%;
-    }
-    .cols_7_de_12 {
-        width: 57.5%;
-    }
-    .cols_8_de_12 {
-        width: 66%;
-    }
-    .cols_9_de_12 {
-        width: 74.5%;
-    }
-    .cols_10_de_12 {
-        width: 83%;
-    }
-    .cols_11_de_12 {
-        width: 91.5%;
-    }
-    .cols_12_de_12 {
-        width: 100%;
-    }
+  .cols_1_de_12 {
+	width: 6.5%;
+  }
+  .cols_2_de_12 {
+	width: 15%;
+  }
+  .cols_3_de_12 {
+	width: 23.5%;
+  }
+  .cols_4_de_12 {
+	width: 32%;
+  }
+  .cols_5_de_12 {
+	width: 40.5%;
+  }
+  .cols_6_de_12 {
+	width: 49%;
+  }
+  .cols_7_de_12 {
+	width: 57.5%;
+  }
+  .cols_8_de_12 {
+	width: 66%;
+  }
+  .cols_9_de_12 {
+	width: 74.5%;
+  }
+  .cols_10_de_12 {
+	width: 83%;
+  }
+  .cols_11_de_12 {
+	width: 91.5%;
+  }
+  .cols_12_de_12 {
+	width: 100%;
+  }
 }

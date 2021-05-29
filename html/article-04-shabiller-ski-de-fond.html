@@ -11,8 +11,8 @@
 	<link rel="icon" type="image/gif" href="../images-html/favicon.png">
 	<title>Comment s’habiller pour faire du ski de fond | Boréal Magazine</title>
 </head>
-<body class="article-commun">
-<header class="entete-pages">
+<body>
+<header class="entete">
     <nav class="menu-principal">
         <ul class="menu-principal__liste">
             <li class="menu-principal__item"><a href="../index.html" class="menu-principal__lien accueil">Boréal Magazine</a></li>
@@ -39,23 +39,27 @@
             <li class="menu-principal__item"><a href="contact.html" class="menu-principal__lien">Contact</a></li>
         </ul>
     </nav>
-	<picture>
-		<!-- Image pour petites résolutions -->
-		<source srcset="../images-html/article-04-entete-500.jpg" media="(max-width: 580px)">
-		<!-- Image pour résolutions moyennes -->
-		<source srcset="../images-html/article-04-entete-1024.jpg" media="(max-width: 1000px)">
-		<!-- Image pour grandes résolution et image par défaut -->
-		<img src="../images-html/article-04-entete-1920.jpg" alt="">
+	<picture class="entete__picture">
+		<!-- Image pour mobile -->
+		<source media="(max-width: 600px)"
+				srcset="../images-html/article-04-entete-600.jpg 1x, ../images-html/article-04-entete-1200.jpg 2x">
+		<!-- Image pour tablette -->
+		<source media="(max-width: 1000px)"
+				srcset="../images-html/article-04-entete-1000.jpg 1x, ../images-html/article-04-entete-2000.jpg 2x">
+		<!-- Image pour poste de table et image par défaut -->
+		<img src="../images-html/article-04-entete-2000.jpg"
+			 srcset="../images-html/article-04-entete-2000.jpg 1x, ../images-html/article-04-entete-3840.jpg 2x"
+			 alt="">
 	</picture>
 </header>
-<article class="article-complet">
-	<header class="article-complet__header">
-		<div class="article-complet__categorie"><p>Ski de fond</p></div>
+<article class="article">
+	<header class="article__header">
+		<p class="article__categorie">Ski de fond</p>
 		<h1>Comment s’habiller pour faire du ski de fond</h1>
-		<div class="article-complet__auteur"><p>Source: <a href="http://altitude-blog.com/fr/shabiller-ski-de-fond/">Altitude
-			Sports (blogue)</a></p></div>
+		<p class="article__auteur">Source: <a href="http://altitude-blog.com/fr/shabiller-ski-de-fond/">Altitude
+			Sports (blogue)</a></p>
 	</header>
-	<div class="article-complet__contenu">
+	<div class="article__contenu">
 		<p>S’habiller pour le ski de fond est un art qui peut sembler complexe, mais qui aura une grande influence sur
 			votre appréciation personnelle de l’expérience. Que vous chaussiez vos skis pour vous déplacer sur les
 			terrains enneigés ou par plus plaisir hivernal, une chose est certaine&thinsp;: c’est une activité qui
@@ -161,11 +165,6 @@
 			elles feront office de protection contre le vent et les flocons. N’oubliez simplement pas de les maintenir
 			bien en place à l’air d’un cordon afin de ne pas les perdre durant vos excursions en ski.</p>
 	</div>
-	<footer class="footer-article">
-		<p>Dernière mise à jour&thinsp;:
-			<time datetime="2018-11-06">6 novembre 2018</time>
-		</p>
-	</footer>
 </article>
 <div class="separateur"></div>
 <footer class="pieddepage">

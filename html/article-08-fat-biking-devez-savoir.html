@@ -11,8 +11,8 @@
 	<link rel="icon" type="image/gif" href="../images-html/favicon.png">
 	<title>Fat biking&thinsp;: ce que vous devez savoir sur le vélo tout terrain | Boréal Magazine</title>
 </head>
-<body class="article-commun">
-<header class="entete-pages">
+<body>
+<header class="entete">
     <nav class="menu-principal">
         <ul class="menu-principal__liste">
             <li class="menu-principal__item"><a href="../index.html" class="menu-principal__lien accueil">Boréal Magazine</a></li>
@@ -39,24 +39,27 @@
             <li class="menu-principal__item"><a href="contact.html" class="menu-principal__lien">Contact</a></li>
         </ul>
     </nav>
-	<picture>
-		<!-- Image pour petites résolutions -->
-		<source srcset="../images-html/article-08-entete-500.jpg" media="(max-width: 580px)">
-		<!-- Image pour résolutions moyennes -->
-		<source srcset="../images-html/article-08-entete-1024.jpg" media="(max-width: 1000px)">
-		<!-- Image pour grandes résolution et image par défaut -->
-		<img src="../images-html/article-08-entete-1920.jpg" alt="">
+	<picture class="entete__picture">
+		<!-- Image pour mobile -->
+		<source media="(max-width: 600px)"
+				srcset="../images-html/article-08-entete-600.jpg 1x, ../images-html/article-08-entete-1200.jpg 2x">
+		<!-- Image pour tablette -->
+		<source media="(max-width: 1000px)"
+				srcset="../images-html/article-08-entete-1000.jpg 1x, ../images-html/article-08-entete-2000.jpg 2x">
+		<!-- Image pour poste de table et image par défaut -->
+		<img src="../images-html/article-08-entete-2000.jpg"
+			 srcset="../images-html/article-08-entete-2000.jpg 1x, ../images-html/article-08-entete-3840.jpg 2x"
+			 alt="">
 	</picture>
 </header>
-<article class="article-complet">
-	<header class="article-complet__header">
-		<div class="article-complet__categorie"><p>Fat bike</p></div>
+<article class="article">
+	<header class="article__header">
+		<p class="article__categorie">Fat bike</p>
 		<h1>Fat biking&thinsp;: ce que vous devez savoir sur le vélo tout terrain</h1>
-		<div class="article-complet__auteur"><p>Source: <a
+		<p class="article__auteur">Source: <a
 				href="http://altitude-blog.com/fr/fat-biking-ce-que-vous-devez-savoir/">Altitude Sports (blogue)</a></p>
-		</div>
 	</header>
-	<div class="article-complet__contenu">
+	<div class="article__contenu">
 		<p>La première fois que j’ai vu un <em>fat bike</em>, c’était lors du 24h Tremblant – lorsque je terminais ma
 			dernière course du circuit, et que par le fait même, je me suis aperçue que j’étais la dernière coureuse de
 			tout l’événement à être sur la piste. Ouais, après une course à relais qui durait depuis environ 23 heures
@@ -121,13 +124,7 @@
 			Nordic Centre, en Alberta.</p>
 		<p>Bonne <em>ride&thinsp;!</em></p>
 	</div>
-	<footer class="footer-article">
-		<p>Dernière mise à jour&thinsp;:
-			<time datetime="2016-02-19">19 février 2016</time>
-		</p>
-	</footer>
 </article>
-<div class="separateur"></div>
 <footer class="pieddepage">
 	<div class="pieddepage__infolettre">
 		<h2 class="pieddepage__titreinfolettre">Abonnez-vous à notre infolettre</h2>

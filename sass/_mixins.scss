@@ -24,21 +24,21 @@
 
 /** Box sizing **/
 @mixin border-box-sizing {
-    html {
-        box-sizing: border-box;
-    }
-    *, *:before, *:after {
-        box-sizing: inherit;
-    }
+  html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
 }
 
 /* Clearfix */
 @mixin clearfix {
-    &:after {
-        content: " ";
-        display: table;
-        clear: both;
-    }
+  &:after {
+	content: " ";
+	display: table;
+	clear: both;
+  }
 }
 
 /***** Accessibilité *****/
@@ -46,97 +46,101 @@
 // Hide only visually, but have it available for screenreaders:
 // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 @mixin visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 
-    // Extends the .visuallyhidden class to allow the element to be focusable
-    // when navigated to via the keyboard: https://www.drupal.org/node/897638
-    &.focusable:active,
-    &.focusable:focus {
-        clip: auto;
-        height: auto;
-        margin: 0;
-        overflow: visible;
-        position: static;
-        width: auto;
-    }
+  // Extends the .visuallyhidden class to allow the element to be focusable
+  // when navigated to via the keyboard: https://www.drupal.org/node/897638
+  &.focusable:active,
+  &.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+  }
 }
 
 .visuallyhidden,
 .screen-reader-only {
-    @include visuallyhidden;
+  @include visuallyhidden;
 }
 
 .sauter-contenu {
-    padding: 2rem 6rem;
-    line-height: 12rem;
-    color: $blanc;
-    background-color: #3200C1;
-    top: -12px;
+  padding: 2rem 6rem;
+  line-height: 12rem;
+  color: $blanc;
+  background-color: #3200C1;
+  top: -12px;
 }
 
 /******** Typographie *****/
 
 // Fonction pour convertir une valeur de font-size en pixels à son équivalent rem
 @function calculateRem($size) {
-    $remSize: $size / 10px;
-    @return #{$remSize}rem;
+  $remSize: $size / 10px;
+  @return #{$remSize}rem;
 }
 
 // Mixin qui inclus la solution de repli en pixel suivi par la valeur calculée en rem
 @mixin fontSize($size) {
-    font-size: $size;
-    font-size: calculateRem($size);
+  font-size: $size;
+  font-size: calculateRem($size);
 }
 
 
 // Mixin pour conteneur parent en Grid
-@mixin conteneur1920px {
-    // Si le navigateur ne supporte pas Grid
-    @include paddingMobile3rem;
-    // Sinon, on y va avec Grid
-    @media (min-width: $mobile600px) {
-        display: grid;
-        grid-template-columns: minmax(auto, 1920px);
-        justify-content: center;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        @media (min-width: 1300px) {
-            padding-left: initial;
-            padding-right: initial;
-        }
-    }
+@mixin conteneur1920px($conteneurBleed: false) {
+  // Si le navigateur ne supporte pas Grid
+  @include paddingMobile3rem;
+
+  // Sinon, on y va avec Grid
+  @media (min-width: $mobile600px) {
+	display: grid;
+	grid-template-columns: minmax(auto, 1920px);
+	justify-content: center;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	@media (min-width: 1920px + 60px) {
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+	@if $conteneurBleed == true {
+	  padding: 0;
+	}
+  }
 }
 
 // Mixin pour rangée Grid sur 12 colonnes
 // Elle sert autant sur mobile (au besoin) que pour la version desktop
 @mixin rangeeGrid12col {
-    @media (min-width: $mobile600px) {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: 20px;
-    }
+  @media (min-width: $mobile600px) {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 20px;
+  }
 }
 
 
 // Mixin pour rangée Flex par défaut
 @mixin rangeeFlex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 // Mixin pour le padding de base pour mobile si Grid ou Flex ne sont pas utilisés
 @mixin paddingMobile3rem {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    @media (min-width: 1300px) {
-        padding-left: initial;
-        padding-right: initial;
-    }
+  padding-left: 3rem;
+  padding-right: 3rem;
+  //@media (min-width: 1300px) {
+	//padding-left: 0;
+	//padding-right: 0;
+  //}
 }

@@ -11,8 +11,8 @@
 	<link rel="icon" type="image/gif" href="../images-html/favicon.png">
 	<title>10 sentiers de raquettes pour tous au Québec | Boréal Magazine</title>
 </head>
-<body class="article-commun">
-<header class="entete-pages">
+<body>
+<header class="entete">
     <nav class="menu-principal">
         <ul class="menu-principal__liste">
             <li class="menu-principal__item"><a href="../index.html" class="menu-principal__lien accueil">Boréal Magazine</a></li>
@@ -39,24 +39,28 @@
             <li class="menu-principal__item"><a href="contact.html" class="menu-principal__lien">Contact</a></li>
         </ul>
     </nav>
-	<picture>
-		<!-- Image pour petites résolutions -->
-		<source srcset="../images-html/article-03-entete-500.jpg" media="(max-width: 580px)">
-		<!-- Image pour résolutions moyennes -->
-		<source srcset="../images-html/article-03-entete-1024.jpg" media="(max-width: 1000px)">
-		<!-- Image pour grandes résolution et image par défaut -->
-		<img src="../images-html/article-03-entete-1920.jpg" alt="">
+	<picture class="entete__picture">
+		<!-- Image pour mobile -->
+		<source media="(max-width: 600px)"
+				srcset="../images-html/article-03-entete-600.jpg 1x, ../images-html/article-03-entete-1200.jpg 2x">
+		<!-- Image pour tablette -->
+		<source media="(max-width: 1000px)"
+				srcset="../images-html/article-03-entete-1000.jpg 1x, ../images-html/article-03-entete-2000.jpg 2x">
+		<!-- Image pour poste de table et image par défaut -->
+		<img src="../images-html/article-03-entete-2000.jpg"
+			 srcset="../images-html/article-03-entete-2000.jpg 1x, ../images-html/article-03-entete-3840.jpg 2x"
+			 alt="">
 	</picture>
 </header>
-<article class="article-complet">
-	<header class="article-complet__header">
-		<div class="article-complet__categorie"><p>Raquettes</p></div>
+<article class="article">
+	<header class="article__header">
+		<p class="article__categorie">Raquettes</p>
 		<h1>10 sentiers de raquettes pour tous au Québec</h1>
-		<div class="article-complet__auteur"><p>Source: <a
+		<p class="article__auteur">Source: <a
 				href="http://www.canalvie.com/famille/vie-de-famille/activites-en-famille/10-sentiers-de-raquettes-pour-tous-au-quebec-1.1387308">Canal
-			Vie</a></p></div>
+			Vie</a></p>
 	</header>
-	<div class="article-complet__contenu">
+	<div class="article__contenu">
 		<p>On ne le répètera jamais assez&thinsp;: pour apprécier l’hiver à sa juste valeur, il faut profiter au maximum
 			de toutes les activités qu’il a à nous offrir. En plus de la glissade, le ski, le patin, le quatre-roues et
 			toutes ces autres choses qu’on ne peut faire que pendant la saison froide, il y a bien évidemment la
@@ -181,11 +185,6 @@
 			nature du Cap-Saint-Jacques, le parc nature de l’Île-de-la-Visitation et le parc nature du Bois-de-Liesse.
 			En plus, c’est entièrement gratuit! Amenez ou louez vos raquettes sur place, et en avant!</p>
 	</div>
-	<footer class="footer-article">
-		<p>Dernière mise à jour&thinsp;:
-			<time datetime="2018-12-10">10 décembre 2018</time>
-		</p>
-	</footer>
 </article>
 <div class="separateur"></div>
 <footer class="pieddepage">
