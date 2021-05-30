@@ -433,7 +433,7 @@ html {
 * POINTS DE RUPTURE
 */
 /** Palette de couleurs **/
-/* Couleurs de base */
+/* Couleurs de base AAA */
 /* Autres couleurs */
 /** Points de rupture **/
 /** Mixins **/
@@ -536,6 +536,28 @@ html {
 }
 h1, h2, h3 {
   font-family: Heebo-Bold, sans-serif;
+  line-height: 110%;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 50px;
+  font-size: 5rem;
+  text-align: center;
+  color: #006437;
+  margin: 0;
+}
+
+h2 {
+  font-size: 35px;
+  font-size: 3.5rem;
+  color: #006437;
+}
+
+h3 {
+  font-size: 25px;
+  font-size: 2.5rem;
+  color: #006437;
 }
 
 /* Base décimale */
@@ -549,6 +571,15 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+ol {
+  line-height: 1.5em;
+  font-size: 1.25em;
+}
+
+ol li {
+  padding: 0.5em 0;
 }
 
 p {
@@ -813,6 +844,9 @@ header {
     padding-right: 0;
   }
 }
+.article h2, .article h3 {
+  text-transform: uppercase;
+}
 @media (min-width: 600px) {
   .article__header {
     display: grid;
@@ -830,16 +864,9 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 2rem;
-  color: #8b8b8b;
+  color: #595959;
 }
 .article__categorie p {
-  margin: 0;
-}
-.article h1 {
-  font-size: 3em;
-  line-height: 1em;
-  text-align: center;
-  color: #006437;
   margin: 0;
 }
 .article__auteur {
@@ -870,47 +897,21 @@ header {
     font-size: 2.5rem;
   }
 }
-
-.article-complet__contenu h2 {
-  font-size: 1.5em;
-  line-height: 1.25em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #009b32;
-  padding-top: 2em;
-  padding-bottom: 1em;
+.article__figure {
+  grid-column: 1/13;
+  margin: 0;
+}
+.article__figure img {
+  border-radius: 1rem;
+}
+.article__legende {
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  font-family: Heebo-Medium, sans-serif;
+  color: #595959;
 }
 
-.article-complet__contenu h3 {
-  font-size: 1.2em;
-  line-height: 1.25em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #009b32;
-  padding-top: 1em;
-}
-
-.article-complet__contenu p {
-  font-size: 1.25em;
-  margin: 1em 0;
-}
-
-.article-complet__contenu p:first-child {
-  font-weight: bold;
-  color: #666666;
-  font-size: 1.5em;
-}
-
-ol {
-  line-height: 1.5em;
-  font-size: 1.25em;
-}
-
-ol li {
-  padding: 0.5em 0;
-}
-
-/* Photos et légendes, vidéos */
 .enveloppe-video {
   position: relative;
   overflow: hidden;
@@ -1282,6 +1283,29 @@ PAGES
     padding-right: 0;
   }
 }
+@media (min-width: 600px) {
+  .accueil .articles__conteneurDateEdition {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.accueil .articles__dateEdition {
+  grid-column: 2/12;
+  color: #fff;
+  text-align: center;
+  font-family: Heebo-Medium, sans-serif;
+  background-color: #006437;
+  margin: 0 -20px;
+  padding: 2rem 0 5rem 0;
+  border-radius: 1rem 1rem 0 0;
+}
+@media screen and (min-width: 800px) {
+  .accueil .articles__conteneur {
+    position: relative;
+    top: -3.5rem;
+  }
+}
 @media screen and (min-width: 800px) and (min-width: 600px) {
   .accueil .articles__conteneur {
     display: grid;
@@ -1343,7 +1367,7 @@ PAGES
 .accueil .articles .article:hover .article__picture, .accueil .articles .article:active .article__picture {
   filter: brightness(110%);
 }
-.accueil .articles .article figure {
+.accueil .articles .article__figure {
   margin: 0;
 }
 .accueil .articles .article figcaption {

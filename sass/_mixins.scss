@@ -120,11 +120,11 @@
 
 // Mixin pour rangée Grid sur 12 colonnes
 // Elle sert autant sur mobile (au besoin) que pour la version desktop
-@mixin rangeeGrid12col {
+@mixin rangeeGrid12col($gridGap: 20px) {
   @media (min-width: $mobile600px) {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-gap: 20px;
+	grid-gap: $gridGap;
   }
 }
 

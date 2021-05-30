@@ -54,9 +54,26 @@ PAGES
   position: relative;
   top: -10rem;
 
+  &__conteneurDateEdition {
+	@include rangeeGrid12col;
+  }
+
+  &__dateEdition {
+	grid-column: 2 / 12;
+	color: $blanc;
+	text-align: center;
+	font-family: Heebo-Medium, sans-serif;
+	background-color: $vertForet;
+	margin: 0 -20px;
+	padding: 2rem 0 5rem 0;
+	border-radius: $coinArrondi $coinArrondi 0 0;
+  }
+
   &__conteneur {
 	@media screen and (min-width: $tablet800px) {
 	  @include rangeeGrid12col;
+	  position: relative;
+	  top: -3.5rem;
 	}
 
 	&Rangee {
@@ -118,7 +135,7 @@ PAGES
 	  filter: brightness(110%);
 	}
 
-	figure {
+	&__figure {
 	  margin: 0;
 	}
 

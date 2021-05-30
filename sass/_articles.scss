@@ -21,11 +21,16 @@
 .article {
   @include conteneur1920px;
 
+  h2, h3 {
+	text-transform: uppercase;
+  }
+
   &__header {
 	@include rangeeGrid12col;
-    & > * {
-      grid-column: 2 / 12;
-    }
+
+	& > * {
+	  grid-column: 2 / 12;
+	}
   }
 
   &__categorie {
@@ -35,18 +40,11 @@
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 2rem;
-	color: #8b8b8b;
-  & p {
-	margin: 0;
-  }
-  }
+	color: $gris;
 
-  & h1 {
-	font-size: 3em;
-	line-height: 1em;
-	text-align: center;
-	color: $vertForet;
-	margin: 0;
+	& p {
+	  margin: 0;
+	}
   }
 
   &__auteur {
@@ -54,85 +52,48 @@
 	padding: 0 0 2rem 0;
 	text-decoration: none;
 	font-size: 1.6rem;
+
 	& p {
 	  margin: 0;
 	}
   }
 
   &__contenu {
-    @include rangeeGrid12col;
-    & > * {
-      grid-column: 2 / 12;
-    }
+	@include rangeeGrid12col;
+
+	& > * {
+	  grid-column: 2 / 12;
+	}
+
 	& p:first-child {
 	  font-family: Heebo-Medium, sans-serif;
 	}
+
 	@media screen and (min-width: 1600px) {
 	  p {
 		@include fontSize(25px);
 	  }
 	}
   }
+
+  &__figure {
+	grid-column: 1 / 13;
+	margin: 0;
+
+	& img {
+	  border-radius: $coinArrondi;
+	}
+  }
+
+  &__legende {
+	@include fontSize(18px);
+	padding: 1.5rem 0;
+	font-family: Heebo-Medium, sans-serif;
+	color: $gris;
+  }
+
 }
 
-
-.article-complet__contenu h2 {
-  font-size: 1.5em;
-  line-height: 1.25em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: rgba(0, 155, 50, 1);
-  padding-top: 2em;
-  padding-bottom: 1em;
-}
-
-.article-complet__contenu h3 {
-  font-size: 1.2em;
-  line-height: 1.25em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: rgba(0, 155, 50, 1);
-  padding-top: 1em;
-}
-
-.article-complet__contenu p {
-  font-size: 1.25em;
-  margin: 1em 0;
-}
-
-.article-complet__contenu p:first-child {
-  font-weight: bold;
-  color: #666666;
-  font-size: 1.50em;
-}
-
-ol {
-  line-height: 1.5em;
-  font-size: 1.25em;
-}
-
-ol li {
-  padding: 0.5em 0;
-}
-
-/* Photos et légendes, vidéos */
-
-//.article-commun figure {
-//  width: 133.7%;
-//  margin-left: -17%;
-//
-//}
-//
-//.article-commun figure img {
-//  width: 100%;
-//}
-//
-//.article-commun figcaption {
-//  font-size: 0.90em;
-//  line-height: 1.5em;
-//  padding: 1em 10% 2em 12.5%;
-//
-//}
 
 .enveloppe-video {
   position: relative;
