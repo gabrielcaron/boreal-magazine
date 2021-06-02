@@ -824,6 +824,11 @@ header {
   width: 100%;
   z-index: 1;
 }
+@media screen and (min-width: 1935px) {
+  .entete picture img {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
 
 .article {
   padding-left: 3rem;

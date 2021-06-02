@@ -15,6 +15,10 @@
 	// version mobile
 	//height: 30rem;
 	//object-fit: cover;
+
+	@media screen and (min-width: 1935px) {
+	  border-radius: 0 0 $coinArrondi $coinArrondi;
+	}
   }
 }
 
