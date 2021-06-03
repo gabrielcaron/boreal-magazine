@@ -141,7 +141,8 @@ PAGES
 
 	figcaption {
 	  background-color: $vertForet;
-	  padding: 3rem;
+	  padding: 3rem 4rem 3rem 3rem;
+	  box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 20%);
       border-radius: 0 0 $coinArrondi $coinArrondi;
 	  height: 17rem; // Uniformise la hauteur si le titre est court
 
@@ -149,6 +150,7 @@ PAGES
 		font-size: 1.75em;
 		line-height: 1.25em;
 		margin: 0;
+		text-transform: none;
 	  }
 	}
   }

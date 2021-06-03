@@ -1377,7 +1377,8 @@ PAGES
 }
 .accueil .articles .article figcaption {
   background-color: #006437;
-  padding: 3rem;
+  padding: 3rem 4rem 3rem 3rem;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0 0 1rem 1rem;
   height: 17rem;
 }
@@ -1385,6 +1386,7 @@ PAGES
   font-size: 1.75em;
   line-height: 1.25em;
   margin: 0;
+  text-transform: none;
 }
 
 .accueil .flottants a:link .article__categorie, .accueil .flottants a:visited .article__categorie {
