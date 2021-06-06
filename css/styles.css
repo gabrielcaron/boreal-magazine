@@ -546,6 +546,7 @@ h1 {
   text-align: center;
   color: #006437;
   margin: 0;
+  padding: 5rem 0 1rem 0;
 }
 
 h2 {
@@ -716,7 +717,7 @@ header {
   margin-top: 1rem;
   margin-right: 1rem;
   content: "";
-  background: url(../../images-css/logo-symbole-ren.svg) no-repeat;
+  background: url(../images-css/logo-symbole-ren.svg) no-repeat;
 }
 .menu-principal__liste {
   padding: 0;
@@ -849,6 +850,9 @@ header {
     padding-right: 0;
   }
 }
+.article h1 {
+  padding: 0;
+}
 .article h2, .article h3 {
   text-transform: uppercase;
 }
@@ -892,9 +896,6 @@ header {
 }
 .article__contenu > * {
   grid-column: 2/12;
-}
-.article__contenu p:first-child {
-  font-family: Heebo-Medium, sans-serif;
 }
 @media screen and (min-width: 1600px) {
   .article__contenu p {
@@ -1059,7 +1060,7 @@ PIED DE PAGE
   margin-top: 1rem;
   margin-right: 1rem;
   content: "";
-  background: url(../../images-css/logo-symbole-ren.svg) no-repeat;
+  background: url(../images-css/logo-symbole-ren.svg) no-repeat;
 }
 .pieddepage__titre.articles-recents {
   grid-column: 2/12;
@@ -1132,7 +1133,7 @@ PIED DE PAGE
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: url(../../images-css/sprite-sociaux.svg) no-repeat;
+  background: url(../images-css/sprite-sociaux.svg) no-repeat;
   background-size: 150px;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
@@ -1208,6 +1209,51 @@ PIED DE PAGE
 }
 
 /********* LAYOUT *********/
+/** Règles de style générales **/
+/* ===========================
+
+STYLES GÉNÉRAUX
+
+=========================== */
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+p:first-child {
+  font-family: Heebo-Medium, sans-serif;
+}
+
+.contenu {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media (min-width: 600px) {
+  .contenu {
+    display: grid;
+    grid-template-columns: minmax(auto, 1920px);
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 600px) and (min-width: 1980px) {
+  .contenu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .contenu__conteneurRangeeGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.contenu__conteneurRangeeGrid > * {
+  grid-column: 2/12;
+}
+
 /** Accueil **/
 /* ===========================
 
@@ -1389,23 +1435,9 @@ PAGES
   text-transform: none;
 }
 
-.accueil .flottants a:link .article__categorie, .accueil .flottants a:visited .article__categorie {
-  color: #FFFFFF;
-  transition: all, 0.3s ease-in-out;
-}
-
-.accueil .flottants a:hover .article__categorie, .accueil .flottants a:active .article__categorie {
-  text-shadow: #33FF33 0 0 10px;
-}
-
-/* À PROPOS */
-.a-propos h1 {
-  padding: 1.5em 0 0 0;
-}
-
-/* CONTACT */
-.contact h1 {
-  padding: 1.5em 0 1em 0;
+/** Contact **/
+.formulaire > * {
+  grid-column: 4/10;
 }
 
 /* Commun à tous les champs */
@@ -1415,10 +1447,6 @@ PAGES
   padding: 10px 0;
 }
 
-.contact fieldset li {
-  list-style-type: none;
-}
-
 .contact legend {
   background-color: #009b32;
   color: #FFFFFF;
@@ -1426,16 +1454,8 @@ PAGES
   border-radius: 5px;
 }
 
-.contact fieldset label {
-  margin: 0 0 0 10%;
-  width: 50px;
-  line-height: 2em;
-  display: inline-block;
-}
-
-.contact fieldset input, .contact fieldset select {
-  width: 50%;
-  margin: 5px 10%;
+.contact label {
+  display: block;
 }
 
 /* Langue */
@@ -1444,6 +1464,10 @@ PAGES
 }
 
 /* J'aimerais collaborer */
+.collaborer label {
+  display: inline-block;
+}
+
 .contact fieldset:nth-child(4) input {
   margin: 0 0 0 60px;
 }
@@ -1467,42 +1491,6 @@ PAGES
   padding: 5px 30px;
   margin-bottom: 15px;
   border: none;
-}
-
-/* ===========================
-
-ADAPTATIONS
-
-=========================== */
-/* MOYENS ÉCRANS */
-@media (min-width: 650px) {
-  /* Contact */
-  .contact fieldset label {
-    margin: 0 0 0 10%;
-    width: 100px;
-    line-height: 2em;
-    display: inline-block;
-  }
-
-  /* - Langue */
-  .contact fieldset:nth-child(3) input {
-    margin: 0 0 0 65px;
-  }
-
-  /* - J'aimerais collaborer */
-  .contact fieldset:nth-child(4) input {
-    margin: 0 0 0 65px;
-  }
-}
-/** Règles de style générales **/
-/* ===========================
-
-STYLES GÉNÉRAUX
-
-=========================== */
-img {
-  vertical-align: bottom;
-  max-width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

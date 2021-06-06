@@ -25,6 +25,10 @@
 .article {
   @include conteneur1920px;
 
+  h1 {
+	padding: 0;
+  }
+
   h2, h3 {
 	text-transform: uppercase;
   }
@@ -67,10 +71,6 @@
 
 	& > * {
 	  grid-column: 2 / 12;
-	}
-
-	& p:first-child {
-	  font-family: Heebo-Medium, sans-serif;
 	}
 
 	@media screen and (min-width: 1600px) {

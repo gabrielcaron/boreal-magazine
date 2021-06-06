@@ -9,3 +9,19 @@ img {
   vertical-align: bottom;
   max-width: 100%;
 }
+
+p:first-child {
+  font-family: Heebo-Medium, sans-serif;
+}
+
+.contenu {
+  @include conteneur1920px();
+
+  &__conteneurRangeeGrid {
+	@include rangeeGrid12col;
+
+	& > * {
+	  grid-column: 2 / 12;
+	}
+  }
+}

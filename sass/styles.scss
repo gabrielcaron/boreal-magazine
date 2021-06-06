@@ -65,8 +65,12 @@
 
 /********* LAYOUT *********/
 
+/** Règles de style générales **/
+@import "layout/general";
+
 /** Accueil **/
 @import "layout/accueil";
 
-/** Règles de style générales **/
-@import "layout/general";
+/** Contact **/
+@import "layout/contact";
+
