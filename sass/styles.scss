@@ -31,42 +31,42 @@
 /****** Librairies ******/
 
 /** Normalize **/
-@import "normalize";
+@import "base/normalize";
 
 /**** UTILITAIRES ****/
 
 /** Utilitaires (à renommer) **/
-@import 'utilitaires';
+@import 'utilitaires/utilitaires';
 
 /** Variables **/
-@import 'variables';
+@import 'utilitaires/variables';
 
 /** Mixins **/
-@import 'mixins';
+@import 'utilitaires/mixins';
 
 /****** BASE ******/
 
 /** Typographie **/
-@import 'typo';
+@import 'base/typo';
 
 /** Grille **/
-@import 'grille';
+@import 'base/grille';
 
 /****** MODULES ******/
 
 /** Entete **/
-@import "entete-nav";
+@import "modules/entete-nav";
 
 /** Articles **/
-@import "articles";
+@import "modules/articles";
 
 /** Pied de page **/
-@import "pieddepage";
+@import "modules/pieddepage";
 
 /********* LAYOUT *********/
 
 /** Accueil **/
-@import "accueil";
+@import "layout/accueil";
 
 /** Règles de style générales **/
-@import "general";
+@import "layout/general";

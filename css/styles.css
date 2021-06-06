@@ -520,19 +520,19 @@ html {
 /* Polices */
 @font-face {
   font-family: Heebo-Light;
-  src: url(../polices/heebo-light.woff2) format("woff2"), url(../polices/heebo-light.woff) format("woff"), url(../polices/heebo-light.ttf) format("truetype");
+  src: url(../../polices/heebo-light.woff2) format("woff2"), url(../../polices/heebo-light.woff) format("woff"), url(../../polices/heebo-light.ttf) format("truetype");
 }
 @font-face {
   font-family: Heebo-Regular;
-  src: url(../polices/heebo-regular.woff2) format("woff2"), url(../polices/heebo-regular.woff) format("woff"), url(../polices/heebo-regular.ttf) format("truetype");
+  src: url(../../polices/heebo-regular.woff2) format("woff2"), url(../../polices/heebo-regular.woff) format("woff"), url(../../polices/heebo-regular.ttf) format("truetype");
 }
 @font-face {
   font-family: Heebo-Medium;
-  src: url(../polices/heebo-medium.woff2) format("woff2"), url(../polices/heebo-medium.woff) format("woff"), url(../polices/heebo-medium.ttf) format("truetype");
+  src: url(../../polices/heebo-medium.woff2) format("woff2"), url(../../polices/heebo-medium.woff) format("woff"), url(../../polices/heebo-medium.ttf) format("truetype");
 }
 @font-face {
   font-family: Heebo-Bold;
-  src: url(../polices/heebo-bold.woff2) format("woff2"), url(../polices/heebo-bold.woff) format("woff"), url(../polices/heebo-bold.ttf) format("truetype");
+  src: url(../../polices/heebo-bold.woff2) format("woff2"), url(../../polices/heebo-bold.woff) format("woff"), url(../../polices/heebo-bold.ttf) format("truetype");
 }
 h1, h2, h3 {
   font-family: Heebo-Bold, sans-serif;
@@ -716,7 +716,7 @@ header {
   margin-top: 1rem;
   margin-right: 1rem;
   content: "";
-  background: url(../images-css/logo-symbole-ren.svg) no-repeat;
+  background: url(../../images-css/logo-symbole-ren.svg) no-repeat;
 }
 .menu-principal__liste {
   padding: 0;
@@ -1059,7 +1059,7 @@ PIED DE PAGE
   margin-top: 1rem;
   margin-right: 1rem;
   content: "";
-  background: url(../images-css/logo-symbole-ren.svg) no-repeat;
+  background: url(../../images-css/logo-symbole-ren.svg) no-repeat;
 }
 .pieddepage__titre.articles-recents {
   grid-column: 2/12;
@@ -1132,7 +1132,7 @@ PIED DE PAGE
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: url(../images-css/sprite-sociaux.svg) no-repeat;
+  background: url(../../images-css/sprite-sociaux.svg) no-repeat;
   background-size: 150px;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
