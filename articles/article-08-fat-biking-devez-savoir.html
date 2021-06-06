@@ -75,10 +75,20 @@
 			surprise de sa mobilité et de sa légèreté. Ne vous laissez pas avoir par son look de monstre: un <em>fat
 				bike</em>, ça roule plus vite que cela en a l’air.</p>
 		<h2>Les avantages</h2>
-		<figure>
-			<img src="../images-html/article-08-contenu-01.jpg"
-				 alt="Sa construction permet de l’utiliser autant sur le sable que dans la neige.">
-			<figcaption>Sa construction permet de l’utiliser autant sur le sable que dans la neige.</figcaption>
+		<figure class="article__figure">
+			<picture class="article__picture">
+				<!-- Image pour mobile -->
+				<source media="(max-width: 600px)"
+						srcset="../images-html/article-08-contenu-02-600.jpg 1x, ../images-html/article-08-contenu-02-1200.jpg 2x">
+				<!-- Image pour tablette -->
+				<source media="(max-width: 1000px)"
+						srcset="../images-html/article-08-contenu-02-1000.jpg 1x, ../images-html/article-08-contenu-02-2000.jpg 2x">
+				<!-- Image pour poste de table et image par défaut -->
+				<img src="../images-html/article-08-contenu-02-2000.jpg"
+					 srcset="../images-html/article-08-contenu-02-2000.jpg 1x, ../images-html/article-08-contenu-02-3840.jpg 2x"
+					 alt="">
+			</picture>
+			<figcaption class="article__legende">Sa construction permet de l’utiliser autant sur le sable que dans la neige.</figcaption>
 		</figure>
 		<p>Pour commencer, je dirais que la plus grande force du <em>fat bike</em>, c’est sa polyvalence. Sa
 			construction permet de l’utiliser autant sur le sable que dans la neige. Le principe derrière tout cela: les
@@ -88,6 +98,23 @@
 		<p>Cela ouvre donc la porte à plusieurs activités, comme le vélo-camping à travers les bois, par exemple. En
 			été, comme en hiver. Imaginez le nombre de kilomètres que vous pourriez accumuler en forêt… assez tentant&thinsp;!</p>
 		<h2>Les vêtements</h2>
+		<figure class="article__figure">
+			<picture class="article__picture">
+				<!-- Image pour mobile -->
+				<source media="(max-width: 600px)"
+						srcset="../images-html/article-08-contenu-01-600.jpg 1x, ../images-html/article-08-contenu-01-1200.jpg 2x">
+				<!-- Image pour tablette -->
+				<source media="(max-width: 1000px)"
+						srcset="../images-html/article-08-contenu-01-1000.jpg 1x, ../images-html/article-08-contenu-01-2000.jpg 2x">
+				<!-- Image pour poste de table et image par défaut -->
+				<img src="../images-html/article-08-contenu-01-2000.jpg"
+					 srcset="../images-html/article-08-contenu-01-2000.jpg 1x, ../images-html/article-08-contenu-01-3840.jpg 2x"
+					 alt="">
+			</picture>
+			<figcaption class="article__legende">Ce qui est bien avec le <em>fat bike</em>, c’est que c’est accessible à tous. Si vous savez
+				faire du vélo, vous êtes ok.
+			</figcaption>
+		</figure>
 		<p>Ce qui est bien avec le <em>fat bike</em>, c’est que c’est accessible à tous. Si vous savez faire du vélo,
 			vous êtes ok. En été, c’est assez facile: vous pouvez porter ce que vous portez habituellement pour faire de
 			la bicyclette.</p>
@@ -96,13 +123,6 @@
 			lors de promenade en terrain accidenté. Choisissez plutôt une bonne paire de bottes imperméables et isolés,
 			avec une excellente traction. De ce côté, la botte Caribou de Sorel est une valeur sure (modèle disponible
 			pour homme et pour femme).</p>
-		<figure>
-			<img src="../images-html/article-08-contenu-02.jpg"
-				 alt="Ce qui est bien avec le fat bike, c’est que c’est accessible à tous. Si vous savez faire du vélo, vous êtes ok.">
-			<figcaption>Ce qui est bien avec le <em>fat bike</em>, c’est que c’est accessible à tous. Si vous savez
-				faire du vélo, vous êtes ok.
-			</figcaption>
-		</figure>
 		<p>Au niveau des mains, la meilleure option pour empêcher vos doigts de geler serait d’y aller avec le gant
 			Louis Garneau Super Shield, confectionné en pince de homard, pour une conduite mieux adaptée.</p>
 		<p>Pour terminer, garder des chauffe-mains à portée est toujours une bonne idée, tout autant qu’une paire de
@@ -111,18 +131,11 @@
 		<p>Avec la montée en popularité du <em>fat bike</em>, de plus en plus de centres de ski et de plein air offrent
 			la possibilité de louer un vélo, afin d’explorer les sentiers à travers le pays. On vient tout juste
 			d’assister au premier Championat Mondial en janvier 2016, ce qui démontre le sérieux de la chose.</p>
-		<figure>
-			<img src="../images-html/article-08-contenu-03.jpg"
-				 alt="Avec la montée en popularité du fat bike, de plus en plus de centres de ski et de plein air offrent la possibilité de louer un vélo, afin d’explorer les sentiers à travers le pays.">
-			<figcaption>Avec la montée en popularité du <em>fat bike</em>, de plus en plus de centres de ski et de plein
-				air offrent la possibilité de louer un vélo, afin d’explorer les sentiers à travers le pays.
-			</figcaption>
-		</figure>
 		<p>Dans la région de Tremblant seulement, on retrouve le service chez Jovelo, Cybercycle Mont-Tremblant et l’Âme
 			du Sport. Il est également possible d’en retrouve dans le coin du Mont St-Anne, au Horseshoe Resort en
 			Ontario; au Silver Star Mountain Resort en Colombie-Britannique; ainsi qu’au Parc Provincial de Canmore
 			Nordic Centre, en Alberta.</p>
-		<p>Bonne <em>ride&thinsp;!</em></p>
+		<p>Bonne randonnée&nbsp;!</p>
 	</div>
 </article>
 <footer class="pieddepage">
