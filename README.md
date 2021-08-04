@@ -1,4 +1,4 @@
-<img src="images-css/logo-boreal-2021-ren.svg" width="285px" height="70px">
+<img src="images-css/logo-boreal-2021.svg" width="285px" height="81px">
 
 Ce dépôt contient le projet Boréal Magazine.
 
