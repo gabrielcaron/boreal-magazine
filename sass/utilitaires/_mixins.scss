@@ -98,8 +98,11 @@
 
 // Mixin pour conteneur parent en Grid
 @mixin conteneur1920px($conteneurBleed: false) {
-  // Si le navigateur ne supporte pas Grid
+  // Version mobile + si le navigateur ne supporte pas Grid
   @include padding3rem;
+  @if $conteneurBleed == true {
+	padding: 0;
+  }
 
   // Sinon, on y va avec Grid
   @media (min-width: $mobile600px) {

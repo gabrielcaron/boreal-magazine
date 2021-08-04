@@ -737,10 +737,10 @@ header {
 .menu-principal__lien {
   font-family: Heebo-Medium, sans-serif;
   font-size: 1.25em;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0.4rem 2rem 0 2rem;
   line-height: 6rem;
   display: inline-block;
+  border-bottom: transparent 4px solid;
 }
 @media screen and (max-width: 603px) {
   .menu-principal__lien {
@@ -771,11 +771,12 @@ header {
   z-index: 1000;
   top: 4.5rem;
   left: 0;
-  width: 400px;
+  width: 37rem;
   padding: 25px 25px;
   text-align: left;
   background-color: rgba(0, 100, 55, 0.95);
   line-height: 1.25em;
+  margin-left: -4px;
 }
 .menu-principal__sous-menu-item {
   display: block;
@@ -804,6 +805,7 @@ header {
 .entete__picture {
   padding-left: 3rem;
   padding-right: 3rem;
+  padding: 0;
 }
 @media (min-width: 600px) {
   .entete__picture {
@@ -834,6 +836,8 @@ header {
 .article {
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media (min-width: 600px) {
   .article {
@@ -1275,8 +1279,12 @@ PAGES
 }
 
 .logo {
-  width: 36%;
-  margin: 0 auto;
+  width: 30rem;
+}
+@media screen and (min-width: 1050px) {
+  .logo {
+    width: 60rem;
+  }
 }
 
 .slogan {
@@ -1289,7 +1297,7 @@ PAGES
 .header-accueil {
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-left: 0;
+  padding: 0;
 }
 @media (min-width: 600px) {
   .header-accueil {
@@ -1316,6 +1324,8 @@ PAGES
 .accueil .articles {
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   position: relative;
   top: -10rem;
 }

@@ -48,13 +48,15 @@ header {
   &__lien {
 	font-family: Heebo-Medium, sans-serif;
 	font-size: 1.25em;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding: 0.4rem 2rem 0 2rem;
 	line-height: 6rem;
 	display: inline-block;
+	border-bottom: transparent 4px solid;
+
     @media screen and (max-width: 603px) {
       width: calc((100% / 3) - 4px);
     }
+
 	&.accueil {
 	  font-family: Heebo-Bold, sans-serif;
       @media screen and (max-width: 603px) {
@@ -81,11 +83,12 @@ header {
 	z-index: 1000;
 	top: 4.5rem;
 	left: 0;
-	width: 400px;
+	width: 37rem;
 	padding: 25px 25px;
 	text-align: left;
 	background-color: rgba(0, 100, 55, 0.95);
 	line-height: 1.25em;
+	margin-left: -4px; // Retire l'espace causé par la bordure
   }
 
   &__sous-menu-item {
