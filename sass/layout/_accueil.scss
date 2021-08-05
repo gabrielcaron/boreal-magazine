@@ -200,21 +200,41 @@ PAGES
 
 	&__figure {
 	  margin: 0;
+	  padding-bottom: 2rem;
 	}
 
-	figcaption {
+	&__infos {
 	  background-color: $vertForet;
-	  padding: 3rem 4rem 3rem 3rem;
+	  padding: 2rem 4rem 3rem 3rem;
 	  box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 20%);
       border-radius: 0 0 $coinArrondi $coinArrondi;
-	  height: 17rem; // Uniformise la hauteur si le titre est court
 
-	  h2 {
-		font-size: 1.75em;
-		line-height: 1.25em;
-		margin: 0;
-		text-transform: none;
+	  @media screen and (min-width: $tablet800px) {
+		height: 17rem; // Uniformise la hauteur si le titre est court
 	  }
 	}
-  }
-}
+
+	&__titre {
+	  font-size: 2.5rem;
+	  line-height: 120%;
+	  margin: 0;
+	  text-transform: none;
+
+	  @media screen and (min-width: 850px) {
+		font-size: 2.7rem;
+	  }
+
+	  @media screen and (min-width: 900px) {
+		font-size: 2.9rem;
+	  }
+
+	  @media screen and (min-width: 1300px) {
+		font-size: 3rem;
+	  }
+
+	  @media screen and (min-width: 1500px) {
+		font-size: 3.5rem;
+	  }
+	}
+  } // fin article
+} // fin accueil
