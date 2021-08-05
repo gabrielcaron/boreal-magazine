@@ -48,18 +48,18 @@ header {
   &__lien {
 	font-family: Heebo-Medium, sans-serif;
 	font-size: 1.25em;
-	padding: 0.4rem 2rem 0 2rem;
+	padding: 0.4rem 1.9rem 0 1.9rem;
 	line-height: 6rem;
 	display: inline-block;
 	border-bottom: transparent 4px solid;
 
-    @media screen and (max-width: 603px) {
+    @media screen and (max-width: $mobile600px - 1) {
       width: calc((100% / 3) - 4px);
     }
 
 	&.accueil {
 	  font-family: Heebo-Bold, sans-serif;
-      @media screen and (max-width: 603px) {
+      @media screen and (max-width: $mobile600px - 1) {
         width: 100%;
         text-align: left;
       }

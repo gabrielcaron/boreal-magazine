@@ -737,12 +737,12 @@ header {
 .menu-principal__lien {
   font-family: Heebo-Medium, sans-serif;
   font-size: 1.25em;
-  padding: 0.4rem 2rem 0 2rem;
+  padding: 0.4rem 1.9rem 0 1.9rem;
   line-height: 6rem;
   display: inline-block;
   border-bottom: transparent 4px solid;
 }
-@media screen and (max-width: 603px) {
+@media screen and (max-width: 599px) {
   .menu-principal__lien {
     width: calc((100% / 3) - 4px);
   }
@@ -750,7 +750,7 @@ header {
 .menu-principal__lien.accueil {
   font-family: Heebo-Bold, sans-serif;
 }
-@media screen and (max-width: 603px) {
+@media screen and (max-width: 599px) {
   .menu-principal__lien.accueil {
     width: 100%;
     text-align: left;
@@ -1270,7 +1270,6 @@ PAGES
   position: absolute;
   width: 100%;
   z-index: 99;
-  top: 25%;
   text-align: center;
 }
 
@@ -1279,19 +1278,66 @@ PAGES
 }
 
 .logo {
+  position: relative;
   width: 30rem;
+  margin-left: 0.5rem;
+  top: -1rem;
+}
+@media screen and (min-width: 600px) {
+  .logo {
+    top: -2rem;
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .logo {
+    top: 0rem;
+    width: 40rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .logo {
+    top: 4rem;
+    width: 50rem;
+  }
 }
 @media screen and (min-width: 1050px) {
   .logo {
     width: 60rem;
+    top: 10rem;
   }
 }
 
 .slogan {
-  margin-top: 20px;
+  position: relative;
   color: white;
-  font-size: 4rem;
+  font-size: 2.2rem;
   text-shadow: #333333 3px 3px 10px;
+  top: -2rem;
+}
+@media screen and (min-width: 600px) {
+  .slogan {
+    font-size: 2.6rem;
+    top: -3rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .slogan {
+    font-size: 3rem;
+    top: -1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .slogan {
+    font-size: 3.75rem;
+    top: 2rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .slogan {
+    font-size: 4.5rem;
+    top: 8rem;
+  }
 }
 
 .header-accueil {
@@ -1317,7 +1363,23 @@ PAGES
 }
 .header-accueil picture img {
   width: 100%;
-  z-index: 1;
+  height: 35rem;
+  object-fit: cover;
+}
+@media screen and (min-width: 700px) {
+  .header-accueil picture img {
+    height: 45rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .header-accueil picture img {
+    height: 60rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .header-accueil picture img {
+    height: 80rem;
+  }
 }
 
 /* Section Articles */
@@ -1344,7 +1406,7 @@ PAGES
     padding-right: 0;
   }
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 1050px) and (min-width: 600px) {
   .accueil .articles__conteneurDateEdition {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -1357,13 +1419,20 @@ PAGES
   text-align: center;
   font-family: Heebo-Medium, sans-serif;
   background-color: #006437;
-  margin: 0 -20px;
+  margin: 0 -3rem;
   padding: 2rem 0 5rem 0;
-  border-radius: 1rem 1rem 0 0;
+}
+@media screen and (min-width: 1050px) {
+  .accueil .articles__dateEdition {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+.accueil .articles__conteneur {
+  position: relative;
+  top: -3.5rem;
 }
 @media screen and (min-width: 800px) {
   .accueil .articles__conteneur {
-    position: relative;
     top: -3.5rem;
   }
 }
@@ -1391,13 +1460,8 @@ PAGES
   grid-column: span 5;
   color: #FFFFFF;
   border-radius: 5px;
-  padding: 0 3rem;
+  padding: 0;
   text-decoration: none;
-}
-@media screen and (min-width: 800px) {
-  .accueil .articles .article {
-    padding: initial;
-  }
 }
 .accueil .articles .article__image {
   border-radius: 1rem 1rem 0 0;
