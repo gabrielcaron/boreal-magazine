@@ -12,6 +12,24 @@
   & picture img {
 	width: 100%;
 	z-index: 1;
+	height: 20rem;
+	object-fit: cover;
+
+	@media screen and (min-width: $mobile600px) {
+	  height: 30rem;
+	}
+
+	@media screen and (min-width: $desktop1050px) {
+	  height: 35rem;
+	}
+
+	@media screen and (min-width: 1300px) {
+	  height: 40rem;
+	}
+
+	@media screen and (min-width: 1500px) {
+	  height: 50rem;
+	}
 
 	@media screen and (min-width: 1935px) {
 	  border-radius: 0 0 $coinArrondi $coinArrondi;

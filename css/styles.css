@@ -831,6 +831,28 @@ header {
 .entete picture img {
   width: 100%;
   z-index: 1;
+  height: 20rem;
+  object-fit: cover;
+}
+@media screen and (min-width: 600px) {
+  .entete picture img {
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .entete picture img {
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .entete picture img {
+    height: 40rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .entete picture img {
+    height: 50rem;
+  }
 }
 @media screen and (min-width: 1935px) {
   .entete picture img {
