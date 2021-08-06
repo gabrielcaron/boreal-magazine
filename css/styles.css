@@ -1629,61 +1629,79 @@ PAGES
 }
 
 /** Contact **/
-.formulaire > * {
-  grid-column: 4/10;
+/**
+* @author Gabriel Caron - 1861095@csfoy.ca
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* PAGE CONTACT
+**/
+.contact .formulaire > * {
+  grid-column: 3/11;
 }
-
-/* Commun à tous les champs */
-.contact fieldset {
-  border-color: #009b32;
-  margin: 30px 0;
-  padding: 10px 0;
+@media screen and (min-width: 900px) {
+  .contact .formulaire > * {
+    grid-column: 5/9;
+  }
 }
-
-.contact legend {
-  background-color: #009b32;
-  color: #FFFFFF;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.contact label {
-  display: block;
-}
-
-/* Langue */
-.contact fieldset:nth-child(3) input {
-  margin: 0 0 0 60px;
-}
-
-/* J'aimerais collaborer */
-.collaborer label {
-  display: inline-block;
-}
-
-.contact fieldset:nth-child(4) input {
-  margin: 0 0 0 60px;
-}
-
-/* Expliquez pourquoi */
-.contact textarea {
-  width: 95%;
-  height: 150px;
-  margin: 10px 2.5%;
-}
-
-/* CV */
-.contact fieldset:nth-child(6) input {
-  margin: 5px 15px;
-}
-
-.contact .article-complet__contenu > form > input:last-child {
-  background-color: #009b32;
-  color: #FFFFFF;
-  font-size: 0.9em;
-  padding: 5px 30px;
-  margin-bottom: 15px;
+.contact .formulaire fieldset {
+  margin: 3rem 0;
+  padding: 0;
   border: none;
+}
+.contact .formulaire legend {
+  width: 100%;
+  font-family: Heebo-Bold, sans-serif;
+  line-height: 110%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #006437;
+  border-bottom: solid 0.3rem rgba(0, 0, 0, 0.2);
+}
+.contact .formulaire select {
+  display: block;
+  width: 70%;
+}
+.contact .formulaire input {
+  width: 100%;
+  height: 4rem;
+  vertical-align: middle;
+}
+.contact .formulaire input.petit {
+  display: block;
+  width: 50%;
+}
+.contact .formulaire input.moyen {
+  display: block;
+  width: 70%;
+}
+.contact .formulaire input[type=checkbox] {
+  width: initial;
+  margin: 0 0.5rem 0.3rem 0;
+}
+.contact .formulaire input[type=file] {
+  margin-top: 2rem;
+}
+.contact .formulaire input[type=submit] {
+  background-color: #006437;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  font-family: Heebo-Bold, sans-serif;
+  font-size: 1.75rem;
+  border: none;
+  height: 5rem;
+}
+.contact .formulaire textarea {
+  width: 100%;
+  height: 20rem;
+  margin-top: 2rem;
+}
+.contact .formulaire input[type=radio] {
+  width: initial;
+  margin: 0 0.5rem 0.3rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

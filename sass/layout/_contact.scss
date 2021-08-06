@@ -1,73 +1,96 @@
+/**
+* @author Gabriel Caron - 1861095@csfoy.ca
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* PAGE CONTACT
+**/
 
 
-.formulaire {
-  & > * {
-	grid-column: 4 / 10;
+.contact {
+
+  // Grille
+  & .formulaire {
+    & > * {
+      grid-column: 3 / 11;
+    }
+
+    @media screen and (min-width: $tablet900px) {
+      & > * {
+        grid-column: 5 / 9;
+      }
+    }
+
+    // Commun à tous les champs
+    & fieldset {
+      margin: 3rem 0;
+      padding: 0;
+      border: none;
+    }
+
+    & legend {
+      width: 100%;
+      font-family: Heebo-Bold, sans-serif;
+      line-height: 110%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      color: $vertForet;
+      border-bottom: solid 0.3rem rgba(0, 0, 0, 0.2);
+    }
+
+    & select {
+      display: block;
+      width: 70%;
+    }
+
+    & input {
+      width: 100%;
+      height: 4rem;
+      vertical-align: middle;
+
+      &.petit {
+        display: block;
+        width: 50%;
+      }
+      &.moyen {
+        display: block;
+        width: 70%;
+      }
+    }
+
+    & input[type="checkbox"] {
+      width: initial;
+      margin: 0 0.5rem 0.3rem 0;
+    }
+
+    & input[type="file"] {
+      margin-top: 2rem;
+    }
+
+    & input[type="submit"] {
+      background-color: $vertForet;
+      border-radius: $coinArrondi;
+      color: #FFFFFF;
+      font-family: Heebo-Bold, sans-serif;
+      font-size: 1.75rem;
+      border: none;
+      height: 5rem;
+    }
+
+    & textarea {
+      width: 100%;
+      height: 20rem;
+      margin-top: 2rem;
+    }
+
+    // Langue
+    & input[type="radio"] {
+      width: initial;
+      margin: 0 0.5rem 0.3rem 0;
+    }
   }
 }
 
-
-/* Commun à tous les champs */
-
-.contact fieldset {
-  border-color: rgba(0, 155, 50, 1);
-  margin: 30px 0;
-  padding: 10px 0;
-}
-
-//.contact fieldset li {
-//  list-style-type: none;
-//}
-
-.contact legend {
-  background-color: rgba(0, 155, 50, 1);
-  color: #FFFFFF;
-  padding: 5px 10px;
-  border-radius: 5px;
-
-}
-
-.contact label {
-  display: block;
-}
-
-/* Langue */
-
-.contact fieldset:nth-child(3) input {
-  margin: 0 0 0 60px;
-}
-
-/* J'aimerais collaborer */
-
-.collaborer {
-  label {
-	display: inline-block;
-  }
-}
-
-.contact fieldset:nth-child(4) input {
-  margin: 0 0 0 60px;
-}
-
-/* Expliquez pourquoi */
-
-.contact textarea {
-  width: 95%;
-  height: 150px;
-  margin: 10px 2.5%;
-}
-
-/* CV */
-
-.contact fieldset:nth-child(6) input {
-  margin: 5px 15px;
-}
-
-.contact .article-complet__contenu > form > input:last-child {
-  background-color: rgba(0, 155, 50, 1);
-  color: #FFFFFF;
-  font-size: 0.9em;
-  padding: 5px 30px;
-  margin-bottom: 15px;
-  border: none;
-}
