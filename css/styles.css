@@ -545,8 +545,7 @@ h1 {
   font-size: 5rem;
   text-align: center;
   color: #006437;
-  margin: 0;
-  padding: 5rem 0 1rem 0;
+  padding: 7rem 0 0 0;
 }
 
 h2 {
@@ -696,11 +695,6 @@ img {
 /** Entete **/
 header {
   position: relative;
-}
-
-.entete-pages picture img {
-  width: 100%;
-  z-index: 1;
 }
 
 /* Barre de navigation principale */
