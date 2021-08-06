@@ -57,6 +57,10 @@ header {
       width: calc((100% / 3) - 4px);
     }
 
+	@media screen and (min-width: $tablet800px) {
+	  padding: 0.4rem 3rem 0 3rem;
+	}
+
 	&.accueil {
 	  font-family: Heebo-Bold, sans-serif;
       @media screen and (max-width: $mobile600px - 1) {

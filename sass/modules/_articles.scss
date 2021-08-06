@@ -12,9 +12,6 @@
   & picture img {
 	width: 100%;
 	z-index: 1;
-	// version mobile
-	//height: 30rem;
-	//object-fit: cover;
 
 	@media screen and (min-width: 1935px) {
 	  border-radius: 0 0 $coinArrondi $coinArrondi;
