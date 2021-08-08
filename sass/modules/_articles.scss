@@ -56,6 +56,10 @@
 
 	& > * {
 	  grid-column: 2 / 12;
+
+	  @media screen and (min-width: 1300px) {
+		grid-column: 3 / 11;
+	  }
 	}
   }
 
@@ -89,9 +93,13 @@
 
 	& > * {
 	  grid-column: 2 / 12;
+
+	  @media screen and (min-width: 1300px) {
+		grid-column: 3 / 11;
+	  }
 	}
 
-	@media screen and (min-width: 1600px) {
+	@media screen and (min-width: 1300px) {
 	  p {
 		@include fontSize(25px);
 	  }
