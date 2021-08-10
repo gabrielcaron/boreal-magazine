@@ -1577,7 +1577,12 @@ PAGES
   filter: brightness(110%);
 }
 .accueil .articles .article__figure {
-  margin: 0;
+  margin: 0 0 2rem 0;
+}
+@media screen and (min-width: 800px) {
+  .accueil .articles .article__figure {
+    margin: 0;
+  }
 }
 .accueil .articles .article__infos {
   background-color: #006437;
