@@ -1,0 +1,1664 @@
+@charset "UTF-8";
+/**
+ * @author Gabriel Caron <gabriel.caron@gmail.com>
+ */
+/*
+ * ------------------
+ * TABLE DES MATIERES
+ * ------------------
+ * Librairies
+ ** Normalize
+ * ------------------
+ * UTILITAIRES
+ ** Variables
+ ** Mixins
+ * ------------------
+ * BASE
+ ** Typographie
+ ** Grille
+ * ------------------
+ * MODULES
+ ** Entete
+ ** Pied de page
+ * ------------------
+ * LAYOUT
+ ** Accueil
+ ** General
+ */
+/****** Librairies ******/
+/** Normalize **/
+/*! normalize.sass v8.0.1 | MIT License | github.com/necolas/normalize.sass */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on medias inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**** UTILITAIRES ****/
+/** Utilitaires (à renommer) **/
+/* Utilitaires
+   ========================================================================== */
+/*** Clearfix première version ***/
+.flottants {
+  overflow: hidden;
+}
+
+/*** Clearfix deuxième version ***/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/** Accessibilité
+  * Pour cacher visuellement tout en gardant accessible un contenu:
+  * screen-reader-only ou visuallyhidden **/
+.screen-reader-only,
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus,
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/** Variables **/
+/**
+ * @author Gabriel Caron <1861095@csfoy.ca>
+ * @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* VARIABLES
+* PALETTES DE COULEURS
+** Couleurs de base
+** Autres couleurs
+* POINTS DE RUPTURE
+*/
+/** Palette de couleurs **/
+/* Couleurs de base AAA */
+/* Autres couleurs */
+/** Points de rupture **/
+/** Mixins **/
+/**
+* @author Gabriel Caron - 1861095@csfoy.ca
+* @version 2021.3
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* UTILITAIRES DE BASE
+** Box sizing
+* Clearfix
+* ACCESSIBILITÉ
+** Visually hidden/screen reader only
+** Lien sauter au contenu
+* TYPOGRAPHIE
+* Fonction pour convertir une valeur de font-size en pixels à son équivalent rem
+* Mixin qui inclus la solution de repli en pixel suivi par la valeur calculée en rem
+* Mixin pour conteneur de base à 1200px
+* Mixin pour rangée Flex par défaut
+* Mixin pour rangée Grid sur 12 colonnes
+* Mixin pour le padding de base pour mobile
+*/
+/***** Utilitaires de base *****/
+/** Box sizing **/
+/* Clearfix */
+/***** Accessibilité *****/
+.visuallyhidden,
+.screen-reader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus,
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.sauter-contenu {
+  padding: 2rem 6rem;
+  line-height: 12rem;
+  color: #fff;
+  background-color: #3200C1;
+  top: -12px;
+}
+
+/******** Typographie *****/
+/****** BASE ******/
+/** Typographie **/
+/**
+* Typographie responsive (Mobile First)
+========================================================================
+*
+* @author Gabriel Caron
+*
+* TABLE DES MATIÈRES
+* Polices
+* Base décimale
+* Hiérarchie responsive
+*
+*
+* Doc des points de rupture :
+* ==========================================================================
+* Écran mobile : de 0 à 599px
+* point de rupture: 600px
+*
+* Écran tablette : de 600 à 799px
+* point de rupture: 800px
+*
+* Écran desktop : 800px et +
+*/
+/* Polices */
+@font-face {
+  font-family: Heebo-Light;
+  src: url(../polices/heebo-light.woff2) format("woff2"), url(../polices/heebo-light.woff) format("woff"), url(../polices/heebo-light.ttf) format("truetype");
+}
+@font-face {
+  font-family: Heebo-Regular;
+  src: url(../polices/heebo-regular.woff2) format("woff2"), url(../polices/heebo-regular.woff) format("woff"), url(../polices/heebo-regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Heebo-Medium;
+  src: url(../polices/heebo-medium.woff2) format("woff2"), url(../polices/heebo-medium.woff) format("woff"), url(../polices/heebo-medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: Heebo-Bold;
+  src: url(../polices/heebo-bold.woff2) format("woff2"), url(../polices/heebo-bold.woff) format("woff"), url(../polices/heebo-bold.ttf) format("truetype");
+}
+h1, h2, h3 {
+  font-family: Heebo-Bold, sans-serif;
+  line-height: 110%;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 50px;
+  font-size: 5rem;
+  text-align: center;
+  color: #006437;
+  padding: 7rem 0 0 0;
+}
+
+h2 {
+  font-size: 35px;
+  font-size: 3.5rem;
+  color: #006437;
+}
+
+h3 {
+  font-size: 25px;
+  font-size: 2.5rem;
+  color: #006437;
+}
+
+/* Base décimale */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Heebo-Light, sans-serif;
+  /* 16px pour toutes les largeurs d'écran */
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+ol {
+  line-height: 1.5em;
+  font-size: 1.25em;
+}
+
+ol li {
+  padding: 0.5em 0;
+}
+
+p {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+/** Grille **/
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.3
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* Utilisation du modèle de boîte avec Box-Sizing
+* Classe conteneur pour le centrage du bloc parent avec CSS Grid
+* Classe conteneur pour le positionnement de la rangée enfant en Grid
+* Classe conteneur pour le positionnement de la rangée enfant en flexbox
+*/
+/*** Utilisation du modèle de boîte avec Box-Sizing ***/
+html {
+  box-sizing: border-box;
+}
+
+/*** Images responsives ***/
+img {
+  max-width: 100%;
+}
+
+/*** Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
+.conteneur {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  grid-template-columns: minmax(auto, 1920px);
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media (min-width: 1300px) {
+  .conteneur {
+    padding-left: initial;
+    padding-right: initial;
+  }
+}
+
+/*** Classe conteneur pour le positionnement de la rangée enfant en Grid ***/
+.rangeeGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+/*** Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
+@media (min-width: 600px) {
+  .rangeeFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* valeur par défaut */
+  }
+  .cols_1_de_12 {
+    width: 6.5%;
+  }
+  .cols_2_de_12 {
+    width: 15%;
+  }
+  .cols_3_de_12 {
+    width: 23.5%;
+  }
+  .cols_4_de_12 {
+    width: 32%;
+  }
+  .cols_5_de_12 {
+    width: 40.5%;
+  }
+  .cols_6_de_12 {
+    width: 49%;
+  }
+  .cols_7_de_12 {
+    width: 57.5%;
+  }
+  .cols_8_de_12 {
+    width: 66%;
+  }
+  .cols_9_de_12 {
+    width: 74.5%;
+  }
+  .cols_10_de_12 {
+    width: 83%;
+  }
+  .cols_11_de_12 {
+    width: 91.5%;
+  }
+  .cols_12_de_12 {
+    width: 100%;
+  }
+}
+/****** MODULES ******/
+/** Entete **/
+header {
+  position: relative;
+}
+
+/* Barre de navigation principale */
+.menu-principal {
+  width: 100%;
+  z-index: 100;
+  background-color: #006437;
+}
+.menu-principal .accueil::before {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  vertical-align: middle;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  content: "";
+  background: url(../images-css/logo-symbole-ren.svg) no-repeat;
+}
+.menu-principal__liste {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.menu-principal__liste .articles-recents {
+  position: relative;
+}
+.menu-principal__item {
+  display: inline;
+}
+.menu-principal__item:hover .menu-principal__sous-menu-liste {
+  display: block;
+}
+.menu-principal__lien {
+  font-family: Heebo-Medium, sans-serif;
+  font-size: 2rem;
+  padding: 0.4rem 1.9rem 0 1.9rem;
+  line-height: 6rem;
+  display: inline-block;
+  border-bottom: transparent 4px solid;
+}
+@media screen and (max-width: 599px) {
+  .menu-principal__lien {
+    width: calc(33.3333333333% - 4px);
+  }
+}
+@media screen and (min-width: 800px) {
+  .menu-principal__lien {
+    padding: 0.4rem 3rem 0 3rem;
+  }
+}
+.menu-principal__lien.accueil {
+  font-family: Heebo-Bold, sans-serif;
+}
+@media screen and (max-width: 599px) {
+  .menu-principal__lien.accueil {
+    width: 100%;
+    text-align: left;
+  }
+}
+.menu-principal__lien:link, .menu-principal__lien:visited {
+  text-decoration: none;
+  color: #ffffff;
+  transition: none, 0.3s ease-in-out;
+}
+.menu-principal__lien:hover, .menu-principal__lien:active {
+  text-shadow: #33FF33 0 0 10px;
+  border-bottom: #FFFFFF 4px solid;
+}
+.menu-principal__sous-menu-liste {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 4.5rem;
+  left: 0;
+  width: 37rem;
+  padding: 25px 25px;
+  text-align: left;
+  background-color: rgba(0, 100, 55, 0.95);
+  line-height: 1.25em;
+  margin-left: -4px;
+}
+.menu-principal__sous-menu-item {
+  display: block;
+  list-style: none;
+  padding: 5px 0;
+}
+.menu-principal__sous-menu-lien:link, .menu-principal__sous-menu-lien:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+.menu-principal__sous-menu-lien:hover, .menu-principal__sous-menu-lien:active {
+  text-shadow: #33FF33 0 0 10px;
+  text-decoration: underline;
+}
+
+/* ÉLÉMENTS ACTIFS */
+.page-courante {
+  border-bottom: #FFFFFF 4px solid;
+  font-weight: bold;
+}
+
+/** Articles **/
+/* ARTICLES */
+/* En-tête */
+/* Commun */
+.entete__picture {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding: 0;
+}
+@media (min-width: 600px) {
+  .entete__picture {
+    display: grid;
+    grid-template-columns: minmax(auto, 1920px);
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding: 0;
+  }
+}
+@media (min-width: 600px) and (min-width: 1980px) {
+  .entete__picture {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.entete picture img {
+  width: 100%;
+  z-index: 1;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 600px) {
+  .entete picture img {
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .entete picture img {
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .entete picture img {
+    height: 40rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .entete picture img {
+    height: 50rem;
+  }
+}
+@media screen and (min-width: 1935px) {
+  .entete picture img {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+.article {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.article h1 {
+  padding: 0;
+}
+.article h2, .article h3 {
+  text-transform: uppercase;
+}
+@media (min-width: 600px) {
+  .article__header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.article__header > * {
+  grid-column: 2/12;
+}
+@media screen and (min-width: 1300px) {
+  .article__header > * {
+    grid-column: 3/11;
+  }
+}
+.article__categorie {
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  color: #595959;
+}
+.article__categorie p {
+  margin: 0;
+}
+.article__auteur {
+  text-align: center;
+  padding: 0 0 2rem 0;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.article__auteur p {
+  margin: 0;
+}
+@media (min-width: 600px) {
+  .article__contenu {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.article__contenu > * {
+  grid-column: 2/12;
+}
+@media screen and (min-width: 1300px) {
+  .article__contenu > * {
+    grid-column: 3/11;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .article__contenu p {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+}
+.article__figure {
+  grid-column: 1/13;
+  margin: 0 auto;
+}
+.article__figure img {
+  border-radius: 1rem;
+}
+.article__legende {
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  font-family: Heebo-Medium, sans-serif;
+  color: #595959;
+}
+
+.enveloppe-video {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.enveloppe-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/** Pied de page **/
+/* ===========================
+
+PIED DE PAGE
+
+=========================== */
+/* Styles généraux, version 2021.2 */
+.pieddepage {
+  background-color: #005A32;
+  margin-top: 5rem;
+  /* Bloc Infolettre */
+  /* Positionnement de la navigation */
+  /* Réseaux sociaux */
+}
+.pieddepage__formulaire {
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 600px) {
+  .pieddepage__formulaire {
+    grid-column: span 12;
+  }
+}
+@media screen and (min-width: 700px) {
+  .pieddepage__formulaire {
+    grid-column: 2/12;
+  }
+}
+@media screen and (min-width: 900px) {
+  .pieddepage__formulaire {
+    grid-column: 3/11;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pieddepage__formulaire {
+    grid-column: 4/10;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .pieddepage__formulaire {
+    grid-column: 5/9;
+  }
+}
+.pieddepage__infolettre {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding: 5rem 3rem;
+  color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #E7E7E7 100%);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 600px) {
+  .pieddepage__infolettre {
+    display: grid;
+    grid-template-columns: minmax(auto, 1920px);
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 600px) and (min-width: 1980px) {
+  .pieddepage__infolettre {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .pieddepage__infolettre {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.pieddepage__titreinfolettre {
+  color: #333333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 600px) {
+  .pieddepage__titreinfolettre {
+    grid-column: span 12;
+  }
+}
+.pieddepage__label {
+  display: block;
+  color: #000;
+}
+.pieddepage__champ {
+  font-size: 2rem;
+  padding: 0 1rem;
+  vertical-align: middle;
+  width: 100%;
+  height: 5rem;
+  border: none;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .pieddepage__champ {
+    width: 70%;
+    border-radius: 1rem 0 0 1rem;
+  }
+}
+.pieddepage__bouton {
+  background-color: #006437;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  font-family: Heebo-Bold, sans-serif;
+  font-size: 1.75rem;
+  margin: 1rem 0;
+  border: none;
+  height: 5rem;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .pieddepage__bouton {
+    width: 30%;
+    margin-left: -0.4rem;
+    border-radius: 0 1rem 1rem 0;
+  }
+}
+.pieddepage__conteneur {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media (min-width: 600px) {
+  .pieddepage__conteneur {
+    display: grid;
+    grid-template-columns: minmax(auto, 1920px);
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 600px) and (min-width: 1980px) {
+  .pieddepage__conteneur {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.pieddepage__navigation {
+  padding: 5rem 0 2rem 0;
+}
+@media (min-width: 600px) {
+  .pieddepage__navigation {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.pieddepage__titre {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: Heebo-Medium, sans-serif;
+}
+.pieddepage__lien {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: Heebo-Medium, sans-serif;
+}
+.pieddepage__titre:link, .pieddepage__titre:visited {
+  transition: all, 0.2s ease;
+}
+.pieddepage__titre:hover, .pieddepage__titre:active {
+  text-decoration: underline;
+}
+.pieddepage__titre.articles-recents:hover, .pieddepage__titre.articles-recents:active {
+  text-decoration: none;
+}
+.pieddepage__lien.accueil {
+  grid-column: 2/12;
+  grid-row: 1;
+  align-self: center;
+  font-family: Heebo-Bold, sans-serif;
+  font-size: 25px;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 1100px) {
+  .pieddepage__lien.accueil {
+    grid-column: 2/5;
+  }
+}
+.pieddepage__lien.accueil::before {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  vertical-align: middle;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  content: "";
+  background: url(../images-css/logo-symbole-ren.svg) no-repeat;
+}
+.pieddepage__titre.articles-recents {
+  grid-column: 2/12;
+  grid-row: 2;
+  margin-bottom: 0;
+}
+.pieddepage__articles-liste {
+  grid-column: 2/12;
+  grid-row: 3;
+  margin: 0;
+  padding: 0;
+}
+.pieddepage__articles-item {
+  list-style-type: none;
+  padding: 0.5rem 0;
+  color: #fff;
+}
+.pieddepage__articles-lien {
+  color: #fff;
+  text-decoration: none;
+}
+.pieddepage__articles-lien:link, .pieddepage__articles-lien:visited {
+  transition: all, 0.2s ease;
+}
+.pieddepage__articles-lien:hover, .pieddepage__articles-lien:active {
+  text-decoration: underline;
+}
+.pieddepage__titre.a-propos {
+  grid-column: 2/12;
+  grid-row: 4;
+}
+@media screen and (min-width: 1100px) {
+  .pieddepage__titre.a-propos {
+    grid-column: 6/8;
+    grid-row: 1;
+  }
+}
+.pieddepage__titre.contact {
+  grid-column: 2/12;
+  grid-row: 5;
+}
+@media screen and (min-width: 1100px) {
+  .pieddepage__titre.contact {
+    grid-column: 9/11;
+    grid-row: 1;
+  }
+}
+@media (min-width: 600px) {
+  .pieddepage__reseaux-sociaux-conteneur {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.pieddepage__reseaux-sociaux-liste {
+  grid-column: 2/12;
+  list-style-type: none;
+  padding: 0;
+}
+.pieddepage__reseaux-sociaux-items {
+  display: block;
+  padding-right: 3rem;
+}
+@media screen and (min-width: 800px) {
+  .pieddepage__reseaux-sociaux-items {
+    display: inline-block;
+  }
+}
+.pieddepage__reseaux-sociaux-items .icone {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../images-css/sprite-sociaux.svg) no-repeat;
+  background-size: 150px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+.pieddepage__reseaux-sociaux-items .libelle {
+  display: inline-block;
+  line-height: 5rem;
+  vertical-align: top;
+  padding-left: 1rem;
+}
+.pieddepage__reseaux-sociaux-items:first-child .icone {
+  background-position: 0 0;
+}
+.pieddepage__reseaux-sociaux-items:nth-child(2) .icone {
+  background-position: -50px 0;
+}
+.pieddepage__reseaux-sociaux-items:nth-child(3) .icone {
+  background-position: -100px 0;
+}
+.pieddepage__reseaux-sociaux-lien {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.pieddepage__reseaux-sociaux-lien:link .icone, .pieddepage__reseaux-sociaux-lien:visited .icone {
+  transition: all, 0.3s ease;
+}
+.pieddepage__reseaux-sociaux-lien:hover .icone, .pieddepage__reseaux-sociaux-lien:active .icone {
+  background-position-y: -50px;
+  border-color: #005A32;
+}
+.pieddepage__reseaux-sociaux-lien:link span, .pieddepage__reseaux-sociaux-lien:visited .libelle {
+  transition: all, 0.1s ease;
+}
+.pieddepage__reseaux-sociaux-lien:hover span, .pieddepage__reseaux-sociaux-lien:active .libelle {
+  text-decoration: underline;
+}
+
+/* Crédits */
+.credits {
+  padding: 3rem 0 5rem 0;
+  color: #fff;
+}
+@media (min-width: 600px) {
+  .credits {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.credits__conteneur {
+  grid-column: 2/12;
+}
+.credits__description {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+.credits__auteur {
+  display: block;
+  font-family: Heebo-Medium, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* Articles */
+.footer-article {
+  font-size: 0.6em;
+  background-color: #FFFFFF;
+  border-top: rgb(0, 155, 50) 2px solid;
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
+
+/********* LAYOUT *********/
+/** Règles de style générales **/
+/* ===========================
+
+STYLES GÉNÉRAUX
+
+=========================== */
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+p:first-child {
+  font-family: Heebo-Medium, sans-serif;
+}
+
+.contenu {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media (min-width: 600px) {
+  .contenu {
+    display: grid;
+    grid-template-columns: minmax(auto, 1920px);
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 600px) and (min-width: 1980px) {
+  .contenu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .contenu__conteneurRangeeGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.contenu__conteneurRangeeGrid > * {
+  grid-column: 2/12;
+}
+
+/** Accueil **/
+/* ===========================
+
+PAGES
+
+=========================== */
+/* ACCUEIL */
+/* Bloc titre */
+.bloc-titre {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  text-align: center;
+}
+
+.bloc-titre h1 {
+  font-size: 0;
+}
+
+.logo {
+  position: relative;
+  width: 30rem;
+  margin-left: 0.5rem;
+  top: -1rem;
+}
+@media screen and (min-width: 600px) {
+  .logo {
+    top: -2rem;
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .logo {
+    top: 0rem;
+    width: 40rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .logo {
+    top: 4rem;
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .logo {
+    width: 60rem;
+    top: 10rem;
+  }
+}
+
+.slogan {
+  position: relative;
+  color: white;
+  font-size: 2.2rem;
+  text-shadow: #333333 3px 3px 10px;
+  top: -2rem;
+}
+@media screen and (min-width: 600px) {
+  .slogan {
+    font-size: 2.6rem;
+    top: -3rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .slogan {
+    font-size: 3rem;
+    top: -1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .slogan {
+    font-size: 3.75rem;
+    top: 2rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .slogan {
+    font-size: 4.5rem;
+    top: 8rem;
+  }
+}
+
+.header-accueil {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding: 0;
+}
+@media (min-width: 600px) {
+  .header-accueil {
+    display: grid;
+    grid-template-columns: minmax(auto, 1920px);
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding: 0;
+  }
+}
+@media (min-width: 600px) and (min-width: 1980px) {
+  .header-accueil {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.header-accueil picture img {
+  width: 100%;
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 700px) {
+  .header-accueil picture img {
+    height: 45rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .header-accueil picture img {
+    height: 60rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .header-accueil picture img {
+    height: 80rem;
+  }
+}
+@media screen and (min-width: 1935px) {
+  .header-accueil picture img {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+/* Section Articles */
+.accueil .articles {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  top: -10rem;
+}
+@media (min-width: 600px) {
+  .accueil .articles {
+    display: grid;
+    grid-template-columns: minmax(auto, 1920px);
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 600px) and (min-width: 1980px) {
+  .accueil .articles {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1050px) and (min-width: 600px) {
+  .accueil .articles__conteneurDateEdition {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.accueil .articles__dateEdition {
+  grid-column: 2/12;
+  color: #fff;
+  text-align: center;
+  font-family: Heebo-Medium, sans-serif;
+  background-color: #006437;
+  margin: 0 -3rem;
+  padding: 2rem 0 5rem 0;
+}
+@media screen and (min-width: 1050px) {
+  .accueil .articles__dateEdition {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+.accueil .articles__conteneur {
+  position: relative;
+  top: -3.5rem;
+}
+@media screen and (min-width: 800px) {
+  .accueil .articles__conteneur {
+    top: -3.5rem;
+  }
+}
+@media screen and (min-width: 800px) and (min-width: 600px) {
+  .accueil .articles__conteneur {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .accueil .articles__conteneurRangee {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .accueil .articles__conteneurRangee {
+    grid-column: 2/12;
+  }
+}
+.accueil .articles .article {
+  grid-column: span 5;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 0;
+  text-decoration: none;
+}
+.accueil .articles .article__image {
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.accueil .articles .article__categorie {
+  text-align: left;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+.accueil .articles .article__titre {
+  text-decoration: none;
+}
+.accueil .articles .article:link .article__titre, .accueil .articles .article:visited .article__titre {
+  color: #FFFFFF;
+  transition: color, 0.2s ease-in-out;
+}
+.accueil .articles .article:hover .article__titre, .accueil .articles .article:active .article__titre {
+  text-shadow: #00b300 0 0 10px;
+  text-decoration: underline;
+}
+.accueil .articles .article:link .article__picture, .accueil .articles .article:visited .article__picture {
+  transition: all, 0.2s ease-in-out;
+}
+.accueil .articles .article:hover .article__picture, .accueil .articles .article:active .article__picture {
+  filter: brightness(110%);
+}
+.accueil .articles .article__figure {
+  margin: 0 0 2rem 0;
+}
+@media screen and (min-width: 800px) {
+  .accueil .articles .article__figure {
+    margin: 0;
+  }
+}
+.accueil .articles .article__infos {
+  background-color: #006437;
+  padding: 2rem 4rem 3rem 3rem;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 1rem 1rem;
+}
+@media screen and (min-width: 800px) {
+  .accueil .articles .article__infos {
+    height: 17rem;
+  }
+}
+.accueil .articles .article__titre {
+  font-size: 2.5rem;
+  line-height: 120%;
+  margin: 0;
+  text-transform: none;
+}
+@media screen and (min-width: 850px) {
+  .accueil .articles .article__titre {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .accueil .articles .article__titre {
+    font-size: 2.9rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .accueil .articles .article__titre {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .accueil .articles .article__titre {
+    font-size: 3.5rem;
+  }
+}
+
+/* Pied de page */
+.accueil .pieddepage {
+  margin-top: -5rem;
+}
+
+/** Contact **/
+/**
+* @author Gabriel Caron - 1861095@csfoy.ca
+* @version 2021.1
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* PAGE CONTACT
+**/
+.contact .formulaire > * {
+  grid-column: 3/11;
+}
+@media screen and (min-width: 900px) {
+  .contact .formulaire > * {
+    grid-column: 5/9;
+  }
+}
+.contact .formulaire fieldset {
+  margin: 3rem 0;
+  padding: 0;
+  border: none;
+}
+.contact .formulaire legend {
+  width: 100%;
+  font-family: Heebo-Bold, sans-serif;
+  line-height: 110%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #006437;
+  border-bottom: solid 0.3rem rgba(0, 0, 0, 0.2);
+}
+.contact .formulaire select {
+  display: block;
+  width: 70%;
+}
+.contact .formulaire input {
+  width: 100%;
+  height: 4rem;
+  vertical-align: middle;
+}
+.contact .formulaire input.petit {
+  display: block;
+  width: 50%;
+}
+.contact .formulaire input.moyen {
+  display: block;
+  width: 70%;
+}
+.contact .formulaire input[type=checkbox] {
+  width: initial;
+  margin: 0 0.5rem 0.3rem 0;
+}
+.contact .formulaire input[type=file] {
+  margin-top: 2rem;
+}
+.contact .formulaire input[type=submit] {
+  background-color: #006437;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  font-family: Heebo-Bold, sans-serif;
+  font-size: 1.75rem;
+  border: none;
+  height: 5rem;
+}
+.contact .formulaire textarea {
+  width: 100%;
+  height: 20rem;
+  margin-top: 2rem;
+}
+.contact .formulaire input[type=radio] {
+  width: initial;
+  margin: 0 0.5rem 0.3rem 0;
+}/*# sourceMappingURL=styles.css.map */
