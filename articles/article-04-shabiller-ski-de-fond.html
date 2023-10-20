@@ -1,267 +1,526 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta name="description" content="Boréal est le magazine par excellence des amateurs de plein-air.">
-	<meta name="password"
-		  content="Boréal Magazine, plein-air, randonnée pédestre, fat bike, ski, ski de fond, randonnée au Québec, camping, camping hivernal">
-	<meta name="author" content="Gabriel Caron">
-	<link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
-	<link rel="icon" type="image/gif" href="../images-html/favicon.png">
-	<title>Comment s’habiller pour faire du ski de fond | Boréal Magazine</title>
-</head>
-<body>
-<header class="entete">
-    <nav class="menu-principal">
-        <ul class="menu-principal__liste">
-            <li class="menu-principal__item"><a href="../index.html" class="menu-principal__lien accueil">Boréal Magazine</a></li>
-            <li class="menu-principal__item articles-recents"><a href="#" class="menu-principal__lien page-courante">Articles</a>
-                <ul class="menu-principal__sous-menu-liste">
-                    <li class="menu-principal__sous-menu-item"><a href="article-01-camping-hiver-trucs.html" class="menu-principal__sous-menu-lien">Camping d’hiver&nbsp;: 26&nbsp;trucs pour débutants</a>
-                    </li>
-                    <li class="menu-principal__sous-menu-item"><a href="article-02-bottes-raquettes.html" class="menu-principal__sous-menu-lien">Quelles bottes choisir pour faire de la raquette&nbsp;?</a>
-                    </li>
-                    <li class="menu-principal__sous-menu-item"><a href="article-03-sentiers-raquettes-quebec.html" class="menu-principal__sous-menu-lien">10 sentiers de raquettes pour tous au
-                        Québec</a></li>
-                    <li class="menu-principal__sous-menu-item"><a href="article-04-shabiller-ski-de-fond.html" class="menu-principal__sous-menu-lien">Comment s'habiller pour faire du ski de fond&nbsp;?</a></li>
-                    <li class="menu-principal__sous-menu-item"><a href="article-05-skis-parfaits.html" class="menu-principal__sous-menu-lien">Quels sont les skis parfaits pour vous&nbsp;?</a></li>
-                    <li class="menu-principal__sous-menu-item"><a href="article-06-endroits-ski-de-fond.html" class="menu-principal__sous-menu-lien">Les meilleurs endroits pour faire du ski de
-                        fond</a></li>
-                    <li class="menu-principal__sous-menu-item"><a href="article-07-sentiers-difficiles-quebec.html" class="menu-principal__sous-menu-lien">5 sentiers difficiles au Québec pour
-                        randonneurs aguerris</a></li>
-                    <li class="menu-principal__sous-menu-item"><a href="article-08-fat-biking-devez-savoir.html" class="menu-principal__sous-menu-lien">Fat biking&nbsp;: ce que vous devez savoir sur le
-                        vélo tout terrain</a></li>
-                </ul>
-            </li>
-            <li class="menu-principal__item"><a href="a-propos.html" class="menu-principal__lien">À&nbsp;propos</a></li>
-            <li class="menu-principal__item"><a href="contact.html" class="menu-principal__lien">Contact</a></li>
-        </ul>
-    </nav>
-	<picture class="entete__picture">
-		<!-- Image pour mobile -->
-		<source media="(max-width: 600px)"
-				srcset="../images-html/article-04-entete-600.jpg 1x, ../images-html/article-04-entete-1200.jpg 2x">
-		<!-- Image pour tablette -->
-		<source media="(max-width: 1000px)"
-				srcset="../images-html/article-04-entete-1000.jpg 1x, ../images-html/article-04-entete-2000.jpg 2x">
-		<!-- Image pour poste de table et image par défaut -->
-		<img src="../images-html/article-04-entete-2000.jpg"
-			 srcset="../images-html/article-04-entete-2000.jpg 1x, ../images-html/article-04-entete-3840.jpg 2x"
-			 alt="">
-	</picture>
-</header>
-<article class="article">
-	<header class="article__header">
-		<p class="article__categorie">Ski de fond</p>
-		<h1>Comment s’habiller pour faire du ski de fond</h1>
-		<p class="article__auteur">Source: <a href="http://altitude-blog.com/fr/shabiller-ski-de-fond/">Altitude
-			Sports (blogue)</a></p>
-	</header>
-	<div class="article__contenu">
-		<p>S’habiller pour le ski de fond est un art qui peut sembler complexe, mais qui aura une grande influence sur
-			votre appréciation personnelle de l’expérience. Que vous chaussiez vos skis pour vous déplacer sur les
-			terrains enneigés ou par plus plaisir hivernal, une chose est certaine&thinsp;: c’est une activité qui
-			requiert beaucoup d’efforts cardiovasculaires. Nul besoin de remonte-siège ou de motoneiges pour atteindre
-			votre destination initiale, c’est votre corps qui fera tout le travail et malgré les températures basses, il
-			produira énormément de chaleur.</p>
-		<p>Pour vous, il est donc nécessaire d’être vêtu adéquatement afin d’éviter d’avoir froid et de risquer
-			l’hypothermie. Le secret pour une sortie de ski de fond agréable&thinsp;? Une bonne superposition des
-			couches et surtout, éviter les vêtements qui enfermeront la sueur contre la peau.</p>
-		<figure class="article__figure">
-			<picture class="article__picture">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Boréal est le magazine par excellence des amateurs de plein-air."
+		/>
+		<meta
+			name="password"
+			content="Boréal Magazine, plein-air, randonnée pédestre, fat bike, ski, ski de fond, randonnée au Québec, camping, camping hivernal"
+		/>
+		<meta name="author" content="Gabriel Caron" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="../liaisons/css/styles.css"
+		/>
+		<link
+			rel="icon"
+			type="image/gif"
+			href="../liaisons/images-html/favicon.png"
+		/>
+		<title>
+			Comment s’habiller pour faire du ski de fond | Boréal Magazine
+		</title>
+	</head>
+	<body>
+		<header class="entete">
+			<nav class="menu-principal">
+				<ul class="menu-principal__liste">
+					<li class="menu-principal__item">
+						<a href="../index.html" class="menu-principal__lien accueil"
+							>Boréal Magazine</a
+						>
+					</li>
+					<li class="menu-principal__item articles-recents">
+						<a href="#" class="menu-principal__lien page-courante">Articles</a>
+						<ul class="menu-principal__sous-menu-liste">
+							<li class="menu-principal__sous-menu-item">
+								<a
+									href="article-01-camping-hiver-trucs.html"
+									class="menu-principal__sous-menu-lien"
+									>Camping d’hiver&nbsp;: 26&nbsp;trucs pour débutants</a
+								>
+							</li>
+							<li class="menu-principal__sous-menu-item">
+								<a
+									href="article-02-bottes-raquettes.html"
+									class="menu-principal__sous-menu-lien"
+									>Quelles bottes choisir pour faire de la raquette&nbsp;?</a
+								>
+							</li>
+							<li class="menu-principal__sous-menu-item">
+								<a
+									href="article-03-sentiers-raquettes-quebec.html"
+									class="menu-principal__sous-menu-lien"
+									>10 sentiers de raquettes pour tous au Québec</a
+								>
+							</li>
+							<li class="menu-principal__sous-menu-item">
+								<a
+									href="article-04-shabiller-ski-de-fond.html"
+									class="menu-principal__sous-menu-lien"
+									>Comment s'habiller pour faire du ski de fond&nbsp;?</a
+								>
+							</li>
+							<li class="menu-principal__sous-menu-item">
+								<a
+									href="article-05-skis-parfaits.html"
+									class="menu-principal__sous-menu-lien"
+									>Quels sont les skis parfaits pour vous&nbsp;?</a
+								>
+							</li>
+							<li class="menu-principal__sous-menu-item">
+								<a
+									href="article-06-endroits-ski-de-fond.html"
+									class="menu-principal__sous-menu-lien"
+									>Les meilleurs endroits pour faire du ski de fond</a
+								>
+							</li>
+							<li class="menu-principal__sous-menu-item">
+								<a
+									href="article-07-sentiers-difficiles-quebec.html"
+									class="menu-principal__sous-menu-lien"
+									>5 sentiers difficiles au Québec pour randonneurs aguerris</a
+								>
+							</li>
+							<li class="menu-principal__sous-menu-item">
+								<a
+									href="article-08-fat-biking-devez-savoir.html"
+									class="menu-principal__sous-menu-lien"
+									>Fat biking&nbsp;: ce que vous devez savoir sur le vélo tout
+									terrain</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-principal__item">
+						<a href="a-propos.html" class="menu-principal__lien"
+							>À&nbsp;propos</a
+						>
+					</li>
+					<li class="menu-principal__item">
+						<a href="contact.html" class="menu-principal__lien">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<picture class="entete__picture">
 				<!-- Image pour mobile -->
-				<source media="(max-width: 600px)"
-						srcset="../images-html/article-04-contenu-01-600.jpg 1x, ../images-html/article-04-contenu-01-1200.jpg 2x">
+				<source
+					media="(max-width: 600px)"
+					srcset="
+						../liaisons/images-html/article-04-entete-600.jpg  1x,
+						../liaisons/images-html/article-04-entete-1200.jpg 2x
+					"
+				/>
 				<!-- Image pour tablette -->
-				<source media="(max-width: 1000px)"
-						srcset="../images-html/article-04-contenu-01-1000.jpg 1x, ../images-html/article-04-contenu-01-2000.jpg 2x">
+				<source
+					media="(max-width: 1000px)"
+					srcset="
+						../liaisons/images-html/article-04-entete-1000.jpg 1x,
+						../liaisons/images-html/article-04-entete-2000.jpg 2x
+					"
+				/>
 				<!-- Image pour poste de table et image par défaut -->
-				<img src="../images-html/article-04-contenu-01-2000.jpg"
-					 srcset="../images-html/article-04-contenu-01-2000.jpg 1x, ../images-html/article-04-contenu-01-3840.jpg 2x"
-					 alt="">
+				<img
+					src="../liaisons/images-html/article-04-entete-2000.jpg"
+					srcset="
+						../liaisons/images-html/article-04-entete-2000.jpg 1x,
+						../liaisons/images-html/article-04-entete-3840.jpg 2x
+					"
+					alt=""
+				/>
 			</picture>
-			<figcaption class="article__legende">Alternez plusieurs couches de vêtements minces et confortables. L’air entre les épaisseurs
-				permet d’emprisonner votre chaleur corporelle, donc plus de couches vous porterez, plus vous serez au
-				chaud.
-			</figcaption>
-		</figure>
-		<p>Superposer les couches&thinsp;: couche de base, intermédiaire ou externe
-			L’hiver, on a tendance à vouloir se vêtir des manteaux et accessoires les plus chauds et isolants. Pourtant,
-			le ski de fond requiert une technique bien différente. Oubliez les habits de neige et les gants chauffants&thinsp;:
-			un bon système de couches est la clé pour régulariser votre température corporelle durant votre excursion en
-			ski. L’idée est simple&thinsp;: il s’agit simplement d’ajouter ou de retirer une épaisseur de vêtements afin
-			d’atteindre le niveau de confort souhaité.</p>
-		<p>Surtout, ne vous contentez pas de revêtir deux couches épaisses. Alternez plutôt plusieurs couches de
-			vêtements minces et confortables. L’air entre les épaisseurs permet d’emprisonner votre chaleur corporelle,
-			donc plus de couches vous porterez, plus vous serez au chaud.</p>
-		<h2>Couche de base</h2>
-		<p>Première étape de vêtement, c’est la couche qui sera en contacte directe avec votre peau. Il s’agit ainsi
-			d’un élément important afin de contrôler l’humidité de votre corps lorsque vous commencerez à transpirer
-			sous l’effort. De ce fait, il est conseillé de choisir un vêtement fait de laine de mérinos, par exemple le
-			chandail Oasis pour femme d’Icebreaker ou le Capilene Thermal Weight pour homme de Patagonia. Évitez
-			par-dessus tout d’utiliser des vêtements de coton comme couche de base parce que le tissu évacue très mal
-			l’humidité&thinsp;; une fois mouillé, le coton reste froid et humide très longtemps.</p>
-		<h2>Couche intermédiaire</h2>
-		<p>La couche intermédiaire fait office d’isolant et emprisonne votre chaleur corporelle. Des manteaux isolés
-			comme l’Atom SL aux vêtements en laine polaire comme le Falketing warm1 de Norrona, de nombreux vêtements
-			peuvent être utilisés pour cette étape. Encore une fois, il est recommandé d’opter pour des coupes plus
-			ajustées. Une fois votre couche de base et votre couche intermédiaire enfilées, assurez-vous simplement que
-			votre mobilité n’est pas obstruée.</p>
-		<h2>Couche externe</h2>
-		<p>Il s’agit de la couche finale, celle qui vous gardera protégé contre les éléments. En cas de tempête de
-			neige, de pluie ou de vents forts, elle est cruciale pour maintenir l’efficacité des couches du dessous.
-			Ainsi, choisissez de préférence un manteau qui soit imperméable, mais surtout respirant afin de ne pas
-			emprisonner l’humidité corporelle. Des modèles comme le Beta AR d’Arc’teryx ou le Finder de Mountain
-			Hardwear vous permettront de rester au sec sous les averses, et ce, même lorsque vous soumettrez votre corps
-			à un effort soutenu. De nombreux manteaux techniques possèdent en outre des ouvertures sous les bras ou des
-			poches en filet afin d’accroître encore davantage leur respirabilité.</p>
-		<p>Vous devriez toujours tenter d’avoir un ou deux vêtements additionnels rangés dans votre sac, prêts à être
-			enfilés au besoin. Pensez légèreté, confort et mobilité. Malgré la chaleur que procurera une superposition
-			de vêtements épais et rigides, cet assemblage finira forcément par gêner vos mouvements et nuire à votre
-			bien-être général.</p>
-		<p>Tel que mentionné précédemment, les pantalons et manteaux de neige traditionnels sont superflus en ski de
-			fond, car ils possèdent une capacité thermique non adaptée à l’exercice physique. Pour couvrir vos jambes,
-			si les températures sont clémentes, vous pouvez vous contenter d’une seule couche de base. S’il fait plus
-			frais et que le temps est mauvais, mieux vaut se vêtir de collants ou de leggings isolés, jumelés à une
-			paire de pantalons légers et imperméables.</p>
-		<p>* Pour en savoir plus sur la façon de bien choisir les couches à superposer pour une activité de plein air
-			hivernal, <a href="http://altitude-blog.com/fr/superposer-ses-vetements-pour-le-plein-air/">consulter notre
-				guide à ce sujet</a>.</p>
-		<h2>Des accessoires pour vous garder au chaud</h2>
-		<p>Une bonne partie de la chaleur corporelle est d’abord perdue par votre tête, vos mains et vos pieds. Il est
-			donc crucial de protéger adéquatement ces extrémités avant de vous lancer dans une séance de ski de
-			fond.</p>
-		<h2>Tête et oreilles</h2>
-		<p>Quand le temps est doux, une casquette à visière comme la FASTCap de Ciele fera parfaitement l’affaire. Si le
-			vent se lève et que le mercure descend, il vaut mieux choisir un chapeau couvrant les oreilles comme la
-			tuque Phase AR d’Arc’teryx, ou un simple bandeau.</p>
-		<h2>Extrémités</h2>
-		<p>Le système de la superposition des couches ne s’applique pas qu’à vos épaules, mais bien à chaque partie de
-			votre corps.</p>
-		<p>Ainsi, nul besoin de vous dire à quel point il est important de porter des gants durant vos séances de ski de
-			fond. Si le temps est particulièrement glacial et que vous avez peur d’avoir froid aux doigts, par contre,
-			n’hésitez pas à vous procurer une paire de sous-gants à enfiler à l’intérieur de vos mitaines.</p>
-		<p>Gardez par ailleurs vos pieds et vos orteils bien au chaud dans des chaussettes conçues pour le ski et les
-			activités hivernales. Le choix est vaste, mais votre meilleure option reste encore la laine de mérinos à
-			cause de ses capacités pour évacuer l’humidité et supprimer les odeurs. Puisque le ski de fond est une
-			activité intense qui vous fera beaucoup transpirer, il est avisé de combiner vos chaussettes à des sous-bas.
-			Celui-ci absorbera une grande partie de l’humidité, laissant votre pied bien au sec. Pour les températures
-			plus fraîches, il est possible d’enfiler une chaussette en laine additionnelle, mais attention à ce que vos
-			pieds ne soient pas trop à l’étroit dans vos bottes.</p>
-		<h2>Restez protégé des éléments</h2>
-		<p>Le ciel hivernal n’est peut-être pas le plus brillant, mais cela ne signifie pas pour autant que vous devriez
-			sortir sans protection.</p>
-		<p>Si vous avez décidé de profiter d’une journée ensoleillée pour sortir vos skis de fond et de partir en
-			promenade, n’oubliez pas d’appliquer de la crème solaire sur votre visage, même en plein hiver. Les rayons
-			qui se reflètent sur la neige immaculée peuvent facilement vous causer de jolis coups de soleil si vous êtes
-			imprudent&thinsp;!</p>
-		<figure class="article__figure">
-			<picture class="article__picture">
-				<!-- Image pour mobile -->
-				<source media="(max-width: 600px)"
-						srcset="../images-html/article-04-contenu-02-600.jpg 1x, ../images-html/article-04-contenu-02-1200.jpg 2x">
-				<!-- Image pour tablette -->
-				<source media="(max-width: 1000px)"
-						srcset="../images-html/article-04-contenu-02-1000.jpg 1x, ../images-html/article-04-contenu-02-2000.jpg 2x">
-				<!-- Image pour poste de table et image par défaut -->
-				<img src="../images-html/article-04-contenu-02-2000.jpg"
-					 srcset="../images-html/article-04-contenu-02-2000.jpg 1x, ../images-html/article-04-contenu-02-3840.jpg 2x"
-					 alt="">
-			</picture>
-			<figcaption class="article__legende">Si vous avez décidé de profiter d’une journée ensoleillée pour sortir vos skis de fond et de
-				partir en promenade, n’oubliez pas d’appliquer de la crème solaire sur votre visage, même en plein
-				hiver.
-			</figcaption>
-		</figure>
-		<p>J’essaie également de toujours avoir un baume à lèvres dans la poche de mon manteau quand je sors à
-			l’extérieur en hiver. Le froid a tendance à assécher les lèvres jusqu’à les faire gercer, ce qui est
-			particulièrement douloureux. Certains baumes à lèvres sont équipés d’une protection solaire en bonus, et
-			même parfois d’une touche d’aloès&thinsp;! Rien de mieux pour entamer une journée de ski le sourire aux
-			lèvres.</p>
-		<p>Durant les journées particulièrement ensoleillées, il peut être utile de porter une paire de lunettes de
-			soleil afin de ne pas être ébloui par la neige environnante. En plus d’éviter à vos yeux de se fatiguer,
-			elles feront office de protection contre le vent et les flocons. N’oubliez simplement pas de les maintenir
-			bien en place à l’air d’un cordon afin de ne pas les perdre durant vos excursions en ski.</p>
-	</div>
-</article>
-<footer class="pieddepage">
-	<div class="pieddepage__infolettre">
-		<h2 class="pieddepage__titreinfolettre">Abonnez-vous à notre infolettre</h2>
-		<form class="pieddepage__formulaire" action="">
-			<label class="pieddepage__label" for="courriel">Courriel</label>
-			<input class="pieddepage__champ" type="email" autocomplete="email" id="courriel">
-			<input class="pieddepage__bouton" type="submit" value="S'abonner">
-		</form>
-	</div>
-	<div class="pieddepage__conteneur">
-		<nav class="pieddepage__navigation">
-			<a href="index.html" class="pieddepage__lien pieddepage__titre accueil" aria-label="Revenir à l'accueil">Boréal
-				Magazine</a>
-			<h2 class="pieddepage__titre articles-recents">Dans notre dernière édition</h2>
-			<ul class="pieddepage__articles-liste">
-				<li class="pieddepage__articles-item"><a href="article-01-camping-hiver-trucs.html"
-														 class="pieddepage__articles-lien">Camping d’hiver&nbsp;: 26&nbsp;trucs pour débutants</a>
-				</li>
-				<li class="pieddepage__articles-item"><a href="article-02-bottes-raquettes.html"
-														 class="pieddepage__articles-lien">Quelles bottes choisir pour faire de la raquette&nbsp;?</a>
-				</li>
-				<li class="pieddepage__articles-item"><a href="article-03-sentiers-raquettes-quebec.html"
-														 class="pieddepage__articles-lien">10 sentiers de raquettes
-					pour tous au
-					Québec</a></li>
-				<li class="pieddepage__articles-item"><a href="article-04-shabiller-ski-de-fond.html"
-														 class="pieddepage__articles-lien">Comment s'habiller pour
-					faire du ski de fond&nbsp;?</a></li>
-				<li class="pieddepage__articles-item"><a href="article-05-skis-parfaits.html"
-														 class="pieddepage__articles-lien">Quels sont les skis
-					parfaits pour vous&nbsp;?</a></li>
-				<li class="pieddepage__articles-item"><a href="article-06-endroits-ski-de-fond.html"
-														 class="pieddepage__articles-lien">Les meilleurs endroits
-					pour faire du ski de
-					fond</a></li>
-				<li class="pieddepage__articles-item"><a href="article-07-sentiers-difficiles-quebec.html"
-														 class="pieddepage__articles-lien">5 sentiers difficiles au
-					Québec pour
-					randonneurs aguerris</a></li>
-				<li class="pieddepage__articles-item"><a href="article-08-fat-biking-devez-savoir.html"
-														 class="pieddepage__articles-lien">Fat biking&nbsp;: ce que vous
-					devez savoir sur le
-					vélo tout terrain</a></li>
-			</ul>
-			<h2 class="pieddepage__titre a-propos"><a href="a-propos.html" class="pieddepage__lien">À&nbsp;propos</a></h2>
-			<h2 class="pieddepage__titre contact"><a href="contact.html" class="pieddepage__lien">Contact</a></h2>
-		</nav>
-		<div class="pieddepage__reseaux-sociaux-conteneur">
-			<ul class="pieddepage__reseaux-sociaux-liste">
-				<li class="pieddepage__reseaux-sociaux-items">
-					<a href="https://www.facebook.com"
-					   class="pieddepage__reseaux-sociaux-lien">
-						<div class="icone"></div>
-						<span class="libelle">Facebook</span>
-					</a>
-				</li>
-				<li class="pieddepage__reseaux-sociaux-items">
-					<a href="https://www.twitter.com"
-					   class="pieddepage__reseaux-sociaux-lien">
-						<div class="icone"></div>
-						<span class="libelle">Twitter</span>
-					</a>
-				</li>
-				<li class="pieddepage__reseaux-sociaux-items">
-					<a href="https://www.instagram.com"
-					   class="pieddepage__reseaux-sociaux-lien">
-						<div class="icone"></div>
-						<span class="libelle">Instagram</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="credits">
-			<small class="credits__conteneur"><span class="credits__description">Ce projet a été réalisé à l'automne 2018 dans le cadre du cours Intégration I en Techniques d'intégration multimédia au Cégep de Sainte-Foy.</span><span
-					class="credits__auteur">© 2018, Gabriel Caron. Tous droits réservés.</span></small>
-		</div>
-	</div>
-</footer>
-</body>
+		</header>
+		<article class="article">
+			<header class="article__header">
+				<p class="article__categorie">Ski de fond</p>
+				<h1>Comment s’habiller pour faire du ski de fond</h1>
+				<p class="article__auteur">
+					Source:
+					<a href="http://altitude-blog.com/fr/shabiller-ski-de-fond/"
+						>Altitude Sports (blogue)</a
+					>
+				</p>
+			</header>
+			<div class="article__contenu">
+				<p>
+					S’habiller pour le ski de fond est un art qui peut sembler complexe,
+					mais qui aura une grande influence sur votre appréciation personnelle
+					de l’expérience. Que vous chaussiez vos skis pour vous déplacer sur
+					les terrains enneigés ou par plus plaisir hivernal, une chose est
+					certaine&thinsp;: c’est une activité qui requiert beaucoup d’efforts
+					cardiovasculaires. Nul besoin de remonte-siège ou de motoneiges pour
+					atteindre votre destination initiale, c’est votre corps qui fera tout
+					le travail et malgré les températures basses, il produira énormément
+					de chaleur.
+				</p>
+				<p>
+					Pour vous, il est donc nécessaire d’être vêtu adéquatement afin
+					d’éviter d’avoir froid et de risquer l’hypothermie. Le secret pour une
+					sortie de ski de fond agréable&thinsp;? Une bonne superposition des
+					couches et surtout, éviter les vêtements qui enfermeront la sueur
+					contre la peau.
+				</p>
+				<figure class="article__figure">
+					<picture class="article__picture">
+						<!-- Image pour mobile -->
+						<source
+							media="(max-width: 600px)"
+							srcset="
+								../liaisons/images-html/article-04-contenu-01-600.jpg  1x,
+								../liaisons/images-html/article-04-contenu-01-1200.jpg 2x
+							"
+						/>
+						<!-- Image pour tablette -->
+						<source
+							media="(max-width: 1000px)"
+							srcset="
+								../liaisons/images-html/article-04-contenu-01-1000.jpg 1x,
+								../liaisons/images-html/article-04-contenu-01-2000.jpg 2x
+							"
+						/>
+						<!-- Image pour poste de table et image par défaut -->
+						<img
+							src="../liaisons/images-html/article-04-contenu-01-2000.jpg"
+							srcset="
+								../liaisons/images-html/article-04-contenu-01-2000.jpg 1x,
+								../liaisons/images-html/article-04-contenu-01-3840.jpg 2x
+							"
+							alt=""
+						/>
+					</picture>
+					<figcaption class="article__legende">
+						Alternez plusieurs couches de vêtements minces et confortables.
+						L’air entre les épaisseurs permet d’emprisonner votre chaleur
+						corporelle, donc plus de couches vous porterez, plus vous serez au
+						chaud.
+					</figcaption>
+				</figure>
+				<p>
+					Superposer les couches&thinsp;: couche de base, intermédiaire ou
+					externe L’hiver, on a tendance à vouloir se vêtir des manteaux et
+					accessoires les plus chauds et isolants. Pourtant, le ski de fond
+					requiert une technique bien différente. Oubliez les habits de neige et
+					les gants chauffants&thinsp;: un bon système de couches est la clé
+					pour régulariser votre température corporelle durant votre excursion
+					en ski. L’idée est simple&thinsp;: il s’agit simplement d’ajouter ou
+					de retirer une épaisseur de vêtements afin d’atteindre le niveau de
+					confort souhaité.
+				</p>
+				<p>
+					Surtout, ne vous contentez pas de revêtir deux couches épaisses.
+					Alternez plutôt plusieurs couches de vêtements minces et confortables.
+					L’air entre les épaisseurs permet d’emprisonner votre chaleur
+					corporelle, donc plus de couches vous porterez, plus vous serez au
+					chaud.
+				</p>
+				<h2>Couche de base</h2>
+				<p>
+					Première étape de vêtement, c’est la couche qui sera en contacte
+					directe avec votre peau. Il s’agit ainsi d’un élément important afin
+					de contrôler l’humidité de votre corps lorsque vous commencerez à
+					transpirer sous l’effort. De ce fait, il est conseillé de choisir un
+					vêtement fait de laine de mérinos, par exemple le chandail Oasis pour
+					femme d’Icebreaker ou le Capilene Thermal Weight pour homme de
+					Patagonia. Évitez par-dessus tout d’utiliser des vêtements de coton
+					comme couche de base parce que le tissu évacue très mal
+					l’humidité&thinsp;; une fois mouillé, le coton reste froid et humide
+					très longtemps.
+				</p>
+				<h2>Couche intermédiaire</h2>
+				<p>
+					La couche intermédiaire fait office d’isolant et emprisonne votre
+					chaleur corporelle. Des manteaux isolés comme l’Atom SL aux vêtements
+					en laine polaire comme le Falketing warm1 de Norrona, de nombreux
+					vêtements peuvent être utilisés pour cette étape. Encore une fois, il
+					est recommandé d’opter pour des coupes plus ajustées. Une fois votre
+					couche de base et votre couche intermédiaire enfilées, assurez-vous
+					simplement que votre mobilité n’est pas obstruée.
+				</p>
+				<h2>Couche externe</h2>
+				<p>
+					Il s’agit de la couche finale, celle qui vous gardera protégé contre
+					les éléments. En cas de tempête de neige, de pluie ou de vents forts,
+					elle est cruciale pour maintenir l’efficacité des couches du dessous.
+					Ainsi, choisissez de préférence un manteau qui soit imperméable, mais
+					surtout respirant afin de ne pas emprisonner l’humidité corporelle.
+					Des modèles comme le Beta AR d’Arc’teryx ou le Finder de Mountain
+					Hardwear vous permettront de rester au sec sous les averses, et ce,
+					même lorsque vous soumettrez votre corps à un effort soutenu. De
+					nombreux manteaux techniques possèdent en outre des ouvertures sous
+					les bras ou des poches en filet afin d’accroître encore davantage leur
+					respirabilité.
+				</p>
+				<p>
+					Vous devriez toujours tenter d’avoir un ou deux vêtements additionnels
+					rangés dans votre sac, prêts à être enfilés au besoin. Pensez
+					légèreté, confort et mobilité. Malgré la chaleur que procurera une
+					superposition de vêtements épais et rigides, cet assemblage finira
+					forcément par gêner vos mouvements et nuire à votre bien-être général.
+				</p>
+				<p>
+					Tel que mentionné précédemment, les pantalons et manteaux de neige
+					traditionnels sont superflus en ski de fond, car ils possèdent une
+					capacité thermique non adaptée à l’exercice physique. Pour couvrir vos
+					jambes, si les températures sont clémentes, vous pouvez vous contenter
+					d’une seule couche de base. S’il fait plus frais et que le temps est
+					mauvais, mieux vaut se vêtir de collants ou de leggings isolés,
+					jumelés à une paire de pantalons légers et imperméables.
+				</p>
+				<p>
+					* Pour en savoir plus sur la façon de bien choisir les couches à
+					superposer pour une activité de plein air hivernal,
+					<a
+						href="http://altitude-blog.com/fr/superposer-ses-vetements-pour-le-plein-air/"
+						>consulter notre guide à ce sujet</a
+					>.
+				</p>
+				<h2>Des accessoires pour vous garder au chaud</h2>
+				<p>
+					Une bonne partie de la chaleur corporelle est d’abord perdue par votre
+					tête, vos mains et vos pieds. Il est donc crucial de protéger
+					adéquatement ces extrémités avant de vous lancer dans une séance de
+					ski de fond.
+				</p>
+				<h2>Tête et oreilles</h2>
+				<p>
+					Quand le temps est doux, une casquette à visière comme la FASTCap de
+					Ciele fera parfaitement l’affaire. Si le vent se lève et que le
+					mercure descend, il vaut mieux choisir un chapeau couvrant les
+					oreilles comme la tuque Phase AR d’Arc’teryx, ou un simple bandeau.
+				</p>
+				<h2>Extrémités</h2>
+				<p>
+					Le système de la superposition des couches ne s’applique pas qu’à vos
+					épaules, mais bien à chaque partie de votre corps.
+				</p>
+				<p>
+					Ainsi, nul besoin de vous dire à quel point il est important de porter
+					des gants durant vos séances de ski de fond. Si le temps est
+					particulièrement glacial et que vous avez peur d’avoir froid aux
+					doigts, par contre, n’hésitez pas à vous procurer une paire de
+					sous-gants à enfiler à l’intérieur de vos mitaines.
+				</p>
+				<p>
+					Gardez par ailleurs vos pieds et vos orteils bien au chaud dans des
+					chaussettes conçues pour le ski et les activités hivernales. Le choix
+					est vaste, mais votre meilleure option reste encore la laine de
+					mérinos à cause de ses capacités pour évacuer l’humidité et supprimer
+					les odeurs. Puisque le ski de fond est une activité intense qui vous
+					fera beaucoup transpirer, il est avisé de combiner vos chaussettes à
+					des sous-bas. Celui-ci absorbera une grande partie de l’humidité,
+					laissant votre pied bien au sec. Pour les températures plus fraîches,
+					il est possible d’enfiler une chaussette en laine additionnelle, mais
+					attention à ce que vos pieds ne soient pas trop à l’étroit dans vos
+					bottes.
+				</p>
+				<h2>Restez protégé des éléments</h2>
+				<p>
+					Le ciel hivernal n’est peut-être pas le plus brillant, mais cela ne
+					signifie pas pour autant que vous devriez sortir sans protection.
+				</p>
+				<p>
+					Si vous avez décidé de profiter d’une journée ensoleillée pour sortir
+					vos skis de fond et de partir en promenade, n’oubliez pas d’appliquer
+					de la crème solaire sur votre visage, même en plein hiver. Les rayons
+					qui se reflètent sur la neige immaculée peuvent facilement vous causer
+					de jolis coups de soleil si vous êtes imprudent&thinsp;!
+				</p>
+				<figure class="article__figure">
+					<picture class="article__picture">
+						<!-- Image pour mobile -->
+						<source
+							media="(max-width: 600px)"
+							srcset="
+								../liaisons/images-html/article-04-contenu-02-600.jpg  1x,
+								../liaisons/images-html/article-04-contenu-02-1200.jpg 2x
+							"
+						/>
+						<!-- Image pour tablette -->
+						<source
+							media="(max-width: 1000px)"
+							srcset="
+								../liaisons/images-html/article-04-contenu-02-1000.jpg 1x,
+								../liaisons/images-html/article-04-contenu-02-2000.jpg 2x
+							"
+						/>
+						<!-- Image pour poste de table et image par défaut -->
+						<img
+							src="../liaisons/images-html/article-04-contenu-02-2000.jpg"
+							srcset="
+								../liaisons/images-html/article-04-contenu-02-2000.jpg 1x,
+								../liaisons/images-html/article-04-contenu-02-3840.jpg 2x
+							"
+							alt=""
+						/>
+					</picture>
+					<figcaption class="article__legende">
+						Si vous avez décidé de profiter d’une journée ensoleillée pour
+						sortir vos skis de fond et de partir en promenade, n’oubliez pas
+						d’appliquer de la crème solaire sur votre visage, même en plein
+						hiver.
+					</figcaption>
+				</figure>
+				<p>
+					J’essaie également de toujours avoir un baume à lèvres dans la poche
+					de mon manteau quand je sors à l’extérieur en hiver. Le froid a
+					tendance à assécher les lèvres jusqu’à les faire gercer, ce qui est
+					particulièrement douloureux. Certains baumes à lèvres sont équipés
+					d’une protection solaire en bonus, et même parfois d’une touche
+					d’aloès&thinsp;! Rien de mieux pour entamer une journée de ski le
+					sourire aux lèvres.
+				</p>
+				<p>
+					Durant les journées particulièrement ensoleillées, il peut être utile
+					de porter une paire de lunettes de soleil afin de ne pas être ébloui
+					par la neige environnante. En plus d’éviter à vos yeux de se fatiguer,
+					elles feront office de protection contre le vent et les flocons.
+					N’oubliez simplement pas de les maintenir bien en place à l’air d’un
+					cordon afin de ne pas les perdre durant vos excursions en ski.
+				</p>
+			</div>
+		</article>
+		<footer class="pieddepage">
+			<div class="pieddepage__infolettre">
+				<h2 class="pieddepage__titreinfolettre">
+					Abonnez-vous à notre infolettre
+				</h2>
+				<form class="pieddepage__formulaire" action="">
+					<label class="pieddepage__label" for="courriel">Courriel</label>
+					<input
+						class="pieddepage__champ"
+						type="email"
+						autocomplete="email"
+						id="courriel"
+					/>
+					<input class="pieddepage__bouton" type="submit" value="S'abonner" />
+				</form>
+			</div>
+			<div class="pieddepage__conteneur">
+				<nav class="pieddepage__navigation">
+					<a
+						href="index.html"
+						class="pieddepage__lien pieddepage__titre accueil"
+						aria-label="Revenir à l'accueil"
+						>Boréal Magazine</a
+					>
+					<h2 class="pieddepage__titre articles-recents">
+						Dans notre dernière édition
+					</h2>
+					<ul class="pieddepage__articles-liste">
+						<li class="pieddepage__articles-item">
+							<a
+								href="article-01-camping-hiver-trucs.html"
+								class="pieddepage__articles-lien"
+								>Camping d’hiver&nbsp;: 26&nbsp;trucs pour débutants</a
+							>
+						</li>
+						<li class="pieddepage__articles-item">
+							<a
+								href="article-02-bottes-raquettes.html"
+								class="pieddepage__articles-lien"
+								>Quelles bottes choisir pour faire de la raquette&nbsp;?</a
+							>
+						</li>
+						<li class="pieddepage__articles-item">
+							<a
+								href="article-03-sentiers-raquettes-quebec.html"
+								class="pieddepage__articles-lien"
+								>10 sentiers de raquettes pour tous au Québec</a
+							>
+						</li>
+						<li class="pieddepage__articles-item">
+							<a
+								href="article-04-shabiller-ski-de-fond.html"
+								class="pieddepage__articles-lien"
+								>Comment s'habiller pour faire du ski de fond&nbsp;?</a
+							>
+						</li>
+						<li class="pieddepage__articles-item">
+							<a
+								href="article-05-skis-parfaits.html"
+								class="pieddepage__articles-lien"
+								>Quels sont les skis parfaits pour vous&nbsp;?</a
+							>
+						</li>
+						<li class="pieddepage__articles-item">
+							<a
+								href="article-06-endroits-ski-de-fond.html"
+								class="pieddepage__articles-lien"
+								>Les meilleurs endroits pour faire du ski de fond</a
+							>
+						</li>
+						<li class="pieddepage__articles-item">
+							<a
+								href="article-07-sentiers-difficiles-quebec.html"
+								class="pieddepage__articles-lien"
+								>5 sentiers difficiles au Québec pour randonneurs aguerris</a
+							>
+						</li>
+						<li class="pieddepage__articles-item">
+							<a
+								href="article-08-fat-biking-devez-savoir.html"
+								class="pieddepage__articles-lien"
+								>Fat biking&nbsp;: ce que vous devez savoir sur le vélo tout
+								terrain</a
+							>
+						</li>
+					</ul>
+					<h2 class="pieddepage__titre a-propos">
+						<a href="a-propos.html" class="pieddepage__lien">À&nbsp;propos</a>
+					</h2>
+					<h2 class="pieddepage__titre contact">
+						<a href="contact.html" class="pieddepage__lien">Contact</a>
+					</h2>
+				</nav>
+				<div class="pieddepage__reseaux-sociaux-conteneur">
+					<ul class="pieddepage__reseaux-sociaux-liste">
+						<li class="pieddepage__reseaux-sociaux-items">
+							<a
+								href="https://www.facebook.com"
+								class="pieddepage__reseaux-sociaux-lien"
+							>
+								<div class="icone"></div>
+								<span class="libelle">Facebook</span>
+							</a>
+						</li>
+						<li class="pieddepage__reseaux-sociaux-items">
+							<a
+								href="https://www.twitter.com"
+								class="pieddepage__reseaux-sociaux-lien"
+							>
+								<div class="icone"></div>
+								<span class="libelle">Twitter</span>
+							</a>
+						</li>
+						<li class="pieddepage__reseaux-sociaux-items">
+							<a
+								href="https://www.instagram.com"
+								class="pieddepage__reseaux-sociaux-lien"
+							>
+								<div class="icone"></div>
+								<span class="libelle">Instagram</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="credits">
+					<small class="credits__conteneur"
+						><span class="credits__description"
+							>Ce projet a été réalisé à l'automne 2018 dans le cadre du cours
+							Intégration I en Techniques d'intégration multimédia au Cégep de
+							Sainte-Foy.</span
+						><span class="credits__auteur"
+							>© 2018, Gabriel Caron. Tous droits réservés.</span
+						></small
+					>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
