@@ -686,6 +686,9 @@ header {
 .menu-principal__item:hover .menu-principal__sous-menu-liste {
   display: block;
 }
+.menu-principal__item:focus-within .menu-principal__sous-menu-liste {
+  display: block;
+}
 .menu-principal__lien {
   font-family: Heebo-Medium, sans-serif;
   font-size: 2rem;
