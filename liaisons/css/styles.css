@@ -722,8 +722,12 @@ header {
   transition: none, 0.3s ease-in-out;
 }
 .menu-principal__lien:hover, .menu-principal__lien:active {
-  text-shadow: #33ff33 0 0 10px;
   border-bottom: #ffffff 4px solid;
+}
+.menu-principal__bouton {
+  background-color: transparent;
+  color: #fff;
+  border: none;
 }
 .menu-principal__sous-menu-liste {
   display: none;
@@ -748,7 +752,6 @@ header {
   color: #ffffff;
 }
 .menu-principal__sous-menu-lien:hover, .menu-principal__sous-menu-lien:active {
-  text-shadow: #33ff33 0 0 10px;
   text-decoration: underline;
 }
 
@@ -1530,7 +1533,6 @@ PAGES
   transition: color, 0.2s ease-in-out;
 }
 .accueil .articles .article:hover .article__titre, .accueil .articles .article:active .article__titre {
-  text-shadow: #00b300 0 0 10px;
   text-decoration: underline;
 }
 .accueil .articles .article:link .article__picture, .accueil .articles .article:visited .article__picture {

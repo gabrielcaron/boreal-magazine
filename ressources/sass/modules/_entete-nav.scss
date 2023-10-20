@@ -76,9 +76,14 @@ header {
 
 		&:hover,
 		&:active {
-			text-shadow: #33ff33 0 0 10px;
 			border-bottom: #ffffff 4px solid;
 		}
+	}
+
+	&__bouton {
+		background-color: transparent;
+		color: $blanc;
+		border: none;
 	}
 
 	&__sous-menu-liste {
@@ -109,7 +114,6 @@ header {
 
 	&__sous-menu-lien:hover,
 	&__sous-menu-lien:active {
-		text-shadow: #33ff33 0 0 10px;
 		text-decoration: underline;
 	}
 }
