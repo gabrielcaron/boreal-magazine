@@ -1,5 +1,5 @@
 // header {
-// 	// position: relative;
+// 	position: relative;
 // }
 
 /* Barre de navigation principale */
@@ -8,17 +8,6 @@
 	width: 100%;
 	z-index: 100;
 	background-color: $vertForet;
-
-	.accueil::before {
-		display: inline-block;
-		width: 3.5rem;
-		height: 2.3rem;
-		vertical-align: middle;
-		margin-top: 0.5rem;
-		margin-right: 1rem;
-		content: "";
-		background: url(../images-css/logo-symbole-ren.svg) no-repeat;
-	}
 
 	&__liste {
 		padding: 0;
@@ -32,7 +21,12 @@
 	}
 
 	&__item {
-		display: inline;
+		display: inline-block;
+		width: 32.5%;
+
+		@media screen and (min-width: $mobile600px) {
+			width: initial;
+		}
 
 		&:hover .menu-principal__sous-menu-liste {
 			display: block;
@@ -40,6 +34,35 @@
 
 		&:focus-within .menu-principal__sous-menu-liste {
 			display: block;
+		}
+
+		&.accueil {
+			font-family: Heebo-Bold, sans-serif;
+			width: 100%;
+			padding: 1rem 0 0 0;
+			text-align: left;
+
+			@media screen and (min-width: $tablet800px) {
+				width: initial;
+				padding: 0;
+			}
+
+			& .menu-principal {
+				&__lien {
+					width: 100%;
+
+					&::before {
+						display: inline-block;
+						width: 3.5rem;
+						height: 2.3rem;
+						vertical-align: middle;
+						margin-top: 0.5rem;
+						margin-right: 1rem;
+						content: "";
+						background: url(../images-css/logo-symbole-ren.svg) no-repeat;
+					}
+				}
+			}
 		}
 	}
 
@@ -49,25 +72,10 @@
 		padding: 0.5rem 3rem;
 		display: inline-block;
 		border-bottom: transparent 0.5rem solid;
-
-		@media screen and (max-width: calc($mobile600px - 1px)) {
-			width: calc((100% / 3) - 0.27rem);
-		}
+		width: 100%;
 
 		@media screen and (min-width: $tablet800px) {
-			padding: 1rem 3rem;
-		}
-
-		&.accueil {
-			font-family: Heebo-Bold, sans-serif;
-			width: 100%;
-			padding: 2rem 3rem 1rem 3rem;
-			text-align: left;
-
-			@media screen and (min-width: $tablet800px) {
-				width: initial;
-				padding: 1.4785rem 3rem 1rem 3rem;
-			}
+			padding: 1.2rem 3rem 0.8rem 3rem;
 		}
 
 		&:link,
@@ -94,13 +102,16 @@
 		display: none;
 		position: absolute;
 		z-index: 1000;
-		top: 5.5rem;
+		top: 4.5rem;
 		left: 0;
-		width: 37rem;
-		padding: 25px 25px;
+		width: 40rem;
+		padding: 2.5rem;
 		text-align: left;
-		background-color: rgba(0, 100, 55, 0.95);
-		line-height: 1.25em;
+		background-color: rgba(0, 100, 55, 0.97);
+
+		@media screen and (min-width: $tablet800px) {
+			top: 5.5rem;
+		}
 	}
 
 	&__sous-menu-item {
