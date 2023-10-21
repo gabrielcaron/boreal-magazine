@@ -24,7 +24,7 @@ Aucune dépendance requise.
 - Toutes les images sont à 1x et 2x.
 - Le format est 16:9
 
-##### Photo d'en-tête (accueil)
+### Photo d'en-tête (accueil)
 
 |          | 1x     | 2x     |
 | -------- | ------ | ------ |
@@ -32,7 +32,7 @@ Aucune dépendance requise.
 | Tablette | 1000px | 2000px |
 | Table    | 2000px | 3840px |
 
-##### Photos des vignettes d'articles en page d'accueil
+### Photos des vignettes d'articles en page d'accueil
 
 |           | 1x    | 2x     |
 | --------- | ----- | ------ |
@@ -41,4 +41,4 @@ Aucune dépendance requise.
 
 ## JavaScript
 
-Aucun JavaScript.
+Aucun JavaScript
